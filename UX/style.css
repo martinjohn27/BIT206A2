@@ -1,0 +1,52 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+  }
+
+  .ui-container{
+    background-color: black;
+    outline: white; 
+    z-index: 10;
+  }
+  .ui-container img{
+    height: 30%;
+    width: 100%;
+    opacity: 0.3;    
+    z-index:5; 
+  }
+
+  /*rgba(143, 211, 232, 1)
+  #d5d5d5*/
+  .buttons{
+    text-align: center;
+    background-color:#00ace6;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    font-size: 190%;
+  }
+
+  .buttons:hover{
+
+  }
+
+  .card-img-overlay button{
+
+    margin-left: 40%;
+    margin-top: 1%;
+  }
+
+  .card-img-overlay h1{
+    color: #d5d5d5;
+    margin-left: 40%;
+    margin-top: 10%;
+  }
+
+
+  .navigation a{
+    padding: 40px;
+    color: #00ace6;
+    text-align: center;
+  }
