@@ -11,9 +11,9 @@
 
     <!--icons-->
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="jquery.countup.js"></script>
     
 
     <link rel="icon" type="image/png" href="image/tabIcon.JPG">
@@ -34,9 +34,9 @@
 
     <!--navigation bar-->
 
-    <div class="navigation">
+    <div class="navigation col-12">
         <div class="card bg-light">
-            <div class="card-body">
+            <div class="card-body box-shadow">
                 <div class="col-12 row center">
                     <div class="navBar col-3 center"> 
                         <a href="#" class="card-link"><img src="image/paw.png" alt="Pet Grooming & Spa"> <br> Pet Grooming & Spa</a>
@@ -55,28 +55,48 @@
         </div>
     </div>
 
-    <!--social proof-->
-    <br>
+    <br><br>
 
-    <div class="social-proof col-12">
-        <div class="card">
-            <div class="card-body row">
-                <div class="col-6">
-                    <i class="far fa-check-circle"></i>
-                    <div class="num">45000</div>
-                    + over customers
-                </div>
-                <div class="col-6">
-                    <i class="fas fa-trophy"></i>
-                    <div class="num">9</div>
-                    + years
-                </div>
+    <!--Our services-->
+    <div class="services row ">
+        <div class="col-12">
+            <div class="col-7 float-left">
+                <h1> &emsp; <span class="highlight"> Our Services </span>  that gives you <br> &emsp; the right choice </h1>
             </div>
-        </div>
+            <div class="col-5 float-right">
+                <img class="box-shadow pull-right" src="image/services1.jpg" alt="Dog Swimming">
+            </div>
+    
+        </div>        
     </div>
 
-    <script type="text/javascript">
+
+
+
+
+    <!--social proof-->
+    <br><br><br><br>
+
+    <div class="social-proof col-12 row">
+        <div class="col-6">
+            <i class="far fa-check-circle"></i>
+            <div class="counter">45000</div>
+            + over customers
+        </div>
+        <div class="col-6">
+            <i class="fas fa-trophy"></i>
+            <div class="counter">9</div>
+            + years
+        </div>        
+    </div>
+
+
     
+    <script>
+    $('.counter').countUp({
+        'time':1000,
+        'delay':10
+    });
     </script>
 </body>
 </html>

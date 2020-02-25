@@ -47,6 +47,7 @@ html, body{
 
   .navigation{
     position: sticky;
+    margin-top: -50px;
   }
 
   .navBar{
@@ -71,6 +72,33 @@ html, body{
   .social-proof{
     position: absolute; 
     text-align: center;
+    float: none;
+  }
+
+  .fa-check-circle{
+    font-size: 50px;
+    color:#33cc33;
+  }
+
+  .fa-trophy{
+    font-size: 50px;
+    color: #e6e600;
+  }
+
+  .services img{
+    border-radius: 20px;
+  }
+
+  .services h1{
+    font-weight: 700;
+  }
+
+  .highlight{
+    color: #0086b3;
+  }
+
+  .box-shadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
 
