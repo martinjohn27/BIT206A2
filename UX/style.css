@@ -5,6 +5,13 @@ html, body{
     color: #222;
   }
 
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 300px;
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
+  }
+
   .ui-container{
     background-color: black;
     outline: white; 
@@ -91,6 +98,20 @@ html, body{
 
   .services h1{
     font-weight: 700;
+  }
+
+.steps{
+  text-align: left;
+  font-weight: 400;
+}
+
+  .steps button{
+    border: none;
+    background-color: #006699;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 150px;
   }
 
   .highlight{
