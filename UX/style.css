@@ -17,6 +17,21 @@ html, body{
     font-weight: 1000;
 }
 
+.buttons{
+  text-align: center;
+  background-color:#00ace6;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 190%;
+}
+
+.buttons:hover{
+
+}
+
+
+/* book now section */
   .ui-container{
     background-color: black;
     outline: white; 
@@ -29,29 +44,17 @@ html, body{
     z-index:5; 
   }
 
-  /*rgba(143, 211, 232, 1)
-  #d5d5d5
-  flaticon*/
-  .buttons{
-    text-align: center;
-    background-color:#00ace6;
-    border: 2px solid white;
-    border-radius: 20px;
-    color: white;
-    font-size: 190%;
-  }
-
-  .buttons:hover{
-
-  }
-
-
-
   .card-img-overlay h1{
     color: #d5d5d5;
     margin-top: 7%;
     padding: 20px;
   }
+
+  /*-------------------*/
+
+ 
+ 
+/*navifation bar*/
 
   .navigation{
     position: sticky;
@@ -77,6 +80,11 @@ html, body{
   }
 
 
+  /*-----------------*/
+
+
+
+  /*Service list */
   .serviceList {
     height: 764px;
     width: 1223px;
@@ -160,6 +168,37 @@ html, body{
     background-image: url(image/service-6.jpg);
   }
 
+
+  /*-------------------*/
+
+
+/*Petto values*/
+
+  .pic-container{
+    position: relative;
+    padding: 50px;
+  }
+
+  .pic1{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 170px;
+    left: 0px;
+    
+  }
+
+  .pic2{    
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+  }
+
+
+
+/*-----------------*/
+
+  /*Social proof*/
   .social-proof{
     text-align: center;
     padding-bottom: 40px;
@@ -183,6 +222,16 @@ html, body{
     padding: 5px;
   }
 
+
+  .fa-star{
+    color:#ffcc00;
+  }
+
+  /*----------------------*/
+
+
+
+  /*Past experience*/
   .join{
     background-image: url(image/join-wallpaper2.jpg);
     background-repeat: no-repeat;
@@ -233,16 +282,16 @@ html, body{
     display: block;
   }
 
-
-  .fa-star{
-    color:#ffcc00;
-  }
-
   .fa-check-circle, .fa-trophy, .fa-users {
     margin-top: 10px;
     font-size: 50px;
     color:white;
   }
+
+/*---------------------------*/
+
+
+  
 
 
   .highlight{
