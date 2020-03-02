@@ -3,12 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us - PETTO</title>
+
+    <!--setup-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="about.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!--icons-->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <link rel="icon" type="image/png" href="image/tabIcon.JPG">
 </head>
 <body>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63741.8601660457
-    1!2d101.61966473929172!3d3.13003161651224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3
-    m3!1m2!1s0x31cc49aca5c7421b%3A0xb7242dad56a6c240!2sHELP+University!5e0!3m2!1sen!2smy
-    !4v1554321060232!5m2!1sen!2smy" allowfullscreen=""></iframe>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!--navigation bar-->
+
+    <div class="navigation">
+        <div class="card bg-light">
+            <div class="card-body">
+                <div class="col-12 row center">
+                    <div class="navBar col-3 center"> 
+                        <a href="#" class="card-link"><img class="small-image" src="image/paw.png" alt="Pet Grooming & Spa"> <br> <span class="visibility"> Pet Grooming & Spa</span></a>
+                    </div> 
+                    <div class="navBar small-image col-3 center">
+                        <a href="#" class="card-link"><img class="small-image" src="image/pet-care.png" alt="Pet Care"><br> <span class="visibility">Pet Hotel</span></a>
+                    </div>      
+                    <div class="navBar small-image col-3 center">
+                        <a href="#" class="card-link"><img class="small-image" src="image/walking-the-dog.png" alt="Swimming Pool & Indoor Park"> <br><span class="visibility"> Pet Activities </span></a>
+                    </div>        
+                    <div class="navBar small-image col-3 center">
+                        <a href="#" class="card-link"><img class="small-image" src="image/pet-shop.png" alt="About Us"><br> <span class="visibility">About us</span> </a>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+
+    <div class="location card box-shadow">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1
+    m3!1d3983.7826783601554!2d101.66895621398854!3d3.15193729770495
+    47!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49ac
+    a5c7421b%3A0xb7242dad56a6c240!2sHELP%20University!5e0!3m2!1sen!
+    2smy!4v1583128559868!5m2!1sen!2smy" width="600" height="450" frameborder="0" 
+    style="border:0;" allowfullscreen=""></iframe>
+
+        
+    </div>
+
+
+    <script>
+        // $( ".navigation" ).hover(function(){
+        //     $('img').toggleClass(".small-image");
+        //     $('span').toggleClass(".visibility");
+        // });
+
+        // $("a").click(function(){
+        //     $("span").toggleClass(".visibility");
+        // });
+        $(".navigation span").hide();
+        
+        $(".navigation").mouseover(function(){
+            $("span").show();
+            $(".navigation").toggleClass("box-shadow");
+            $("span").toggleClass("visibility");
+            $("img").toggleClass("small-image");
+        });
+
+        $(".navigation").mouseout(function(){
+            $(".navigation span").hide();
+            $(".navigation").toggleClass("box-shadow");
+            $("span").toggleClass("visibility");
+            $("img").toggleClass("small-image");
+        })
+
+        
+
+
+    </script>
+    
 </body>
 </html>
