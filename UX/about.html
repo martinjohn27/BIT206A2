@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="about.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
+    <!--timeline setup-->
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <!--icons-->
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
@@ -17,30 +21,68 @@
 </head>
 <body>
     
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <section class="cd-timeline js-cd-timeline">
+        <div class="container max-width-lg cd-timeline__container">
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img  booking ">
+                <i class="fas fa-calendar-alt"></i>
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>1. Booking</h2>
+              <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+    
+              <div class="flex justify-between items-center">
+                <a href="#0" class="btn btn--subtle">Book Now </a>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+    
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img check-in">
+                <i class="far fa-calendar-check"></i>
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>2. Check In</h2>
+              <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+              
+              <div class="flex justify-between items-center">
+                <a href="#0" class="btn btn--subtle">Read more</a>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+    
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img check-out">
+                <i class="fas fa-dollar-sign"></i>
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>3. Check Out & make payment</h2>
+              <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+    
+              <div class="flex justify-between items-center">
+                <a href="#0" class="btn btn--subtle">Read more</a>
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+          
+          <div class="cd-timeline__block">
+            <div class="cd-timeline__img complete">
+                <i class="far fa-handshake"></i>
+            </div> <!-- cd-timeline__img -->
+    
+            <div class="cd-timeline__content text-component">
+              <h2>Completed</h2>
+              <p class="color-contrast-medium">This is the content of the last section</p>
+    
+              <div class="flex justify-between items-center">
+              </div>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+        </div>
+      </section> <!-- cd-timeline -->
 
 
     <!--navigation bar-->
@@ -69,27 +111,14 @@
 
     <br>
 
-    <div class="location card box-shadow">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1
-    m3!1d3983.7826783601554!2d101.66895621398854!3d3.15193729770495
-    47!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49ac
-    a5c7421b%3A0xb7242dad56a6c240!2sHELP%20University!5e0!3m2!1sen!
-    2smy!4v1583128559868!5m2!1sen!2smy" width="600" height="450" frameborder="0" 
-    style="border:0;" allowfullscreen=""></iframe>
-
+    <!-- <div class="location card box-shadow"> -->
         
-    </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7826783601554!2d101.66895621398854!3d3.1519372977049547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49aca5c7421b%3A0xb7242dad56a6c240!2sHELP%20University!5e0!3m2!1sen!2smy!4v1583205504058!5m2!1sen!2smy" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        
+    <!-- </div> -->
 
-
-    <script>
-        // $( ".navigation" ).hover(function(){
-        //     $('img').toggleClass(".small-image");
-        //     $('span').toggleClass(".visibility");
-        // });
-
-        // $("a").click(function(){
-        //     $("span").toggleClass(".visibility");
-        // });
+    <script src="assets/js/main.js"></script>
+    <script>        
         $(".navigation span").hide();
         
         $(".navigation").mouseover(function(){

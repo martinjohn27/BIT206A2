@@ -1,3 +1,32 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  text-align: center;
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  width: 300px;
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+h1{
+  font-weight: 1000;
+}
+
+.buttons{
+  text-align: center;
+  background-color:#00ace6;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 190%;
+}
+
+
 .navigation{
     position: sticky;
     margin-top: -50px;
@@ -26,6 +55,29 @@
     width: 50px;
     transition: 0.2s;
   }
+
+
+  .booking, .check-in, .check-out, .complete{
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .booking{
+    background-color: #00ace6;
+  }
+  .check-in{
+    background-color: #0086b3;
+  }
+  .check-out{
+    background-color:  #54ac51;
+  }
+  .complete{
+    background-color: #85d560;
+  }
+
+
+
 
   .visibility{
       visibility: hidden;
