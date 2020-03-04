@@ -2,7 +2,6 @@ html, body{
     height: 100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    color: #222;
     text-align: center;
   }
 
@@ -14,49 +13,26 @@ html, body{
   }
 
   h1{
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 1000;
 }
 
-.buttons{
-  text-align: center;
-  background-color:#00ace6;
-  border: 2px solid white;
-  border-radius: 20px;
+/*ALERT*/
+/*ALERT*/
+/*dangerous css*/
+.buttons a{
+  color: #00ace6;
+  border: 2px solid #00ace6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons a:hover{
   color: white;
-  font-size: 190%;
-}
-
-.buttons:hover{
-
+  background-color:#00ace6;
 }
 
 
-/* book now section */
-  .ui-container{
-    background-color: black;
-    outline: white; 
-    z-index: 10;
-  }
-  .ui-container img{
-    height: 30%;
-    width: 100%;
-    opacity: 0.3;    
-    z-index:5; 
-  }
-  
-  #videoTesting{
-    opacity: 0.4;    
-    z-index:5; 
-  }
-
-  .card-img-overlay h1{
-    color: #d5d5d5;
-    margin-top: 7%;
-    padding: 20px;
-    font-weight: 700;
-  }
-
-  /*-------------------*/
+/*-------------*/
 
  
  
@@ -73,6 +49,8 @@ html, body{
 
   .navBar a{
     color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .navBar:hover{
@@ -85,255 +63,30 @@ html, body{
     color: #00ace6;
   }
 
-
-  /*-----------------*/
-
-
-
-  /*Service list */
-  .serviceList {
-    height: 764px;
-    width: 1223px;
-  }
-
-
-  .card{
-    margin: 0 auto;
-    float: none; 
-    margin-bottom: 10px;
-    border: none; 
-  }
-
-  .serviceList video{
-    margin-top: -5px;
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-  }
-
-  .serviceList video::after{
-    content: "";
-    display: block;
-  }
-
-  .services h5{
-    color: white;
-    font-weight: 700;
-    z-index: 20;
-  }
-
-  .service-tiles{
-    background-color: black;
-    padding: 70px;
-    height: 130px;
-    width: 50px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    z-index: 10;
-  }
-
-  .service-tiles2{
-    background-color: black;
-    padding: 70px;
-    height: 130px;
-    width: 50px;
-    margin-bottom: 10px;
-    z-index: 10;
-  }
-  
-
-
-  .service1, .service2, .service3, .service4, .service5, .service6{
-    background-size: cover;    
-    background-repeat: no-repeat;
-    opacity: 0.3;
-    z-index:5; 
-  }
-
-  .service1 {
-    background-image: url(image/home/service-1.jpg);
-  }
-
-  .service2{
-    background-image: url(image/home/service-2.jpg);
-  }
-
-  .service3{
-    background-image: url(image/home/service-3.jpg);
-  }
-
-  .service4{
-    background-image: url(image/home/service-4.jpg);
-  }
-
-  .service5{
-    background-image: url(image/home/service-5.jpg);
-  }
-
-  .service6{
-    background-image: url(image/home/service-6.jpg);
-  }
-
-
-  /*-------------------*/
-
-
-/*Petto values*/
-
-  .pic-container{
-    position: relative;
-    padding: 50px;
-  }
-
-  .pic1{
-    position: absolute;
-    height: 300px;
-    width: 300px;
-    top: 170px;
-    left: 0px;
-    
-  }
-
-  .pic2{    
-    height: 300px;
-    width: 300px;
-    border-radius: 20px;
-  }
-
-
-
-/*-----------------*/
-
-  /*Social proof*/
-  .social-proof{
-    text-align: center;
-    padding-bottom: 40px;
-    width: 100%;
-    background-image: url(image/home/join-wallpaper2.jpg);  
-    background-repeat: no-repeat;
-    background-size: cover;  
-  }
-
-  .social-proof h1{
-    color: black;
-    padding: 50px;
-    padding-bottom: 1px;
-  }
-
-  .social-proof h4{
-    color: black;
-    padding-bottom: 50px;
-  }
-
-  .comments{
-    text-align: left;
-    padding: 5px;
-  }
-
-
-  .fa-star{
-    color:#ffcc00;
-  }
-
-  /*----------------------*/
-
-
-
-  /*Customer values*/
-  .customer-values h3{
-    font-weight: 700;
-  }
-
-  .values-list{
-    text-align: left;
-    list-style-type: none;
-    margin-top: 80px;
-    margin-left: 40px;
-  }
-
-  .values-list li{
-    padding: 10px;
-  }
-
-  .values-list img{
-    width: 50px;
+  .small-image{
     height: 50px;
-    filter: sepia(100%);
-    color: #0086b3;
+    width: 50px;
+    transition: 0.2s;
   }
 
-
-  .list-highlight{
-    font-weight: 700;
-    font-size: 27px;
-  }
-
-
-  /*Past experience*/
-  .join{
-    background-image: url(image/home/join-wallpaper2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 40px;
-    
-  }
-
-
-  .box{
-    height: 135px;
-    width: 363px;
-  }
-
-  .box-container{
-    padding-right: 30px;
-    position: relative;
-  }
-
-  .small-box{
-    padding: 15px;
-    height: 90px;
-    width: 25%;
-    background-image: linear-gradient(to bottom right, 	 #99e6ff, #00ace6);
-    border-radius: 10px;
-    z-index: 15;
-  }
-
-  .small-box::after{
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  }
-
-  .big-box{
-    text-align: center;
-    padding: 20px;
-    width: 80%;
-    border-radius: 10px;
-    background-color: white;
-    margin-left: -45px;
-    margin-top: 30px;
-    z-index: 10;
-  }
-
-  .big-box::after{
-    content: "";
-    display: block;
-  }
-
-  .fa-check-circle, .fa-trophy, .fa-users {
-    margin-top: 10px;
-    font-size: 50px;
-    color:white;
-  }
-
-/*---------------------------*/
-
-
-  
+  .visibility{
+    visibility: hidden;
+}
+  /*-----------------*/
+ 
 
 
   .highlight{
     color: #0086b3;
+  }
+
+  .navBar-highlight{
+    opacity: 0.3;
+  }
+
+  .navBar-highlight-link{
+    color: #00ace6;
+    font-weight: 700;
   }
 
   .silver{
