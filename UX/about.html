@@ -7,6 +7,7 @@
 
     <!--setup-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">   
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -152,15 +153,29 @@
     <!-- <div class="location card box-shadow"> -->
     <div class="location col-12 row">
         <div class="col-5 float-left">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7826783601554!2d101.66895621398854!3d3.1519372977049547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49aca5c7421b%3A0xb7242dad56a6c240!2sHELP%20University!5e0!3m2!1sen!2smy!4v1583205504058!5m2!1sen!2smy" width="550" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7826783601554!2d101.66895621398854!3d3.1519372977049547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49aca5c7421b%3A0xb7242dad56a6c240!2sHELP%20University!5e0!3m2!1sen!2smy!4v1583205504058!5m2!1sen!2smy" width="550" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
 
         <div class="card col-5 float-right">
             <h3>Don't have wait to let your <br> <span class="highlight">Pet feel SUPERB</span> </h3>
             <h5><br><br> Working Hours:</h5>
-            <p>10 a.m - 7 p.m</p>
+            <p>(Available everyday except Tuesday)</p>
+            <p>10 a.m - 7 p.m </p>
 
-            <h5><br><br>Popular Times : </h5>
+            <h5><br><br>Popular Times (Based on visits to this place): </h5>
+            <div class="form-group">
+              <br>
+              <select class="form-control " id="popular-times">
+                <option value="0">Monday</option>
+                <option value="1">Wednesday</option>
+                <option value="2">Thursday</option>
+                <option value="3">Friday</option>
+                <option value="4">Saturday</option>
+                <option value="5">Sunday</option>
+              </select>
+              <br>
+            </div>
+            <div id="chart_div"></div>
 
 
         </div>
@@ -169,6 +184,8 @@
     <footer>
       jacky's footer
     </footer>
+    
+
 
     <script src="assets/js/main.js"></script>
     <script>        
@@ -188,7 +205,89 @@
             $("img").toggleClass("small-image");
         })
 
-        
+        document.getElementById('popular-times').addEventListener("change", e=>{
+          const selection = document.getElementById('popular-times');
+          const data = selection.options[selection.selectedIndex].value;
+
+          google.charts.load('current', {'packages':['corechart', 'bar']});
+          google.charts.setOnLoadCallback(drawChart);
+
+          function drawChart() {
+
+            var data0 = new google.visualization.DataTable();
+            data0.addColumn('string', 'Time');
+            data0.addColumn('number', 'Percentage%');
+            data0.addRows([
+              ['10am', 10], ['11am', 20],['12pm', 40],['1pm', 50],['2pm', 50],
+              ['3pm', 40], ['4pm', 20], ['5pm', 40],['6pm', 40],['7pm', 10]
+            ]);
+
+            var data1 = new google.visualization.DataTable();
+            data1.addColumn('string', 'Time');
+            data1.addColumn('number', 'Percentage%');
+            data1.addRows([
+              ['10am', 20],['11am', 20],['12pm', 50],['1pm', 50],['2pm', 40],
+              ['3pm', 40],['4pm', 30],['5pm', 30],['6pm', 20],['7pm', 10]
+            ]);
+
+            var data2 = new google.visualization.DataTable();
+            data2.addColumn('string', 'Time');
+            data2.addColumn('number', 'Percentage%');
+            data2.addRows([
+              ['10am', 40],['11am', 40],['12pm', 30],['1pm', 80],['2pm', 80],
+              ['3pm', 60],['4pm', 30],['5pm', 40],['6pm', 30],['7pm', 20]
+            ]);
+
+            var data3 = new google.visualization.DataTable();
+            data3.addColumn('string', 'Time');
+            data3.addColumn('number', 'Percentage%');
+            data3.addRows([
+              ['10am', 50],['11am', 50],['12pm', 40],['1pm', 20],['2pm', 20],
+              ['3pm', 30],['4pm', 30],['5pm', 40],['6pm', 40],['7pm', 20]
+            ]);
+
+            var data4 = new google.visualization.DataTable();
+            data4.addColumn('string', 'Time');
+            data4.addColumn('number', 'Percentage%');
+            data4.addRows([
+              ['10am', 20],['11am', 20],['12pm', 30],['1pm', 40],['2pm', 50],
+              ['3pm', 70],['4pm', 60],['5pm', 50],['6pm', 30],['7pm', 20]
+            ]);
+
+            
+            var data5 = new google.visualization.DataTable();
+            data5.addColumn('string', 'Time');
+            data5.addColumn('number', 'Percentage%');
+            data5.addRows([
+              ['10am', 10],['11am', 30],['12pm', 50],['1pm', 70],['2pm', 60],
+              ['3pm', 50],['4pm', 50],['5pm', 40],['6pm', 40],['7pm', 30]
+            ]);
+
+            const dataList = [];
+            dataList.push(data0);
+            dataList.push(data1);
+            dataList.push(data2);
+            dataList.push(data3);
+            dataList.push(data4);
+            dataList.push(data5);
+            
+
+            var chartData = dataList[data];
+
+            // Set chart options
+            var options = {'title':'',
+                          'legend' : { position: 'none' },
+                          'hAxis' : {title: 'Time'},
+                          'vAxis' : {title: 'Percentage %',
+                                    ticks : [0,20,80,100]},
+                          'width':600,
+                          'height':250};
+
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.charts.Bar(document.getElementById('chart_div'));
+            chart.draw(chartData, google.charts.Bar.convertOptions(options));
+	    }
+});
 
 
     </script>
