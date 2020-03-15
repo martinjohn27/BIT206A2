@@ -39,8 +39,10 @@ html, body{
 /*navifation bar*/
 
   .navigation{
-    position: sticky;
+    position: fixed;
     margin-top: -50px;
+    z-index: 20;
+    padding-bottom: 100px;
   }
 
   .navBar{
@@ -63,7 +65,7 @@ html, body{
     color: #00ace6;
   }
 
-  .small-image{
+  .big-image{
     height: 50px;
     width: 50px;
     transition: 0.2s;
