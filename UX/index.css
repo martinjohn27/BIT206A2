@@ -32,6 +32,33 @@
     padding: 20px;
     font-weight: 700;
   }
+.title_top_space{
+  padding-top: 10rem;
+}
+
+  .title_h1 {
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: 0.5rem;
+  }
+  
+  .title_h2{
+    padding-top: 1rem;
+    font-size: 250%;
+    font-weight: 300;
+    color: floralwhite;
+  }
+  
+  .title_h4{
+    font-size: 130%;
+    font-weight: 200;
+    color: floralwhite;
+  
+  }
+
+
+ 
 
   /*-------------------*/
 
@@ -318,6 +345,30 @@
   #videoTesting{
     visibility: hidden;
   }
+  
+  .title_top_space{
+    padding-top: 5rem;
+  }
+
+  .title_h1 {
+    font-size: 300%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: 0.5rem;
+  }
+
+  .title_h2{
+    padding-top: 1rem;
+    font-size: 150%;
+    font-weight: 300;
+  }
+
+  .title_h4{
+    font-size: 80%;
+    font-weight: 200;
+    display: none;
+  }
+
 
   .card-img-overlay h1{
     padding: 0px;
@@ -432,6 +483,37 @@
      height: auto;
      width: 375px;
    }
+
+
+
+
+
+}
+
+@media (max-width:576px){
+  .title_top_space{
+    padding-top: 12rem;
+  }
+
+  .title_h1 {
+    font-size: 200%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: 0rem;
+    display: none;
+  }
+
+  .title_h2{
+    padding-top: -2rem;
+    font-size: 125%;
+    font-weight: 300;
+  }
+
+  .title_h4{
+    font-size: 60%;
+    font-weight: 200;
+    display: none;
+  }
 
 }
  
