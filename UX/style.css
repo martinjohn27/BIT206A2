@@ -45,11 +45,15 @@ html, body{
 
   .navigation{
     position: fixed !important;
-    /*margin-top: -50px;
+    margin-top: -200px;
     z-index: 20 ;
-    padding-bottom: 100px;*/
+    padding-bottom: 100px;
     opacity: 1;
     transition: all 0.5s;
+  }
+
+  .navigation img{
+    width: 35px;
   }
 
   .navBar{

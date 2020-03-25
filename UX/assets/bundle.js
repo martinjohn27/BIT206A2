@@ -3,14 +3,14 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navigation").style.marginTop = "40px";
+    document.getElementById("navigation").style.marginTop = "-150px";
     $(".navigation img").addClass("big-image");
     $(".navigation span").addClass("visibility");
     $(".navigation span").hide();
     document.getElementById("navigation").style.opacity = "0.9";
     
   } else {
-    document.getElementById("navigation").style.marginTop = "-50px";
+    document.getElementById("navigation").style.marginTop = "-200px";
     $(".navigation img").removeClass("big-image");
     $(".navigation span").removeClass("visibility");  
     $(".navigation span").show();
@@ -40,6 +40,6 @@ $(".navigation").mouseout(function(){
     $(".navigation span").hide();
     $(".navigation span").addClass("visibility");
     $(".navigation img").addClass("big-image");
-    document.getElementById("navigation").style.marginTop = "40px";
+    document.getElementById("navigation").style.marginTop = "-150px";
   }
 });
