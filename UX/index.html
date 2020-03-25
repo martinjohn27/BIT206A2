@@ -33,7 +33,7 @@
         <!--Jacky-->
 <!-- Navbar-->
 <nav class="nav_bar navbar navbar-expand-lg fixed-top py-2">
-    <div class="container-fluid"><a href="#" class="navbar-brand text-uppercase font-weight-bold">  PETTO</a>
+    <div class="container-fluid"><a href="#" class="navbar-brand text-uppercase font-weight-bold"> <img style="width: 50px;" src="image/invisible-logo.png" alt="PETTO Logo"> &nbsp;  PETTO</a>
         <a href="#" onclick="openNav()" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></a>
         
         <!--
@@ -224,9 +224,8 @@
     <div class="card social-proof box-shadow ">
         <h1>What are they saying about <span class="highlight">us</span> ? </h1>
         <h4>OVERALL RATING : 4.3/5</h4>
-            <div id="lefty">&lt;</div>
-            <div class="row card-deck col-12">
-                <div class="comments card col-3 left box-shadow">
+            <div class="container-comment row card-deck col-12">
+                <div id="comment1" class="comments card left box-shadow">
                     <div class="card-body">
                         <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
                         <p class="card-title silver"><br> 6 weeks ago</p>
@@ -236,7 +235,7 @@
 
                     </div>
                 </div>
-                <div class="comments card col-3 center box-shadow">
+                <div id="comment2" class="comment-none comments card center box-shadow">
                     <div class="card-body">
                         <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
                         <p class="card-title silver"><br>6 weeks ago</p>
@@ -245,7 +244,7 @@
                         <strong>Harrison</strong>
                     </div>
                 </div>
-                <div class="comments card col-3 center box-shadow">
+                <div id="comment3" class="comment-none comments card center box-shadow">
                     <div class="card-body">
                         <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
                         <p class="card-title silver"><br>6 weeks ago</p>
@@ -256,7 +255,7 @@
                         <strong>Trex</strong>
                     </div>
                 </div>
-                <div class="comments card col-3 right box-shadow">
+                <div id="comment4" class="comment-none comments card right box-shadow">
                     <div class="card-body">
                         <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
                         <p class="card-title silver"><br>6 weeks ago</p>
@@ -265,6 +264,7 @@
 
                     </div>       
                 </div>
+                <div id="lefty">&lt;</div>
                 <div id="righty">&gt;</div>
             </div>
             
@@ -319,6 +319,8 @@
     </footer>
 
     
+
+    <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="assets/bundle.js"></script>
     <script>
         document.getElementById('videoTesting').play();
@@ -346,33 +348,6 @@
         }
     });
     
-
-    $(function(){
-        var state = 0;
-        var maxState = 3;
-        var winWidth = $(window).width();
-        $(window).resize(function(){
-            winWidth = $(window).width();
-            $('.box,.container_element').width(winWidth-100);
-            $('.container_element').scrollLeft((winWidth-100)*state);
-        }).trigger('resize');
-        $('#lefty').click(function(){
-            if (state==0) {
-            state = maxState;
-            } else {
-            state--;
-            }
-            $('.container_element').animate({scrollLeft:((winWidth-100)*state)+'px'}, 800);
-        });
-        $('#righty').click(function(){
-            if (state==maxState) {
-            state = 0;
-            } else {
-            state++;
-            }
-            $('.container_element').animate({scrollLeft:((winWidth-100)*state)+'px'}, 800);
-        });
-    });
     </script>
 
 

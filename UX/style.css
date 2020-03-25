@@ -72,8 +72,8 @@ html, body{
   }
 
   .big-image{
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     transition: 0.2s;
   }
 
