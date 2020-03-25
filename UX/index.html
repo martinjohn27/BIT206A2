@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="topNav.css">
+
 
 
     <!--icons-->
@@ -18,30 +20,89 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="assets/jquery.countup.js"></script>
     
+    <!--TopNav-->
+    <script src="topNav.js"></script>
+   
+    
 
     <link rel="icon" type="image/png" href="image/tabIcon.JPG">
 </head>
 <body>
-    <nav>
+    
+       
         <!--Jacky-->
-        <p>Jacky's header </p>
-    </nav>
+<!-- Navbar-->
+<nav class="nav_bar navbar navbar-expand-lg fixed-top py-2">
+    <div class="container-fluid"><a href="#" class="navbar-brand text-uppercase font-weight-bold">  PETTO</a>
+        <a href="#" onclick="openNav()" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></a>
+        
+        <!--
+        <span id="sidenavBtnOpen" style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; open</span>
+        <span id="sidenavBtnClose" style="font-size:30px;cursor:pointer" onclick="closeNav()">&#9776; close</span>
+        -->
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="nav-link text-uppercase">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    <div class="ui-container card">
-        <video id="videoTesting" height="450" autoplay muted loop>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+
+    <div class="ui-container">
+        <video id="videoTesting" autoplay muted loop>
             <source src="image/home/cocomomo2.mp4" type="video/mp4" >
         </video>
         <img class="card-img-overlay" src="image/home/cute-dog-pic2.jpg" alt="Background image">
-        <div class="card-img-overlay">
-            <h1> Best of Care <br> Close to Home</h1>
+        <div class="card-img-overlay pt-5">
+                        <h1> Best of Care <br> Close to Home</h1>
             <div class="buttons">
                 <a class="btn btn-outline btn-header" role="button">Book Now &nbsp; <i class="fas fa-calendar-alt"></i></a>
             </div>              
         </div>      
     </div>
 
-    <!--navigation bar-->
+    <!--
+    <div class="ui-container container-fluid">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+          -->
+            <!--<img class="d-block w-100" src="..." alt="First slide">-->
+            <!--
+            <video class="d-block w-100" id="videoTesting" autoplay muted loop>
+                <source src="image/home/cocomomo2.mp4" type="video/mp4" >
+            </video>
+          </div>
+          -->
+          <!--
+          <div class="carousel-caption">
+              -->
+            <!--<h1 class="title_h1"> ESWEB </h1>
+            <h3 class="title_h2"> An Intergrated platform for recycling community </h3>
+            <h4 class="title_h4">Let's become one of the recycling community members!</h4>-->
+            <!--
+            <h1 class="mb-3"> Best of Care <br> Close to Home</h1>
+            <div class="buttons">
+                <a class="btn btn-outline btn-header" role="button">Book Now &nbsp; <i class="fas fa-calendar-alt"></i></a>
+            </div>
+          </div>
 
+          
+        </div>
+      </div>
+    </div>
+    -->
+
+    <!--navigation bar-->
     <div class="navigation col-12" id="navigation">
         <div class="card bg-light">
             <div class="card-body">
@@ -312,6 +373,11 @@
             $('.container_element').animate({scrollLeft:((winWidth-100)*state)+'px'}, 800);
         });
     });
+    </script>
+
+
+    <script type="text/javaScript">
+        
     </script>
 </body>
 </html>

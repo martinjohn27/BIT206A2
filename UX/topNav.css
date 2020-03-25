@@ -1,0 +1,142 @@
+/*Side Navigation Bar*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:  #0086b3;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #c0c0c0;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #sidenavBtnClose {
+    visibility: hidden;
+  }
+
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+
+  .bg_color{
+    background-color: #4ca1af;
+  }
+  
+  
+  /*Top Navigation bar*/
+
+  .nav_bar{
+      position: fixed;
+  }
+  .navbar {
+      transition: all 0.4s;
+      padding-top: 1rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+      font-size: 1.0rem;
+  }
+  
+  .navbar .nav-link{
+      /*color: rgb(223, 223, 223);*/
+      color: #fff;
+
+  }
+  
+  .navbar .nav-link:hover,
+  .navbar .nav-link:focus {
+        color: #fff;
+      /*color: #fff;*/
+      text-decoration: none;
+  }
+  
+  .navbar .navbar-brand {
+      color: #fff;
+  }
+  
+  
+  /* Change navbar styling on scroll */
+  .navbar.active {
+      background-color: #4ca1af;
+      box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+      padding-top: 0.7rem;
+      padding-right: 0.7rem;
+      padding-left: 0.7rem;
+      padding-bottom: 0rem;
+      font-size: 0.9rem;
+  }
+  
+  .navbar.active .nav-link {
+      color: #fff;
+  }
+  
+  .navbar.active .nav-link:hover,
+  .navbar.active .nav-link:focus {
+      color: rgb(223, 223, 223);
+      text-decoration: none;
+  }
+  
+  .navbar.active .navbar-brand {
+      color: rgb(223, 223, 223);
+  }
+  
+  
+  /* Change navbar styling on small viewports */
+  @media (max-width: 991.98px) {
+      .navbar {
+          background:#000;
+          padding-right: 1rem;
+          padding-left: 1rem;
+          position: absolute!important;
+
+          
+  
+      }
+  
+      .navbar .navbar-brand, .navbar .nav-link {
+          color: rgb(223, 223, 223);
+      }
+  
+      .navbar.active {
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+  }
+  
+    .fa-bars{
+      color: rgb(223, 223, 223);
+    }
+  }
+  
+  
