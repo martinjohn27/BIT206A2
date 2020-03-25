@@ -27,11 +27,11 @@
         <p>Jacky's header </p>
     </nav>
 
-    <div class="ui-container">
+    <div class="ui-container card">
         <video id="videoTesting" height="450" autoplay muted loop>
             <source src="image/home/cocomomo2.mp4" type="video/mp4" >
         </video>
-        <!-- <img src="image/home/home6.jpg" alt="Background image"> -->
+        <img class="card-img-overlay" src="image/home/cute-dog-pic2.jpg" alt="Background image">
         <div class="card-img-overlay">
             <h1> Best of Care <br> Close to Home</h1>
             <div class="buttons">
@@ -63,14 +63,14 @@
         </div>
     </div>
 
-    <br><br><br><br><br>
+    <br><br><br><br>
 
     <!--Our services-->
     <div class="services center">
-        <h1>What services does <span class="highlight">PETTO</span>  provide ?</h1>
+        <h1>What services does <span class="highlight">PETTO</span><br>  provide ?</h1>
         <hr>
         <div class="card serviceList col-12 ">                 
-            <video class="box-shadow" controls>
+            <video class="box-shadow" autoplay muted loop>
                 <source src="image/home/videoForSwimmingPool.mp4" type="video/mp4">
             </video>
 
@@ -78,7 +78,7 @@
                 <div class="card col-3 service-tiles box-shadow">
                     <h5>Pet Grooming</h5>
                     <div class="service1 card-img-overlay"></div>                       
-                </div>
+                </div>  
                 <div class="card col-3 service-tiles box-shadow">
                     <h5>Pet Spa</h5>
                     <div class="service2 card-img-overlay"></div>
@@ -109,6 +109,8 @@
 
         </div>  
     </div>
+
+    <div class="none"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
 
 
     <br><br>
@@ -161,6 +163,7 @@
     <div class="card social-proof box-shadow ">
         <h1>What are they saying about <span class="highlight">us</span> ? </h1>
         <h4>OVERALL RATING : 4.3/5</h4>
+            <div id="lefty">&lt;</div>
             <div class="row card-deck col-12">
                 <div class="comments card col-3 left box-shadow">
                     <div class="card-body">
@@ -201,6 +204,7 @@
 
                     </div>       
                 </div>
+                <div id="righty">&gt;</div>
             </div>
             
         
@@ -219,29 +223,29 @@
     <h4>"Best of Care, Close To Home"</h4>
     <br>
     <div class="join card box-shadow">
-        <div class=" col-12 row d-flex justify-content-around">
-            <div class="box-container col-4">
+        <div class="col-12 row d-flex justify-content-around">
+            <div class="box-container">
                 <div class="box row ">
                     <div class="small-box box-shadow d-flex">
                         <i class="far fa-check-circle"></i>
                     </div>                
-                    <h4 class="big-box flex-fill"> &emsp; <strong>Happy Customers</strong><br> <strong class="highlight"><span class="counter">45000</span>+</strong></h4>
+                    <h5 class="big-box"> &emsp; <strong>Happy Customers</strong><br> <strong class="highlight"><span class="counter">45000</span>+</strong></h5>
                 </div>
             </div>
-            <div class="box-container col-4">
+            <div class="box-container">
                 <div class="box row">
                     <div class="small-box box-shadow">
                         <i class="fas fa-trophy"></i>
                     </div>                
-                    <h4 class="big-box"> &emsp; <strong>Experience Over</strong><br> <strong class="highlight"><span class="counter">9</span> +</strong></h4>
+                    <h5 class="big-box"> &emsp; <strong>Experience Over</strong><br> <strong class="highlight"><span class="counter">9</span> +</strong></h5>
                 </div>
             </div>
-            <div class="box-container col-4">
+            <div class="box-container">
                 <div class="box row">
                     <div class="small-box box-shadow">
                         <i class="fas fa-users"></i>
                     </div>                
-                    <h4 class="big-box"> &emsp; <strong>Well Trained Staff</strong><br> <strong class="highlight"><span class="counter">31</span></strong></h4>
+                    <h5 class="big-box"> &emsp; <strong>Well Trained Staff</strong><br> <strong class="highlight"><span class="counter">31</span></strong></h5>
                 </div>
             </div>
         </div>        
@@ -261,6 +265,52 @@
     $('.counter').countUp({
         'time':1000,
         'delay':10
+    });
+
+    $(window).resize(function(){
+        if ($(window).width()<768){
+        $('.services .col-xs-12').removeClass('row');
+        } 
+        else{
+            $('.services .col-xs-12').addClass('row');
+        }
+    });
+
+    $(window).load(function(){
+        if ($(window).width()<768){
+        $('.services .col-xs-12').removeClass('row');
+        } 
+        else{
+            $('.services .col-xs-12').addClass('row');
+        }
+    });
+    
+
+    $(function(){
+        var state = 0;
+        var maxState = 3;
+        var winWidth = $(window).width();
+        $(window).resize(function(){
+            winWidth = $(window).width();
+            $('.box,.container_element').width(winWidth-100);
+            $('.container_element').scrollLeft((winWidth-100)*state);
+        }).trigger('resize');
+        $('#lefty').click(function(){
+            if (state==0) {
+            state = maxState;
+            } else {
+            state--;
+            }
+            $('.container_element').animate({scrollLeft:((winWidth-100)*state)+'px'}, 800);
+        });
+        $('#righty').click(function(){
+            if (state==maxState) {
+            state = 0;
+            } else {
+            state++;
+            }
+            $('.container_element').animate({scrollLeft:((winWidth-100)*state)+'px'}, 800);
+        });
     });
     </script>
 </body>

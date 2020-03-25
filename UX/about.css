@@ -9,17 +9,76 @@
   height: 30%;
   width: 100%;
   opacity: 0.3;    
-  z-index:5; 
+  /* z-index:5;  */
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.card-img-overlay h1{
+.ui-container .card-img-overlay br{
+  display: none;
+}
+
+.card-img-overlay{
+  margin-top: 5%;
+}
+
+.card-img-overlay h1, .card-img-overlay h5{
   color: #d5d5d5;
-  margin-top: 7%;
-  padding: 20px;
   font-weight: 700;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
+/*navigation*/
+.navigation{
+  width: 100% !important;
+  height: 238px;
+}
+
+.navBar{
+  padding-left: 85px;
+}
+
+.navBar a{
+  font-size: 17px;
+}
 /*-------------------*/
+
+/*mission*/
+.mission .float-left, .mission .float-right, .mission2 .float-left, .mission2 .float-right{
+  padding: 20px;
+  width: 50%;
+}
+
+.mission .float-left img{
+  margin-left: 40px;
+}
+
+.big-images{
+  width: 550px;
+  height: 450px;
+  margin:auto;
+}
+
+.mission-box{
+  width: 450px;
+  height: 450px;
+}
+
+.mission-box div{
+  width: 450px;
+  height: 350px;
+  background-image: linear-gradient(to bottom right, 	 #99e6ff, #00ace6);
+}
+
+.mission2 .float-right .mission-box div{
+  margin-left: 110px;
+}
+
+.mission2 .float-right img{
+  margin-left: 650px;
+}
+
 
 
 
@@ -117,4 +176,87 @@ select{
   background-repeat: no-repeat;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+
+@media only screen and (max-width: 768px){
+  /*about us container*/
+  .ui-container{ 
+    height: 450px;  
+  }
+
+  .ui-container img{
+    height: 450px;
+    width: 450px;
+    opacity: 0.5;
+    padding: 0px;
+  }
+  
+  .aboutImg{
+    visibility: hidden;
+  }
+
+  .ui-container .visibility{
+    visibility: visible;
+  }
+
+  .ui-container .card-img-overlay br{
+    display: initial;
+  }
+  
+  /*------------------*/
+
+  /*mission*/
+  .mission .float-right{
+    float: none;
+    width: 100%;
+  }
+
+  .mission .float-left{
+    padding-bottom: 0px;
+    margin-bottom: -50px;
+  }
+
+  .mission-box div{
+    height: 300px;
+    width: 260px;
+  }
+
+  .mission-box{
+    width: 300px;
+  }
+
+  .big-images{
+    height: 380px;
+    width: 300px;
+    margin-top: 15px;
+  }
+
+  .mission2 .float-left{
+    margin-top: 440px;
+    width: 100%;
+    float: none;
+  }
+
+  .mission2 .float-right{
+    margin-top: -520px;
+    margin-left: 20px;
+  }
+
+  .mission2 .float-right .mission-box div{
+    margin-left: 0px;
+  }
+  
+  .mission2 .float-right .big-images{
+    margin-left: 10px;
+  }
+
+  /*---------------------*/
+
+  .timeline .cd-timeline__img {
+    font-size: 20px;
+  }
+
+
+
 }

@@ -1,8 +1,7 @@
 /* book now section */
 .btn-header{
     text-align: center;
-    border-radius: 20px;
-    font-size: 190%;
+    font-size: 170%;
   }
 
 .ui-container{
@@ -11,15 +10,17 @@
     z-index: 10;
   }
   .ui-container img{
-    height: 30%;
+    padding: 0px;
+    height: 450px;
     width: 100%;
     opacity: 0.3;    
-    z-index:5; 
+    /* z-index:5;  */
+    visibility: hidden;
   }
   
   #videoTesting{
     opacity: 0.4;    
-    z-index:5;
+    /* z-index:5; */
     width: 100%;
     overflow-x: hidden;
   }
@@ -35,6 +36,10 @@
 
 
 /*Service list */
+.services br{
+  display: none;
+}
+
 .serviceList {
     height: 764px;
     width: 1223px;
@@ -227,7 +232,7 @@
 
   .box{
     height: 135px;
-    width: 363px;
+    width: 363px !important;
   }
 
   .box-container{
@@ -266,7 +271,14 @@
     display: block;
   }
 
-  .fa-check-circle, .fa-trophy, .fa-users {
+  .fa-check-circle{
+    margin: auto;
+    font-size: 50px;
+    color:white;
+  }
+  
+  
+  .fa-trophy, .fa-users {
     margin-top: 10px;
     font-size: 50px;
     color:white;
@@ -279,3 +291,118 @@
     height: 60%;
     width: 100%;
 }
+
+
+
+@media only screen and (max-width: 768px){
+  /* book now section */
+  .ui-container{
+    height: 450px;
+  }
+
+  .ui-container img{
+    visibility: visible;    
+  }
+
+
+  #videoTesting{
+    visibility: hidden;
+  }
+
+  .card-img-overlay h1{
+    padding: 0px;
+    opacity: 1;
+    margin-top: 100px;
+    margin-bottom: auto;
+    padding-bottom: 50px;
+  }
+   /*-------------------*/
+
+
+   /*Service list */
+   .services br{
+     display: initial;
+   }
+
+   .serviceList video{
+     margin-bottom: 20px;
+   }
+
+   .services h5{
+     padding: none;
+     width: 200px;
+   }
+
+   .service-tiles{
+     margin-top: 0px;
+     margin-bottom: 10px;
+   }
+
+   .service-tiles, .service-tiles2{
+     padding-right: 260px;
+     /* padding-left: 260px; */
+   }
+
+
+   .service1, .service2, .service3, .service4, .service5,.service6{
+     width: 330px;
+   }
+   /*---------*/
+
+
+  /*comments*/
+  #lefty,#righty {
+    width: 35px;
+    display: inline-block;
+    height: 57px;
+    text-align: center;
+    color: #fff;
+    line-height: 57px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  #lefty {
+      float:left;
+  }
+
+  #righty {
+      float:right;
+  }
+  /*----------*/
+
+   /*Past Experience*/
+   .join{
+     padding-left: 100px;
+   }
+
+   .joing h4{
+     font-size: 5px;
+   }
+
+   .box{
+    width: 300px;
+    padding-left: 15px;
+   }
+
+   .small-box{
+     height: 70px;
+   }
+
+   
+   .fa-check-circle{
+     font-size: 40px;
+   }
+
+   .fa-trophy, .fa-users {
+    margin-top: 8px;
+    font-size: 30px;
+  }
+
+   .footer-img{
+     height: auto;
+     width: 375px;
+   }
+
+}
+ 
