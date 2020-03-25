@@ -14,7 +14,7 @@
   margin-bottom: auto;
 }
 
-.ui-container .card-img-overlay br{
+.ui-container .card-img-overlay h1 br{
   display: none;
 }
 
@@ -46,6 +46,9 @@
 
 /*mission*/
 .mission .float-left, .mission .float-right, .mission2 .float-left, .mission2 .float-right{
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
   padding: 20px;
   width: 50%;
 }
@@ -78,6 +81,27 @@
 .mission2 .float-right img{
   margin-left: 650px;
 }
+
+.mission2 .float-left br{
+  display: none;
+}
+
+.mission .float-right h4, .mission2 .float-left h4{
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.mission .float-right hr, .mission2 .float-left hr{
+  width: 70px !important;
+  margin-top: 0px !important;
+  border-top: 3px solid #00ace6;
+}
+
+.mission .float-right p, .mission2 .float-left p{
+  text-align: justify;
+}
+
+/*----------*/
 
 
 
@@ -238,8 +262,12 @@ select{
     float: none;
   }
 
+  .mission2 .float-left br{
+    display: initial;
+  }
+
   .mission2 .float-right{
-    margin-top: -520px;
+    margin-top: -750px;
     margin-left: 20px;
   }
 
