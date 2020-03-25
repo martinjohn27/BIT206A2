@@ -3,7 +3,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navigation").style.marginTop = "80px";
+    document.getElementById("navigation").style.marginTop = "40px";
     $(".navigation img").addClass("big-image");
     $(".navigation span").addClass("visibility");
     $(".navigation span").hide();
@@ -40,6 +40,6 @@ $(".navigation").mouseout(function(){
     $(".navigation span").hide();
     $(".navigation span").addClass("visibility");
     $(".navigation img").addClass("big-image");
-    document.getElementById("navigation").style.marginTop = "80px";
+    document.getElementById("navigation").style.marginTop = "40px";
   }
 });
