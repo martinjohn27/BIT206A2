@@ -83,7 +83,9 @@
 
   .serviceList video{
     margin-top: -5px;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     height: 420px;
     object-fit: cover;
   }
@@ -387,6 +389,7 @@
 
    .serviceList video{
      margin-bottom: 20px;
+     width: 100%;
    }
 
    .services h5{
@@ -412,6 +415,8 @@
 
 
   /*comments*/
+  
+
   .comments{
     width: 400px !important;
   }
