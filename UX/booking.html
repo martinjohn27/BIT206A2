@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="booking.css">
-    <link rel="stylesheet" href="topNavOri.css">
+    
 
 
 
@@ -19,9 +19,14 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="assets/jquery.countup.js"></script>
+    <link rel="icon" type="image/png" href="image/tabIcon.JPG">
     
     <!--TopNav-->
     <script src="topNavOri.js"></script>
+    <link rel="stylesheet" href="topNavOri.css">
+
+    <!--javaScript-->
+    <script src="booking.js"></script>
   </head>
   <body>
     <!--Header-->
@@ -41,9 +46,8 @@
         -->
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
-                
+                <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">Register</a></li>
                 <li class="nav-item"><a href="login.html" class="nav-link text-uppercase">Login</a></li>
             </ul>
         </div>
@@ -77,13 +81,17 @@
   </div>
 
 
-    <div class="container mt-5">
-        <div class="container-fluid">
+    <div class="container mt-5 ">
+        <div class="container mb-3">
             <div class="row">
-                
+                <span> <p class="lead book_tab book_tab_1">&nbsp; SERVICE &nbsp;<i class="fas fa-chevron-right"></i></p></span>
+                 <span> <p class="lead book_tab book_tab_2">&nbsp; TIME &nbsp;<i class="fas fa-chevron-right"></i></p></span>
+                 <span> <p class="lead book_tab book_tab_3">&nbsp; APPOINTMENT &nbsp;</p></span>
+                 
             </div>
         </div>
 
+    
         <div class="row">
 
             <div class="card box_shadow ">
@@ -92,7 +100,7 @@
                   <h5 class="card-title text-left">Pet Grooming</h5>
                   <p class="card-text text-left">Pet grooming specialist that provides the best of services for pets.</p>
                   
-                    <a href="#" class="btn btn-primary text-center card_btn col-12">Select</a>
+                    <a href="#" onclick="selectedService('s1')" class="btn btn-primary text-center card_btn col-12">Select</a>
                   
                   
                 </div>
@@ -103,7 +111,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-left">Pet Spa</h5>
                   <p class="card-text text-left">The ultimate retreat for the pampered pet.</p>
-                  <a href="#" class="btn btn-primary text-center col-12">Select</a>
+                  <a onclick="selectedService('s2')"  class="btn btn-primary text-center col-12">Select</a>
                 </div>
               </div>
 
@@ -112,7 +120,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-left">Pet Hotel</h5>
                   <p class="card-text text-left">On a work trip or vacation? Leave your pet with us!</p>
-                  <a href="#" class="btn btn-primary text-center col-12">Select</a>
+                  <a onclick="selectedService('s3')"  class="btn btn-primary text-center col-12">Select</a>
                 </div>
               </div>
 
@@ -125,7 +133,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-left">Swimming Pool</h5>
                   <p class="card-text text-left">Swimming your dog is a perfect activity for the young or old.</p>
-                  <a href="#" class="btn btn-primary text-center col-12">Select</a>
+                  <a onclick="selectedService('s4')"  class="btn btn-primary text-center col-12">Select</a>
                 </div>
             </div>
 
@@ -134,7 +142,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-left">Indoor Park</h5>
                   <p class="card-text text-left">A platform for your pets to release stress and having fun.</p>
-                  <a href="#" class="btn btn-primary text-center col-12">Select</a>
+                  <a onclick="selectedService('s5')"  class="btn btn-primary text-center col-12">Select</a>
                 </div>
               </div>
 
@@ -144,7 +152,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-left">Pet Walking</h5>
                   <p class="card-text text-left">Busy life? Don't worry, our pet walking service is here.</p>
-                  <a href="#" class="btn btn-primary text-center col-12">Select</a>
+                  <a onclick="selectedService('s5')"  class="btn btn-primary text-center col-12">Select</a>
                 </div>
               </div>
 
@@ -163,7 +171,7 @@
 </main>
     <footer>
         <div class="col-12">
-            <hr class="light-100">
+            <!--<hr class="light-100">-->
             <h5 class="footer_btm_font">&copy; PETTO 2020. All Copyright Reserved.</h5>
         </div>
     </footer>

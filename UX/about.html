@@ -22,14 +22,48 @@
     <!--icons-->
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
+     <!--TopNav-->
+     <script src="topNavOri.js"></script>
+     <link rel="stylesheet" href="topNavOri.css">
 
     <link rel="icon" type="image/png" href="image/tabIcon.JPG">
 </head>
 <body>
-  <nav>
+  
     <!--Jacky-->
-    <p>Jacky's header </p>
-  </nav>
+    <!-- Navbar-->
+<nav class="nav_bar navbar navbar-expand-lg fixed-top py-2">
+  <div class="container-fluid">
+      <a href="#" onclick="openNav()" class="navbar-toggler navbar-toggler-left"><i class="fa fa-bars"></i></a>
+      <span class="spacer "></span>
+      <a href="index.html" class="navbar-brand text-uppercase font-weight-bold"> <img style="width: 35px;" src="image/invisible-logo.png" alt="PETTO Logo"> PETTO</a>
+      <span class="spacer "></span>
+      <span> </span>
+      
+      <!--
+      <span id="sidenavBtnOpen" style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; open</span>
+      <span id="sidenavBtnClose" style="font-size:30px;cursor:pointer" onclick="closeNav()">&#9776; close</span>
+      -->
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
+              <li class="nav-item"><a href="login.html" class="nav-link text-uppercase">Login</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<div id="mySidenav" class="sidenav text-left">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <p><i class="far fa-window-minimize"></i></p>
+  <a href="#">Login</a>
+  <a href="#">Sign Up</a>
+
+</div>    
+<br>
 
 
   
@@ -233,10 +267,78 @@
       </div>
     </div>
 
-     <img class="footer-img" src="image/home/footer.jpg" alt="Group of dogs"> 
-    <footer>
-      jacky's footer
-    </footer>
+     <!--<img class="footer-img" src="image/home/footer.jpg" alt="Group of dogs">-->
+  <!--Footer-->
+  <footer>
+    <!--  <img class="footer-img" src="image/home/footer.jpg" alt="Group of dogs">-->
+      
+  <div class="container-fluid">
+
+ 
+  <div class="container-fluid padding mt-3 footer_mid">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <hr class="light">
+      <h5>Directories</h5>
+      <hr class="light">
+      <div class="lead">
+      <a class="footer_link" href="about.html">About Us</a>
+      <br>
+      <a class="footer_link" href="booking.html">Booking</a>
+      <br>
+     
+      </div>
+    </div>
+
+  <div class="col-md-4">
+    <hr class="light">
+    <h5>Services</h5>
+    <hr class="light">
+    <div class="lead">
+    <a class="footer_link" href="#">Pet Grooming</a>
+    <br>
+    <a class="footer_link" href="#">Pet Spa</a>
+    <br>
+    <a class="footer_link" href="#">Pet Hotel</a>
+    <br>
+    <a class="footer_link" href="#">Pet Walking</a>
+    <br>
+    <a class="footer_link" href="#">Swimming Pool</a>
+    <br>
+    <a class="footer_link" href="#">Indoor Park</a>
+    <br>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="container-fluid">
+      <hr class="light">
+      <h5>Follow Us</h5>
+      <hr class="light">
+    <div class="lead">
+    </div>
+    
+    <a class="social_icon social_icon_fb" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+    <a class="social_icon social_icon_tw" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    <a class="social_icon social_icon_ig" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+    <br>
+    </div>
+  </div>
+
+
+
+</div>
+
+</div>
+<br>
+  <div class="col-12">
+      <hr class="light-100">
+      <h5 class="footer_btm_font">&copy; PETTO 2020. All Copyright Reserved.</h5>
+  </div>
+  </div>
+</footer>
+
+
     
 
     <script type="text/javascript" src="assets/bundle.js"></script>

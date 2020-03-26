@@ -292,3 +292,58 @@ select{
 
 
 }
+
+
+
+/*Footer*/
+footer {
+  background-color: #0086b3;
+  color:#fff;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  
+  
+
+}
+
+.footer-img{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+hr.light{
+  border-top: 1px solid #fff;
+  width: 75%;
+  margin-top: 0.8rem;
+  margin-bottom:1rem;
+}
+
+footer a{
+  color: #fff;
+  margin: 1.5em;
+  font-size: 1rem;
+  text-decoration: none!important;
+}
+
+hr.light-100{
+  border-top: 1px solid #fff;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer_link:hover{
+  font-size: 105%;
+  text-decoration: none;
+  color:#fff;
+  transition: all 0.3s;
+}
+
+.footer_btm_font{
+  font-size: 0.7em;
+  color: #fff;
+}
+
+.social_icon{
+  font-size: 1.5em;
+  transform:all 0.4s;
+}
