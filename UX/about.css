@@ -315,6 +315,8 @@ hr.light{
   width: 75%;
   margin-top: 0.8rem;
   margin-bottom:1rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 footer a{
