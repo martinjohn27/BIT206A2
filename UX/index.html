@@ -73,9 +73,9 @@
     </div>
 
     <!--navigation bar-->
-    <div class="navigation col-12 box-shadow" id="navigation1">
+    <div class="navigation col-12 " id="navigation1">
         <div class="card bg-light">
-            <div class="card-body">
+            <div class="card-body box-shadow">
                 <div class="col-12 row center">
                     <div class="navBar col-3 center"> 
                         <a href="#" class="card-link"><img class="big-image" src="image/paw.png" alt="Pet Grooming & Spa"> <br> <span class="visibility"> Pet Grooming & Spa</span></a>
@@ -154,22 +154,17 @@
         <hr>
         <div class="col-12 row">
             <div class="col-6 float-left">
-                <br>
                 <div class="card">
-                    <h3 class="highlight ">"Your best friend's new best friend"</h3>
-                    <ul class="values-list">
-                        <li class="list-highlight">Considerate &emsp;<img src="image/home/consideration.png" alt="Considerate icon"></li>
-                        <li class="list-highlight">Caring &emsp;&emsp;&emsp;&ensp;<img src="image/home/caring.png" alt="caring icon"></li>
-                        <li class="list-highlight">Empathetic &emsp; <img src="image/home/emphatetic.png" alt="caring icon"></li>
-                    </ul>
+                    <p>Our team are empowered with caring because everything needs care. <span class="highlight">If you love pets you will love us</span>. As PETTO is the basis for empathetic that built love</p>
+                    <h5 class="highlight ">"Only the best for your fur baby"</h5>
                     <div class="buttons">
-                        <a class="btn btn-outline" role="button">Find out more</a>
+                        <a class="btn btn-outline" role="button" href="about.html">Find out more</a>
                     </div>                    
                 </div>
             </div>
-            <div class="container-fluid pic-container col-6 float-right">
-                <img class="pic1" src="image/home/happy-cat.png" alt="Happy Dog">
-                <img class="box-shadow pic2" src="image/home/happy-dog.jpg" alt="Happy Cat">
+            <div class="pic-container col-6 float-right">
+                <img class="pic1" src="image/home/happy-cat.png" alt="Happy Cat">
+                <img class="box-shadow pic2" src="image/home/happy-dog.jpg" alt="Happy Dog">
             </div>
         </div>
     </div>
@@ -301,25 +296,6 @@
         'time':1000,
         'delay':10
     });
-
-    $(window).resize(function(){
-        if ($(window).width()<768){
-        $('.services .col-xs-12').removeClass('row');
-        } 
-        else{
-            $('.services .col-xs-12').addClass('row');
-        }
-    });
-
-    $(window).load(function(){
-        if ($(window).width()<768){
-        $('.services .col-xs-12').removeClass('row');
-        } 
-        else{
-            $('.services .col-xs-12').addClass('row');
-        }
-    });
-    
     </script>
 
 

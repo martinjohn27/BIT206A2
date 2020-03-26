@@ -9,7 +9,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    elements.navigation === null ? elements.homeNavigation.style.marginTop = "-180px"
+    elements.navigation === null ? elements.homeNavigation.style.marginTop = "-170px"
     :   elements.navigation.style.marginTop = "50px"; 
     $(".navigation img").addClass("big-image");
     $(".navigation span").addClass("visibility");
@@ -38,8 +38,8 @@ $(".navigation").mouseover(function(){
     $(".navigation span").show();
     $(".navigation span").removeClass("visibility");
     $("img").removeClass("big-image");
-    elements.navigation === null ? elements.homeNavigation.style.marginTop = "-300px"
-    : elements.navigation.style.marginTop = "-10px";
+    elements.navigation === null ? elements.homeNavigation.style.marginTop = "-225px"
+    : elements.navigation.style.marginTop = "-5px";
   }
 });
 
@@ -50,7 +50,7 @@ $(".navigation").mouseout(function(){
     $(".navigation span").hide();
     $(".navigation span").addClass("visibility");
     $(".navigation img").addClass("big-image");
-    elements.navigation === null ? elements.homeNavigation.style.marginTop = "-180px"
+    elements.navigation === null ? elements.homeNavigation.style.marginTop = "-170px"
     : elements.navigation.style.marginTop = "50px";
   }
 });

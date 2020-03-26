@@ -166,13 +166,14 @@
   .pic-container{
     position: relative;
     padding: 50px;
+    padding-top: 0px;
   }
 
   .pic1{
     position: absolute;
     height: 300px;
     width: 300px;
-    top: 170px;
+    top: 120px;
     left: 0px;
     
   }
@@ -181,6 +182,23 @@
     height: 300px;
     width: 300px;
     border-radius: 20px;
+  }
+
+  /*Customer values*/
+  .customer-values h3{
+    font-weight: 700;
+  }
+
+  .customer-values h5{
+    padding: 10px;
+  }
+
+  .customer-values p {
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    text-align: justify;
   }
 
 
@@ -231,36 +249,6 @@
 
   /*----------------------*/
 
-
-
-  /*Customer values*/
-  .customer-values h3{
-    font-weight: 700;
-  }
-
-  .values-list{
-    text-align: left;
-    list-style-type: none;
-    margin-top: 80px;
-    margin-left: 40px;
-  }
-
-  .values-list li{
-    padding: 10px;
-  }
-
-  .values-list img{
-    width: 50px;
-    height: 50px;
-    filter: sepia(100%);
-    color: #0086b3;
-  }
-
-
-  .list-highlight{
-    font-weight: 700;
-    font-size: 27px;
-  }
 
 
   /*Past experience*/
@@ -416,6 +404,30 @@
      width: 330px;
    }
    /*---------*/
+
+
+    /*Petto values*/
+
+    .pic-container{
+      padding-top: 30px;
+    }
+
+    .pic-container .pic1{
+      left: 150px;
+      width: 250px;
+    }
+
+    .customer-values .float-left, .customer-values .float-right{
+      float: none !important;
+      flex: initial;
+    }
+
+    .customer-values .col-6{
+      max-width: 100%;
+      width: 100%;
+    }
+
+
 
 
   /*comments*/
