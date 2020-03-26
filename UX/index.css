@@ -116,7 +116,9 @@
   }
 
   .service-tiles:hover{
-    background-color: #00ace6;
+    background-color: #0086b3;
+    transition: all 0.4s;
+    text-shadow: 1px 1px 15px #000;
   }
 
   .service-tiles2{
@@ -126,6 +128,12 @@
     width: 50px;
     margin-bottom: 10px;
     z-index: 10;
+  }
+
+  .service-tiles2:hover{
+    background-color: #0086b3;
+    transition: all 0.4s;
+    text-shadow: 1px 1px 15px #000;
   }
   
 
