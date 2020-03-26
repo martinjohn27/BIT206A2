@@ -24,3 +24,13 @@ function closeNav() {
     //document.getElementById("sidenavBtnClose").style.visibility = "hidden";
 
 }
+$(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 12 ) {
+            $('.nav_bar').addClass('active');
+        } else {
+            $('.nav_bar').removeClass('active');
+        }
+    });
+  })
+  console.log('hi');
