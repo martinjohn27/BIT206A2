@@ -21,6 +21,7 @@ html, body{
 /*ALERT*/
 /*dangerous css*/
 .buttons a{
+  
   color: #00ace6;
   border: 2px solid #00ace6;
   font-family: Arial, Helvetica, sans-serif;
@@ -31,11 +32,11 @@ html, body{
   background-color:#00ace6;
 }
 
-/*
+
 .none{
   display: none;
 }
-*/
+
 
 /*-------------*/
 
@@ -45,11 +46,10 @@ html, body{
 
   .navigation{
     position: fixed !important;
-    margin-top: -200px;
+    margin-top: -50px;
     z-index: 20 ;
-    padding-bottom: 100px;
     opacity: 1;
-    transition: all 0.5s;
+    transition: all 0.5s;  
   }
 
   .navigation img{
@@ -87,7 +87,10 @@ html, body{
 }
   /*-----------------*/
  
-
+  .footer-img{
+    height: 60%;
+    width: 100%;
+  } 
 
   .highlight{
     color: #0086b3;
@@ -111,6 +114,9 @@ html, body{
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
+
+  
+
   @media only screen and (max-width: 768px){
 
     .navigation{
@@ -121,7 +127,11 @@ html, body{
       display: initial;
     }
       
-
+    .footer-img{
+      height: auto;
+      width: 375px;
+    }
+  
 
   }
    

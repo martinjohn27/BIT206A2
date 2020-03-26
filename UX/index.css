@@ -1,3 +1,7 @@
+.navigation{
+  margin-top: -220px;
+}
+
 
 /* book now section */
 .btn-header{
@@ -33,7 +37,7 @@
     font-weight: 700;
   }
 .title_top_space{
-  padding-top: 0px;
+  padding-top: 5rem;
 }
 
   .title_h1 {
@@ -82,7 +86,7 @@
   }
 
   .serviceList video{
-    margin-top: -5px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -111,6 +115,13 @@
     z-index: 10;
   }
 
+  .service-tiles:hover{
+    background-color: #0086b3;
+    transition: all 0.4s;
+    text-shadow: 1px 1px 15px #000;
+    font-size: 120%;
+  }
+
   .service-tiles2{
     background-color: black;
     padding: 70px;
@@ -118,6 +129,13 @@
     width: 50px;
     margin-bottom: 10px;
     z-index: 10;
+  }
+
+  .service-tiles2:hover{
+    background-color: #0086b3;
+    transition: all 0.4s;
+    text-shadow: 1px 1px 15px #000;
+    font-size: 120%;
   }
   
 
@@ -162,13 +180,14 @@
   .pic-container{
     position: relative;
     padding: 50px;
+    padding-top: 0px;
   }
 
   .pic1{
     position: absolute;
     height: 300px;
     width: 300px;
-    top: 170px;
+    top: 120px;
     left: 0px;
     
   }
@@ -177,6 +196,23 @@
     height: 300px;
     width: 300px;
     border-radius: 20px;
+  }
+
+  /*Customer values*/
+  .customer-values h3{
+    font-weight: 700;
+  }
+
+  .customer-values h5{
+    padding: 10px;
+  }
+
+  .customer-values p {
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    text-align: justify;
   }
 
 
@@ -227,36 +263,6 @@
 
   /*----------------------*/
 
-
-
-  /*Customer values*/
-  .customer-values h3{
-    font-weight: 700;
-  }
-
-  .values-list{
-    text-align: left;
-    list-style-type: none;
-    margin-top: 80px;
-    margin-left: 40px;
-  }
-
-  .values-list li{
-    padding: 10px;
-  }
-
-  .values-list img{
-    width: 50px;
-    height: 50px;
-    filter: sepia(100%);
-    color: #0086b3;
-  }
-
-
-  .list-highlight{
-    font-weight: 700;
-    font-size: 27px;
-  }
 
 
   /*Past experience*/
@@ -326,10 +332,7 @@
 /*---------------------------*/
 
 
-.footer-img{
-    height: 60%;
-    width: 100%;
-}
+
 
 
 
@@ -414,6 +417,30 @@
    /*---------*/
 
 
+    /*Petto values*/
+
+    .pic-container{
+      padding-top: 30px;
+    }
+
+    .pic-container .pic1{
+      left: 150px;
+      width: 250px;
+    }
+
+    .customer-values .float-left, .customer-values .float-right{
+      float: none !important;
+      flex: initial;
+    }
+
+    .customer-values .col-6{
+      max-width: 100%;
+      width: 100%;
+    }
+
+
+
+
   /*comments*/
   
 
@@ -484,14 +511,13 @@
     font-size: 30px;
   }
 
-   .footer-img{
-     height: auto;
-     width: 375px;
-   }
+  .social_icon{
+    font-size: 1.3em;
+  }
 
-
-
-
+  .footer_mid{
+    display: hidden;
+  }
 
 }
 
@@ -519,6 +545,66 @@
     font-weight: 200;
     display: none;
   }
+  footer {
+    padding-bottom: 0;
+  }
+
+  .social_icon{
+    font-size: 1.3em;
+  }
 
 }
+
  
+
+/*Footer*/
+footer {
+  background-color: #0086b3;
+  color:#fff;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  
+
+}
+
+.footer-img{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+hr.light{
+  border-top: 1px solid #fff;
+  width: 75%;
+  margin-top: 0.8rem;
+  margin-bottom:1rem;
+}
+
+footer a{
+  color: #fff;
+  margin: 1.5em;
+  font-size: 1rem;
+}
+
+hr.light-100{
+  border-top: 1px solid #fff;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer_link:hover{
+  font-size: 105%;
+  text-decoration: none;
+  color:#fff;
+  transition: all 0.3s;
+}
+
+.footer_btm_font{
+  font-size: 0.7em;
+  color: #fff;
+}
+
+.social_icon{
+  font-size: 1.5em;
+  transform:all 0.4s;
+}
+

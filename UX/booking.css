@@ -1,0 +1,104 @@
+.box_shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /*Title*/
+  .page-header {
+    background-image:url("image/booking/make_black_50.jpg");
+      background-repeat:no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position:50% 45%;
+    height: 20rem;
+  }
+  .page-caption {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .page-title { 
+    font-size: 2.5rem;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1px 1px 10px #000;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+
+  /*main*/
+  .book_tab{
+      color: #a9a9a9;
+  }
+  .book_tab_1{
+      color:black;
+  }
+
+  .card{
+    margin: 0 auto;
+    float: none; 
+    margin-bottom: 2rem;
+    border: none; 
+    width: 19rem;
+    height: 22rem;
+  }
+
+
+
+  hr.light-100{
+    border-top: 1px solid #fff;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    background-color: #0086b3;
+    color:#fff;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    text-decoration: none!important;
+    
+  
+  }
+  .footer_btm_font{
+    font-size: 0.7em;
+    color: #fff;
+  }
+
+.btn-primary{
+    background-color: #0086b3 !important;
+    color: #fff!important;
+    border-color:  #0086b3!important;
+}
+
+.btn-primary:hover{
+    background-color: #005c7a !important;
+    color: #fff!important;
+    border-color: #005c7a!important;
+}
+
+@media(max-width:768px){
+    .page-header {
+        height: 10rem;
+      }
+
+      .page-title { 
+        font-size: 1.5rem;
+      }
+      .page-caption {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+      }
+       
+ 
+}
