@@ -1,3 +1,7 @@
+.navigation{
+  margin-top: -220px;
+}
+
 
 /* book now section */
 .btn-header{
@@ -82,7 +86,7 @@
   }
 
   .serviceList video{
-    margin-top: -5px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
