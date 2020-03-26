@@ -115,6 +115,10 @@
     z-index: 10;
   }
 
+  .service-tiles:hover{
+    background-color: #00ace6;
+  }
+
   .service-tiles2{
     background-color: black;
     padding: 70px;
