@@ -32,8 +32,12 @@
 <!--Jacky-->
 <!-- Navbar-->
 <nav class="nav_bar navbar navbar-expand-lg fixed-top py-2">
-    <div class="container-fluid"><a href="#" class="navbar-brand text-uppercase font-weight-bold"> <img style="width: 35px;" src="image/invisible-logo.png" alt="PETTO Logo"> &nbsp;  PETTO</a>
-        <a href="#" onclick="openNav()" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></a>
+    <div class="container-fluid">
+        <a href="#" onclick="openNav()" class="navbar-toggler navbar-toggler-left"><i class="fa fa-bars"></i></a>
+        <span class="spacer "></span>
+        <a href="#" class="navbar-brand text-uppercase font-weight-bold"> <img style="width: 35px;" src="image/invisible-logo.png" alt="PETTO Logo"> PETTO</a>
+        <span class="spacer "></span>
+        <span> </span>
         
         <!--
         <span id="sidenavBtnOpen" style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; open</span>
@@ -48,14 +52,17 @@
     </div>
 </nav>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
+<div id="mySidenav" class="sidenav text-left">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <p><i class="far fa-window-minimize"></i></p>
+    <a href="#">Login</a>
+    <a href="#">Sign Up</a>
 
+</div>    
+
+    <main>
     <div class="ui-container">
         <video id="videoTesting" autoplay muted loop>
             <source src="image/home/PETTO_Intro.mp4" type="video/mp4" >
@@ -281,11 +288,15 @@
 
     <br><br>
     <img class="footer-img" src="image/home/footer.jpg" alt="Group of dogs">
+
+
+
+    </main>
     <footer>
         jacky's footer
     </footer>
 
-    
+ 
 
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="assets/bundle.js"></script>

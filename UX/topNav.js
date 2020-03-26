@@ -18,6 +18,8 @@ function openNav(){
 function closeNav() {
     var nav = document.getElementById("mySidenav");
     nav.style.width = "0";
+    nav.style.color ="#0086b3";
+    
     //document.getElementById("sidenavBtnOpen").style.visibility = "initial";
     //document.getElementById("sidenavBtnClose").style.visibility = "hidden";
 
@@ -25,7 +27,7 @@ function closeNav() {
 
 $(function () {
     $(window).on('scroll', function () {
-        if ( $(window).scrollTop() > 10 ) {
+        if ( $(window).scrollTop() > 12 ) {
             $('.nav_bar').addClass('active');
         } else {
             $('.nav_bar').removeClass('active');

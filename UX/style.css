@@ -21,6 +21,7 @@ html, body{
 /*ALERT*/
 /*dangerous css*/
 .buttons a{
+  
   color: #00ace6;
   border: 2px solid #00ace6;
   font-family: Arial, Helvetica, sans-serif;
