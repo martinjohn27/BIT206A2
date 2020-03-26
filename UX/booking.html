@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - PETTO</title>
+
+    <!--setup-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="topNavOri.css">
+
+
+
+    <!--icons-->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="assets/jquery.countup.js"></script>
+    
+    <!--TopNav-->
+    <script src="topNavOri.js"></script>
+  </head>
+  <body>
+    <!--Header-->
+
+    <!-- Navbar-->
+<nav class="nav_bar navbar navbar-expand-lg fixed-top py-2">
+    <div class="container-fluid">
+        <a href="#" onclick="openNav()" class="navbar-toggler navbar-toggler-left"><i class="fa fa-bars"></i></a>
+        <span class="spacer "></span>
+        <a href="index.html" class="navbar-brand text-uppercase font-weight-bold"> <img style="width: 35px;" src="image/invisible-logo.png" alt="PETTO Logo"> PETTO</a>
+        <span class="spacer "></span>
+        <span> </span>
+        
+        <!--
+        <span id="sidenavBtnOpen" style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; open</span>
+        <span id="sidenavBtnClose" style="font-size:30px;cursor:pointer" onclick="closeNav()">&#9776; close</span>
+        -->
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">Register</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link text-uppercase">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="mySidenav" class="sidenav text-left">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <p><i class="far fa-window-minimize"></i></p>
+    <a href="#">Login</a>
+    <a href="#">Sign Up</a>
+
+</div>    
+<br>
+<main>
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="card box_shadow">
+                <img class="card-img-top" src="image/home/service-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-left">Pet Grooming</h5>
+                  <p class="card-text text-left">Pet grooming specialist that provides the best of services for pets.</p>
+                  
+                    <a href="#" class="btn btn-outline-primary text-center col-12">Select</a>
+                  
+                  
+                </div>
+            </div>
+
+            <div class="card box_shadow">
+                <img class="card-img-top" src="image/home/service-2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-left">Pet Spa</h5>
+                  <p class="card-text text-left">The ultimate retreat for the pampered pet, provide a calm and relax experience.</p>
+                  <a href="#" class="btn btn-outline-primary text-center col-12">Select</a>
+                </div>
+              </div>
+
+              <div class="card box_shadow">
+                <img class="card-img-top" src="image/home/service-3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-left">Pet Hotel</h5>
+                  <p class="card-text text-left">On a work trip or vacation? Leave your pet with us!</p>
+                  <a href="#" class="btn btn-outline-primary text-center col-12">Select</a>
+                </div>
+              </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="card box_shadow">
+                <img class="card-img-top" src="image/home/service-4.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-left">Swimming Pool</h5>
+                  <p class="card-text text-left">Swimming your dog is a perfect activity for the young or old.</p>
+                  <a href="#" class="btn btn-outline-primary text-center col-12">Select</a>
+                </div>
+            </div>
+
+            <div class="card box_shadow">
+                <img class="card-img-top" src="image/home/service-5.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-left">Indoor Park</h5>
+                  <p class="card-text text-left">A platform for your pets to release stress and having fun.</p>
+                  <a href="#" class="btn btn-outline-primary text-center col-12">Select</a>
+                </div>
+              </div>
+
+              
+              <div class="card box_shadow">
+                <img class="card-img-top" src="image/home/service-6.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-left">Pet Walking</h5>
+                  <p class="card-text text-left">Busy life? Don't worry, our pet walking service is here.</p>
+                  <a href="#" class="btn btn-outline-primary text-center col-12">Select</a>
+                </div>
+              </div>
+
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+  </body>
+</html>

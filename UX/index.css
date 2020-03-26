@@ -37,7 +37,7 @@
     font-weight: 700;
   }
 .title_top_space{
-  padding-top: 0px;
+  padding-top: 5rem;
 }
 
   .title_h1 {
@@ -511,13 +511,13 @@
     font-size: 30px;
   }
 
-   
-
-
   .social_icon{
     font-size: 1.3em;
   }
 
+  .footer_mid{
+    display: hidden;
+  }
 
 }
 
@@ -559,10 +559,11 @@
 
 /*Footer*/
 footer {
-  background-color: #5f5f5f;
-  color:#0086b3;
+  background-color: #0086b3;
+  color:#fff;
   padding-top: 2rem;
   padding-bottom: 5rem;
+  
 
 }
 
@@ -571,37 +572,39 @@ footer {
 }
 
 hr.light{
-  border-top: 1px solid #0086b3;
+  border-top: 1px solid #fff;
   width: 75%;
   margin-top: 0.8rem;
   margin-bottom:1rem;
 }
 
 footer a{
-  color: #000;
+  color: #fff;
   margin: 1.5em;
   font-size: 1rem;
 }
 
 hr.light-100{
-  border-top: 1px solid #0086b3;
+  border-top: 1px solid #fff;
   width: 100%;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
 
 .footer_link:hover{
-  font-weight: bold;
+  font-size: 105%;
   text-decoration: none;
-  color:#0086b3;
-  transition: all 0.1s;
+  color:#fff;
+  transition: all 0.3s;
 }
 
 .footer_btm_font{
   font-size: 0.7em;
-  color: #0086b3;
+  color: #fff;
 }
 
 .social_icon{
   font-size: 1.5em;
+  transform:all 0.4s;
 }
+

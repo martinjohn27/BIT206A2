@@ -1,0 +1,40 @@
+.box_shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .page-header {
+    background-image:url("pic/faculty_IT/faculty_IT_header_bla.jpg");
+      background-repeat:no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position:50% 36%;
+  }
+  .page-caption {
+    padding-top: 170px;
+    padding-bottom: 174px;
+  }
+  .page-title { font-size: 46px;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+  /*main*/
+  .card{
+    margin: 0 auto;
+    float: none; 
+    margin-bottom: 10px;
+    border: none; 
+    width: 19rem;
+    height: 24rem;
+  }
+

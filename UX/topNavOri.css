@@ -1,0 +1,164 @@
+/*Side Navigation Bar*/
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    float: right;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    background-color:  #0086b3;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+    
+  .sidenav a:hover {
+    color: #c0c0c0;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #sidenavBtnClose {
+    visibility: hidden;
+  }
+
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .spacer {
+      flex:1 1 auto;
+      text-align: center;
+    }
+  }
+  
+
+  .bg_color{
+    background-color: #4ca1af;
+  }
+  
+  
+  /*Top Navigation bar*/
+
+  .nav_bar{
+      position: fixed;
+  }
+  .navbar {
+      transition: all 0.4s;
+      padding-top: 1rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+      font-size: 1.0rem;
+      z-index: 30 !important;
+      background: #0086b3;
+      
+  }
+  
+  .navbar .nav-link{
+      /*color: rgb(223, 223, 223);*/
+      color: #fff;
+
+  }
+  
+  .navbar .nav-link:hover,
+  .navbar .nav-link:focus {
+        color: #fff;
+      /*color: #fff;*/
+      text-decoration: none;
+  }
+  
+  .navbar .navbar-brand {
+      color: #fff;
+      transition: all 0.5s;
+  }
+  
+  
+  /* Change navbar styling on scroll */
+  .navbar.active {
+      /*background-color: #4ca1af;*/
+      background-color: #0086b3;
+      box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+      padding-top: 0.5rem;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      padding-bottom: 0rem;
+      font-size: 0.8rem;
+  }
+  
+  .navbar.active .nav-link {
+      color: #fff;
+  }
+  
+  .navbar.active .nav-link:hover,
+  .navbar.active .nav-link:focus {
+      color: rgb(223, 223, 223);
+      text-decoration: none;
+  }
+  
+  .navbar.active .navbar-brand{
+    font-size: 0.9rem;
+    
+  }
+  
+  
+  /* Change navbar styling on small viewports */
+  @media (max-width: 991.98px) {
+      .navbar {
+          background:#000;
+          padding-right: 1rem;
+          padding-left: 1rem;
+          position: absolute!important;
+
+          
+  
+      }
+  
+      .navbar .navbar-brand, .navbar .nav-link {
+          color: rgb(223, 223, 223);
+      }
+  
+      .navbar.active {
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+  }
+  
+    .fa-bars{
+      color: rgb(223, 223, 223);
+    }
+  }
+  
+  
