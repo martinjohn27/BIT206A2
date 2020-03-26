@@ -86,7 +86,10 @@ html, body{
 }
   /*-----------------*/
  
-
+  .footer-img{
+    height: 60%;
+    width: 100%;
+  } 
 
   .highlight{
     color: #0086b3;
@@ -110,6 +113,9 @@ html, body{
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
+
+  
+
   @media only screen and (max-width: 768px){
 
     .navigation{
@@ -120,7 +126,11 @@ html, body{
       display: initial;
     }
       
-
+    .footer-img{
+      height: auto;
+      width: 375px;
+    }
+  
 
   }
    
