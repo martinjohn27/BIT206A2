@@ -47,7 +47,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
-                <li class="nav-item"><a href="login.html" class="nav-link text-uppercase">Login</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-uppercase" onclick="displayForm('login')">Login</a></li>
             </ul>
         </div>
     </div>
@@ -58,240 +58,271 @@
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <p><i class="far fa-window-minimize"></i></p>
-    <a href="#">Login</a>
-
-
+    <a onclick="displayForm('login')" >Login</a>
 </div>    
 
     <main>
-    <div class="ui-container">
-        <video id="videoTesting" autoplay muted loop>
-            <source src="image/home/PETTO_Intro.mp4" type="video/mp4" >
-        </video>
-        <img class="card-img-overlay" src="image/home/cute-dog-pic2.jpg" alt="Background image">
-        <div class="card-img-overlay title_top_space">
-                <h1 class="title_h1"> PETTO </h1>
-                <h3 class="title_h2"> Best of Care | Close to Home  </h3>
-                <h4 class="title_h4 font-italic">A place built exclusively for urban dogs and cats.</h4>
-                        
-            <div class="buttons">
-                <a href="booking.html" class="btn btn-outline mt-2 btn-lg" role="button">Book Now &nbsp; <i class="fas fa-calendar-alt"></i></a>
-            </div>              
-        </div>      
-    </div>
+        <div id="loginForm">
+            <form id=loginContent class="box-shadow card">
+                
+                    
+                <img class="float-left imgLogin" src="image/home/home8.jpg" alt="Default Picture">
 
-    <!--navigation bar-->
-    <div class="navigation col-12 " id="navigation1">
-        <div class="card bg-light">
-            <div class="card-body box-shadow">
-                <div class="col-12 row center">
-                    <div class="navBar col-3 center"> 
-                        <a href="#" class="card-link"><img class="big-image" src="image/paw.png" alt="Pet Grooming & Spa"> <br> <span class="visibility"> Pet Grooming & Spa</span></a>
+                <div class="loginInput card-body  float-right">
+                    <span onclick="cancelForm('login')" 
+                    id="close" title="Close Modal">&times;</span>
+
+                    <h2>Welcome to <span class="highlight"> PETTO</span> &nbsp;<img style="width: 35px;" src="image/black-invisible-logo.png" alt="PETTO Logo">  </h2>
+                    <div class="row">
+                        <i class="fas fa-user col-2"></i>
+                        <input class="col-8" type="text" placeholder="Enter Email" name="name" required>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-unlock-alt col-2"></i>
+                        <input class="col-8" type="password" placeholder="Enter Password" name="psw" required>
+                    </div>
+                    <div class="row RemPwrd">
+                        <label class="col-6"><input type="checkbox" name="loginRmbName" class="rememberMe" >&nbsp; Remember Me</label>
+                        <span class="col-6">Forgot <a href="#">password?</a></span>
+                    </div>
+
+                    <a href="" class="btn btn-primary text-center btn-lg" role="button"> Login &nbsp;</a>
+                    
+                    <div class="createAccount">
+                        <div class="row or"><hr>&emsp; or &emsp;<hr></div>
+                        <a class="">Create an Account</a>
+                    </div>
+                </div>
+
+                    
+            </form>            
+        </div>
+
+        <div class="ui-container">
+            <video id="videoTesting" autoplay muted loop>
+                <source src="image/home/PETTO_Intro.mp4" type="video/mp4" >
+            </video>
+            <img class="card-img-overlay" src="image/home/cute-dog-pic2.jpg" alt="Background image">
+            <div class="card-img-overlay title_top_space">
+                    <h1 class="title_h1"> PETTO </h1>
+                    <h3 class="title_h2"> Best of Care | Close to Home  </h3>
+                    <h4 class="title_h4 font-italic">A place built exclusively for urban dogs and cats.</h4>
+                            
+                <div class="buttons">
+                    <a href="booking.html" class="btn btn-outline mt-2 btn-lg" role="button">Book Now &nbsp; <i class="fas fa-calendar-alt"></i></a>
+                </div>              
+            </div>      
+        </div>
+
+        <!--navigation bar-->
+        <div class="navigation col-12 " id="navigation1">
+            <div class="card bg-light">
+                <div class="card-body box-shadow">
+                    <div class="col-12 row center">
+                        <div class="navBar col-3 center"> 
+                            <a href="#" class="card-link"><img class="big-image" src="image/paw.png" alt="Pet Grooming & Spa"> <br> <span class="visibility"> Pet Grooming & Spa</span></a>
+                        </div> 
+                        <div class="navBar  col-3 center">
+                            <a href="#" class="card-link"><img class="big-image" src="image/pet-care.png" alt="Pet Care"><br> <span class="visibility">Pet Hotel</span></a>
+                        </div>      
+                        <div class="navBar col-3 center">
+                            <a href="#" class="card-link"><img class="big-image" src="image/walking-the-dog.png" alt="Swimming Pool & Indoor Park"> <br><span class="visibility"> Pet Activities </span></a>
+                        </div>        
+                        <div class="navBar col-3 center">
+                            <a href="about.html" class="card-link"><img class="big-image" src="image/pet-shop.png" alt="About Us"><br> <span class="visibility">About us</span> </a>
+                        </div> 
                     </div> 
-                    <div class="navBar  col-3 center">
-                        <a href="#" class="card-link"><img class="big-image" src="image/pet-care.png" alt="Pet Care"><br> <span class="visibility">Pet Hotel</span></a>
-                    </div>      
-                    <div class="navBar col-3 center">
-                        <a href="#" class="card-link"><img class="big-image" src="image/walking-the-dog.png" alt="Swimming Pool & Indoor Park"> <br><span class="visibility"> Pet Activities </span></a>
-                    </div>        
-                    <div class="navBar col-3 center">
-                        <a href="about.html" class="card-link"><img class="big-image" src="image/pet-shop.png" alt="About Us"><br> <span class="visibility">About us</span> </a>
-                    </div> 
-                </div> 
+                </div>
+            </div>
+        </div>
+
+    <br><br><br><br> 
+
+        <!--Our services-->
+        <div class="services center">
+            <h1>What services does <span class="highlight">PETTO</span><br>  provide ?</h1>
+            <hr>
+            <div class="card serviceList col-12 ">                 
+            
+
+                <div class="col-xs-12 row">
+                    <div class="card col-3 service-tiles box-shadow">
+                        <h5>Pet Grooming</h5>
+                        <div class="service1 card-img-overlay"></div>                       
+                    </div>  
+                    <div class="card col-3 service-tiles box-shadow">
+                        <h5>Pet Spa</h5>
+                        <div class="service2 card-img-overlay"></div>
+                    </div>
+                    <div class="card col-3  service-tiles box-shadow">
+                        <h5>Pet Hotel</h5>
+                        <div class="service3 card-img-overlay"></div>                       
+                    </div>
+                </div>
+            
+                
+                <div class="col-xs-12 row">
+
+                    <div class="card col-3  service-tiles2 box-shadow">
+                        <h5>Pet Walking</h5>
+                        <div class="service6 card-img-overlay"></div>                       
+                    </div>
+                    <div class="card col-3 service-tiles2 box-shadow">
+                        <h5>Swimming Pool</h5>
+                        <div class="service4 card-img-overlay"></div>                       
+                    </div>
+                    <div class="card col-3 service-tiles2 box-shadow">
+                        <h5>Indoor Park</h5>
+                        <div class="service5 card-img-overlay"></div>                       
+                    </div>
+                    
+                </div>    
+                <video class="box-shadow" autoplay muted loop>
+                    <source src="image/home/videoForSwimmingPool.mp4" type="video/mp4">
+                </video>
+            
+
+            </div>  
+        </div>
+
+        <div class="none"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+
+
+        <br><br>
+        <!--customerValues-->
+
+        <div class="container">
+        <div class="customer-values col-12">
+            <h1>Why choose <span class="highlight">PETTO</span> ?</h1>
+            <hr>
+            <div class="col-12 row">
+                <div class="col-6 float-left">
+                    <div class="card">
+                        <p>Our team are empowered with caring because everything needs care. <span class="highlight">If you love pets you will love us</span>. As PETTO is the basis for empathetic that built love</p>
+                        <h5 class="highlight ">"Only the best for your fur baby"</h5>
+                        <div class="buttons">
+                            <a class="btn btn-outline" role="button" href="about.html">Find out more</a>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="pic-container col-6 float-right">
+                    <img class="pic1" src="image/home/happy-cat.png" alt="Happy Cat">
+                    <img class="box-shadow pic2" src="image/home/happy-dog.jpg" alt="Happy Dog">
+                </div>
             </div>
         </div>
     </div>
 
-   <br><br><br><br> 
+        <!-- <div class="col-7 float-left">
+                    <h1> &emsp; Discover <span class="highlight"> Our Services </span>  that gives <br> &emsp; you the right choice </h1>
+                    <br><br><br>
+                    <div class="steps center ">
+                        
+                        <h3>&emsp; &emsp; 1.  Make Booking </h3> <br>
+                        <h3>&emsp; &emsp; 2.  Check in </h3> <br>
+                        <h3>&emsp; &emsp; 3.  Check Out & Make Payment </h3>
+                        
+                                    
 
-    <!--Our services-->
-    <div class="services center">
-        <h1>What services does <span class="highlight">PETTO</span><br>  provide ?</h1>
-        <hr>
-        <div class="card serviceList col-12 ">                 
-           
+                    </div>
+                </div>
+                <div class="col-5 float-right">
+                    <img class="box-shadow" src="image/services1.jpg" alt="Dog Swimming">
+                </div> -->
 
-            <div class="col-xs-12 row">
-                <div class="card col-3 service-tiles box-shadow">
-                    <h5>Pet Grooming</h5>
-                    <div class="service1 card-img-overlay"></div>                       
-                </div>  
-                <div class="card col-3 service-tiles box-shadow">
-                    <h5>Pet Spa</h5>
-                    <div class="service2 card-img-overlay"></div>
-                </div>
-                <div class="card col-3  service-tiles box-shadow">
-                    <h5>Pet Hotel</h5>
-                    <div class="service3 card-img-overlay"></div>                       
-                </div>
-            </div>
-        
-            
-            <div class="col-xs-12 row">
+        <br><br><br><br>
 
-                <div class="card col-3  service-tiles2 box-shadow">
-                    <h5>Pet Walking</h5>
-                    <div class="service6 card-img-overlay"></div>                       
-                </div>
-                <div class="card col-3 service-tiles2 box-shadow">
-                    <h5>Swimming Pool</h5>
-                    <div class="service4 card-img-overlay"></div>                       
-                </div>
-                <div class="card col-3 service-tiles2 box-shadow">
-                    <h5>Indoor Park</h5>
-                    <div class="service5 card-img-overlay"></div>                       
+        <div class="card social-proof box-shadow ">
+            <h1>What are they saying about <span class="highlight">us</span> ? </h1>
+            <h4>OVERALL RATING : 4.3/5</h4>
+                <div class="container-comment row card-deck col-12">
+                    <div id="comment1" class="comments card left box-shadow">
+                        <div class="card-body">
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                            <p class="card-title silver"><br> 6 weeks ago</p>
+                            <p class="card-text">" Very friendly and professional service. Place is clean 
+                                and products used for grooming are high quality. Highly recommended. "</p>
+                            <strong>Wendy</strong>
+
+                        </div>
+                    </div>
+                    <div id="comment2" class="comment-none comments card center box-shadow">
+                        <div class="card-body">
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                            <p class="card-title silver"><br>6 weeks ago</p>
+                            <p class="card-text">"Excellent service, friendly people, clean and great 
+                                groomers! "</p>
+                            <strong>Harrison</strong>
+                        </div>
+                    </div>
+                    <div id="comment3" class="comment-none comments card center box-shadow">
+                        <div class="card-body">
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                            <p class="card-title silver"><br>6 weeks ago</p>
+                            <p class="card-text">" A place worth bringing your furkid. Excellent warm services
+                                by staff. And the place is truly suitable and trustworthy to leave your pet 
+                                for boarding. Comfortable clean and balanced between play and overnight stay.
+                                👍👍👍 "</p>
+                            <strong>Trex</strong>
+                        </div>
+                    </div>
+                    <div id="comment4" class="comment-none comments card right box-shadow">
+                        <div class="card-body">
+                            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                            <p class="card-title silver"><br>6 weeks ago</p>
+                            <p class="card-text">" Treated our dog with love, Simply Great ! "</p>
+                            <strong>Alex</strong>
+
+                        </div>       
+                    </div>
+                    <div id="lefty">&lt;</div>
+                    <div id="righty">&gt;</div>
                 </div>
                 
-            </div>    
-            <video class="box-shadow" autoplay muted loop>
-                <source src="image/home/videoForSwimmingPool.mp4" type="video/mp4">
-            </video>
-           
-
-        </div>  
-    </div>
-
-    <div class="none"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
-
-
-    <br><br>
-    <!--customerValues-->
-
-    <div class="container">
-    <div class="customer-values col-12">
-        <h1>Why choose <span class="highlight">PETTO</span> ?</h1>
-        <hr>
-        <div class="col-12 row">
-            <div class="col-6 float-left">
-                <div class="card">
-                    <p>Our team are empowered with caring because everything needs care. <span class="highlight">If you love pets you will love us</span>. As PETTO is the basis for empathetic that built love</p>
-                    <h5 class="highlight ">"Only the best for your fur baby"</h5>
-                    <div class="buttons">
-                        <a class="btn btn-outline" role="button" href="about.html">Find out more</a>
-                    </div>                    
-                </div>
-            </div>
-            <div class="pic-container col-6 float-right">
-                <img class="pic1" src="image/home/happy-cat.png" alt="Happy Cat">
-                <img class="box-shadow pic2" src="image/home/happy-dog.jpg" alt="Happy Dog">
-            </div>
-        </div>
-    </div>
-</div>
-
-    <!-- <div class="col-7 float-left">
-                <h1> &emsp; Discover <span class="highlight"> Our Services </span>  that gives <br> &emsp; you the right choice </h1>
-                <br><br><br>
-                <div class="steps center ">
-                    
-                    <h3>&emsp; &emsp; 1.  Make Booking </h3> <br>
-                    <h3>&emsp; &emsp; 2.  Check in </h3> <br>
-                    <h3>&emsp; &emsp; 3.  Check Out & Make Payment </h3>
-                     
-                                  
-
-                </div>
-            </div>
-            <div class="col-5 float-right">
-                <img class="box-shadow" src="image/services1.jpg" alt="Dog Swimming">
-            </div> -->
-
-    <br><br><br><br>
-
-    <div class="card social-proof box-shadow ">
-        <h1>What are they saying about <span class="highlight">us</span> ? </h1>
-        <h4>OVERALL RATING : 4.3/5</h4>
-            <div class="container-comment row card-deck col-12">
-                <div id="comment1" class="comments card left box-shadow">
-                    <div class="card-body">
-                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                        <p class="card-title silver"><br> 6 weeks ago</p>
-                        <p class="card-text">" Very friendly and professional service. Place is clean 
-                            and products used for grooming are high quality. Highly recommended. "</p>
-                        <strong>Wendy</strong>
-
-                    </div>
-                </div>
-                <div id="comment2" class="comment-none comments card center box-shadow">
-                    <div class="card-body">
-                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                        <p class="card-title silver"><br>6 weeks ago</p>
-                        <p class="card-text">"Excellent service, friendly people, clean and great 
-                            groomers! "</p>
-                        <strong>Harrison</strong>
-                    </div>
-                </div>
-                <div id="comment3" class="comment-none comments card center box-shadow">
-                    <div class="card-body">
-                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                        <p class="card-title silver"><br>6 weeks ago</p>
-                        <p class="card-text">" A place worth bringing your furkid. Excellent warm services
-                             by staff. And the place is truly suitable and trustworthy to leave your pet 
-                             for boarding. Comfortable clean and balanced between play and overnight stay.
-                              👍👍👍 "</p>
-                        <strong>Trex</strong>
-                    </div>
-                </div>
-                <div id="comment4" class="comment-none comments card right box-shadow">
-                    <div class="card-body">
-                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                        <p class="card-title silver"><br>6 weeks ago</p>
-                        <p class="card-text">" Treated our dog with love, Simply Great ! "</p>
-                        <strong>Alex</strong>
-
-                    </div>       
-                </div>
-                <div id="lefty">&lt;</div>
-                <div id="righty">&gt;</div>
-            </div>
             
+        </div>
         
-    </div>
-    
 
-    
+        
 
 
 
 
 
-    <!--social proof-->
-    <br><br><br>
-    <h1>Join the fun</h1>
-    <h4>"Best of Care, Close To Home"</h4>
-    <br>
-    <div class="join card box-shadow">
-        <div class="col-12 row d-flex justify-content-around">
-            <div class="box-container">
-                <div class="box row ">
-                    <div class="small-box box-shadow d-flex">
-                        <i class="far fa-check-circle"></i>
-                    </div>                
-                    <h5 class="big-box"> &emsp; <strong>Happy Customers</strong><br> <strong class="highlight"><span class="counter">45000</span>+</strong></h5>
+        <!--social proof-->
+        <br><br><br>
+        <h1>Join the fun</h1>
+        <h4>"Best of Care, Close To Home"</h4>
+        <br>
+        <div class="join card box-shadow">
+            <div class="col-12 row d-flex justify-content-around">
+                <div class="box-container">
+                    <div class="box row ">
+                        <div class="small-box box-shadow d-flex">
+                            <i class="far fa-check-circle"></i>
+                        </div>                
+                        <h5 class="big-box"> &emsp; <strong>Happy Customers</strong><br> <strong class="highlight"><span class="counter">45000</span>+</strong></h5>
+                    </div>
                 </div>
-            </div>
-            <div class="box-container">
-                <div class="box row">
-                    <div class="small-box box-shadow">
-                        <i class="fas fa-trophy"></i>
-                    </div>                
-                    <h5 class="big-box"> &emsp; <strong>Experience Over</strong><br> <strong class="highlight"><span class="counter">9</span> +</strong></h5>
+                <div class="box-container">
+                    <div class="box row">
+                        <div class="small-box box-shadow">
+                            <i class="fas fa-trophy"></i>
+                        </div>                
+                        <h5 class="big-box"> &emsp; <strong>Experience Over</strong><br> <strong class="highlight"><span class="counter">9</span> +</strong></h5>
+                    </div>
                 </div>
-            </div>
-            <div class="box-container">
-                <div class="box row">
-                    <div class="small-box box-shadow">
-                        <i class="fas fa-users"></i>
-                    </div>                
-                    <h5 class="big-box"> &emsp; <strong>Well Trained Staff</strong><br> <strong class="highlight"><span class="counter">31</span></strong></h5>
+                <div class="box-container">
+                    <div class="box row">
+                        <div class="small-box box-shadow">
+                            <i class="fas fa-users"></i>
+                        </div>                
+                        <h5 class="big-box"> &emsp; <strong>Well Trained Staff</strong><br> <strong class="highlight"><span class="counter">31</span></strong></h5>
+                    </div>
                 </div>
-            </div>
-        </div>        
-    </div>
-
-    
-
-    
+            </div>        
+        </div>
 
 
 

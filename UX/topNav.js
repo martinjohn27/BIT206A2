@@ -35,3 +35,42 @@ $(function () {
     });
   })
   console.log('hi');
+
+
+  //login form 
+
+  function displayForm(form){
+    switch(form){
+       case 'login':
+           document.getElementById('loginForm').style.display='block';
+           break;
+       case 'register':
+           registerForm.style.display='block';
+           break;
+
+    }
+    
+}
+
+function cancelForm(form){
+
+    switch(form){
+        case 'login':
+            document.getElementById('loginForm').style.display='none';
+            break;
+        case 'register':
+            registerForm.style.display='none';
+            break;    
+    }
+
+}
+
+//when the user clicks anywhere outside of the form, close it
+window.onclick = function(event){
+    if(event.target == loginForm){
+        document.getElementById('loginForm').style.display = "none";
+    }
+    else if (event.target == registerForm){
+        registerForm.style.display='none';
+    }
+}
