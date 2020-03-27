@@ -1,28 +1,50 @@
+console.log("booking.js is running");
+
+
+//user selectedSerive
 function selectedService(service){
     if (service=="s1"){
-        console.log("Ui noob!");
+        localStorage.selectedService = "Pet Grooming";
+        console.log(localStorage.selectedService);
+        window.location.href = "booking_time.html";
+        
     }
 
     if(service=="s2"){
-        console.log("Pet Spa");
+       
+        localStorage.selectedService = "Pet Spa";
+        console.log(localStorage.selectedService);
+        window.location.href = "booking_time.html";
+        
     }
 
     if(service=="s3"){
-        console.log("Pet Hotel");
+        localStorage.selectedService = "Pet Hotel";
+        console.log(localStorage.selectedService);
+        window.location.href = "booking_time.html";
+        
+        
     }
 
     if(service=="s4"){
-        console.log("Swimming Pool");
+        console.log(localStorage.selectedService);
+        localStorage.selectedService = "Swimming Pool";
+        window.location.href = "booking_time.html";
+        
     }
 
     if(service=="s5"){
-        console.log("Indoor Park");
+        localStorage.selectedService = "Indoor Park";
+        console.log(localStorage.selectedService);
+        window.location.href = "booking_time.html";
+        
     }
 
     if(service=="s6"){
-        console.log("Pet Walking");
+        localStorage.selectedService = "Pet Walking";
+        console.log(localStorage.selectedService);
+        window.location.href = "booking_time.html";
+        
     }
-
-
-
 }
+

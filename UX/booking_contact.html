@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - PETTO</title>
+
+    <!--setup-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking_time.css">
+    
+
+
+
+    <!--icons-->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="assets/jquery.countup.js"></script>
+    <link rel="icon" type="image/png" href="image/tabIcon.JPG">
+    
+    <!--TopNav-->
+    <script src="topNav.js"></script>
+    <link rel="stylesheet" href="topNav.css">
+
+    <!--javaScript-->
+    <script src="booking.js"></script>
+  </head>
+  <body>
+    <!--Header-->
+
+    <!-- Navbar-->
+<nav class="nav_bar navbar navbar-expand-lg fixed-top py-2">
+    <div class="container-fluid">
+        <a href="#" onclick="openNav()" class="navbar-toggler navbar-toggler-left"><i class="fa fa-bars"></i></a>
+        <span class="spacer "></span>
+        <a href="index.html" class="navbar-brand text-uppercase font-weight-bold"> <img style="width: 35px;" src="image/invisible-logo.png" alt="PETTO Logo"> PETTO</a>
+        <span class="spacer "></span>
+        <span> </span>
+        
+        <!--
+        <span id="sidenavBtnOpen" style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; open</span>
+        <span id="sidenavBtnClose" style="font-size:30px;cursor:pointer" onclick="closeNav()">&#9776; close</span>
+        -->
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link text-uppercase">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="mySidenav" class="sidenav text-left">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <p><i class="far fa-window-minimize"></i></p>
+    <a href="#">Login</a>
+    <a href="#">Sign Up</a>
+
+</div>    
+    <!--Header-->
+    <div class="page-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="page-caption">
+                <h1 class="page-title"> Make Appointment </h1>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+<main>
+
+
+    <div class="container mt-5 ">
+        <div class="container mb-3">
+            <div class="row">
+                <span> <p class="lead book_tab book_tab_1">&nbsp; SERVICE &nbsp;<i class="fas fa-chevron-right"></i></p></span>
+                 <span> <p class="lead book_tab book_tab_2">&nbsp; TIME &nbsp;<i class="fas fa-chevron-right"></i></p></span>
+                 <span> <p class="lead book_tab book_tab_3">&nbsp; CONTACT &nbsp;<i class="fas fa-chevron-right"></i></p></span>
+                 <span> <p class="lead book_tab book_tab_3">&nbsp; COMPLETE &nbsp;</p></span>
+                 
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card box_shadow">
+            <!--<div class="card-title m-3">
+                <h3>Booking Arrangement</h3>
+            </div>-->
+
+            <div class="card-body">
+                <form>
+                <div class="row">
+                    <div class="container col-2"></div>
+              
+
+                    <div class="container text-left col-lg-8 col-md-12 col-sm-12 mt-3 mb-3">
+                    <!--
+                    <div class="form-group">
+                      <label for="inEmail">Email address</label>
+                      <input type="email" class="form-control" id="inEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">
+                          Leave your email to keep in touch your appointment with us.
+                      </small>
+                    </div>-->
+
+                    <div class="form-group">
+                        <label for="inService"><i class="fas fa-paw"></i> Service </label>
+                        <input type="text" class="form-control" id="inService" aria-describedby="emailHelp" value="Noob"  readonly>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inTime"><i class="far fa-clock"></i> Booking time </label>
+                        <select class="form-control" id="inTime">
+                            <option>09:00 - 10:00 am</option>
+                            <option>10:00 - 11:00 am</option>
+                            <option>12:00 - 01:00 pm</option>
+                            <option>02:00 - 03:00 pm</option>
+                            <option>03:00 - 04:00 pm</option>
+                            <option>04:00 - 05:00 pm</option>
+                            <option>05:00 - 06:00 pm</option>
+                          </select>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="inDate"><i class="far fa-calendar-alt"></i> Booking Date </label>
+                        <input type="date" class="form-control" id="inDate">
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="comment">Remarks:</label>
+                        <textarea class="form-control" rows="3" id="comment" placeholder="Write down your special needs."></textarea>
+                      </div>
+
+                    <div class="container text-center">
+                        <a href="booking_contact.html" type="submit" class="box_shadow btn btn-primary col-lg-8 col-md-10 col-sm-10">Next</a>
+                    </div>
+
+
+
+                    </div>
+                    
+
+                    <div class="container col-2"></div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+</main>
+    <footer>
+        <div class="col-12">
+            <!--<hr class="light-100">-->
+            <h5 class="footer_btm_font">&copy; PETTO 2020. All Copyright Reserved.</h5>
+        </div>
+    </footer>
+
+  </body>
+</html>
