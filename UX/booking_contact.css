@@ -91,7 +91,10 @@
         padding-top: 5rem;
         padding-bottom: 2rem;
       }
-       
+    .font_size_bar{
+        font-size: 0.1rem !important;
+    }
+    
  
 }
 
