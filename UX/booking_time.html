@@ -83,9 +83,9 @@
         <div class="container mb-3">
             <div class="row">
                 <span> <a href="booking.html" class="lead book_tab book_tab_1">SERVICE &nbsp;<i class="fas fa-chevron-right"></i></a></span>
-                 <span> <p class="lead book_tab book_tab_2">&nbsp; TIME &nbsp;<i class="fas fa-chevron-right"></i></p></span>
+                 <span> <p class="lead book_tab book_tab_2">&nbsp; BOOKING &nbsp;<i class="fas fa-chevron-right"></i></p></span>
                  <span> <p class="lead book_tab book_tab_3">&nbsp; CONTACT &nbsp;<i class="fas fa-chevron-right"></i></p></span>
-                 <span> <p class="lead book_tab book_tab_3">&nbsp; COMPLETE &nbsp;</p></span>
+                 <span> <p class="lead book_tab book_tab_4">&nbsp; COMPLETE &nbsp;</p></span>
                  
             </div>
         </div>
@@ -93,17 +93,20 @@
 
     <div class="container">
         <div class="card box_shadow">
-            <!--<div class="card-title m-3">
-                <h3>Booking Arrangement</h3>
-            </div>-->
+            
 
             <div class="card-body">
-                <form method="post">
+                <div class="card-title mt-5">
+                    <h3 >Booking Details</h3>
+                    <hr>
+                </div>
+                
+                <form method="post" action="booking_contact.html" onsubmit="submitBookForm()">
                 <div class="row">
                     <div class="container col-2"></div>
               
 
-                    <div class="container text-left col-lg-8 col-md-12 col-sm-12 mt-3 mb-3">
+                    <div class="container text-left col-lg-8 col-md-12 col-sm-12 mb-3">
                     <!--
                     <div class="form-group">
                       <label for="inEmail">Email address</label>
@@ -114,15 +117,28 @@
                     </div>-->
 
                     <div class="form-group">
-                        <label for="inputService"><i class="fas fa-paw"></i> Service </label>
+                        <label class="font-weight-bold" for="inputService"><i class="far fa-check-circle"></i> Service </label>
                         <input id="inputService" type="text" class="form-control">
-
                     </div>
-
+                    
                     <div class="form-group">
-                        <label for="inTime"><i class="far fa-clock"></i> Booking time </label>
-                        <select class="form-control" id="inTime" required>
-                            <option>09:00 - 10:00 am</option>
+                        <label class="font-weight-bold mt-3" for="inPetName"><i class="fas fa-tag"></i> Pet Name </label>
+                        <input id="inPetName" type="text" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="font-weight-bold mt-3" id="labelPetType" for="inPetType"><i class="fas fa-paw"></i> Pet Type </label>
+                        <select class="form-control" id="inPetType" required>
+                            <option>Cat </option> 
+                            <option>Dog </option>
+                           
+                          </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="font-weight-bold mt-3" id="labelTime" for="inTime"><i class="far fa-clock"></i> Booking time </label>
+                        <select class="form-control" id="inTime">
+                            <option>09:00 - 10:00 am</option> 
                             <option>10:00 - 11:00 am</option>
                             <option>12:00 - 01:00 pm</option>
                             <option>02:00 - 03:00 pm</option>
@@ -131,33 +147,30 @@
                             <option>05:00 - 06:00 pm</option>
                           </select>
                     </div>
-
+                    
                     <div class="form-group">
-                        <label id="labelDate" for="inDate"><i class="far fa-calendar-alt"></i> Booking Date </label>
-                        <input type="date" class="form-control " id="inDate" required>
+                        <label class="font-weight-bold mt-3" id="labelDate" for="inDate"><i class="far fa-calendar-alt"></i> Booking Date </label>
+                        <input type="date" class="form-control" id="inDate">
                     </div>
-
-                    <div class="form-group">
-                        <label id="labelDate" for="inCheckInDate"><i class="far fa-calendar-alt"></i> Check-in </label>
-                        <input type="date" class="form-control " id="inCheckInDate" required>
+                    
+                    <div class="form-group ">
+                        <label class="font-weight-bold mt-3" id="labelCheckInDate" for="inCheckInDate"><i class="far fa-calendar-alt"></i> Check-in </label>
+                        <input type="date" class="form-control " id="inCheckInDate" >
                     </div>
-
-                    <div class="form-group">
-                        <label id="labelDate" for="inCheckOutDate"><i class="far fa-calendar-alt"></i> Check-out </label>
-                        <input type="date" class="form-control " id="inCheckOutDate" required>
+                    
+                    <div class="form-group ">
+                        <label class="font-weight-bold mt-3" id="labelCheckOutDate" for="inCheckOutDate"><i class="far fa-calendar-alt"></i> Check-out </label>
+                        <input type="date" class="form-control " id="inCheckOutDate" >
                     </div>
-
-
+                    
                     <div class="form-group">
-                        <label for="comment">Remarks:</label>
-                        <textarea class="form-control" rows="3" id="comment" placeholder="Write down your special needs."></textarea>
+                        <label class="font-weight-bold mt-3" for="inRemarks"><i class="far fa-star"></i> Remarks:</label>
+                        <textarea class="form-control" rows="3" id="inRemarks" placeholder="Plese write down your special needs here. Thank you!"></textarea>
                     </div>
 
                     <div class="container text-center">
-                        <button type="submit" class="box_shadow btn btn-primary col-lg-8 col-md-10 col-sm-10">Next</button>
+                        <button type="submit" class="box_shadow btn btn-primary col-lg-8 col-md-10 col-sm-10 mt-3">Next</button>
                     </div>
-
-
 
                     </div>
                     

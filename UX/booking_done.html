@@ -8,7 +8,7 @@
     <!--setup-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="booking_contact.css">
+    <link rel="stylesheet" href="booking_done.css">
     
 
 
@@ -69,7 +69,7 @@
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div class="page-caption">
                 <h1 class="page-title"> Make Appointment </h1>
-            
+    
               </div>
             </div>
           </div>
@@ -82,8 +82,8 @@
     <div class="container mt-5 ">
         <div class="container mb-3">
             <div class="row">
-                <span> <a href="booking.html" class="lead book_tab book_tab_1">SERVICE &nbsp;<i class="fas fa-chevron-right"></i></a></span>
-                 <span> <a href="booking_time.html" class="lead book_tab book_tab_2">&nbsp; BOOKING &nbsp;<i class="fas fa-chevron-right"></i></a></span>
+                <span> <p class="lead book_tab book_tab_1">SERVICE &nbsp;<i class="fas fa-chevron-right"></i></p></span>
+                 <span> <p class="lead book_tab book_tab_1">&nbsp; BOOKING &nbsp;<i class="fas fa-chevron-right"></i></p></span>
                  <span> <p class="lead book_tab book_tab_3">&nbsp; CONTACT &nbsp;<i class="fas fa-chevron-right"></i></p></span>
                  <span> <p class="lead book_tab book_tab_4">&nbsp; COMPLETE &nbsp;</p></span>
                  
@@ -98,68 +98,21 @@
             </div>-->
 
             <div class="card-body">
-                <div class="card-title mt-5">
-                    <h3>Contact Details</h3>
-                    <hr>
+                <div class="card-title mt-3">
+                    <h3 class="mb-3"><i class="fas fa-check-circle text-success"></i> Congratulation!</h3>
+                    <h4 class="mb-3">Your booking has been booked successfully.</h4>
                 </div>
 
-                <form method="post" onsubmit="submitContactForm()" action="booking_done.html">
-                <div class="row">
-                    <div class="container col-2"></div>
-              
-
-                    <div class="container text-left col-lg-8 col-md-12 col-sm-12 mb-3">
-                    <!--
-                    <div class="form-group">
-                      <label for="inEmail">Email address</label>
-                      <input type="email" class="form-control" id="inEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">
-                          Leave your email to keep in touch your appointment with us.
-                      </small>
-                    </div>-->
-
-                    <div class="form-group">
-                        <label for="inFullName" class="font-weight-bold"><i class="far fa-user"></i> Owner's Name </label>
-                        <input type="text" class="form-control" id="inFullName" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="inEmail" class="font-weight-bold mt-3"><i class="far fa-envelope"></i> E-mail </label>
-                        <input type="email" class="form-control" id="inEmail" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="inContactNo" class="font-weight-bold mt-3"><i class="fas fa-phone-square"></i> Contact No. </label>
-                        <input type="phone" class="form-control" id="inContactNo" required>
-                    </div>
-
-                    <div class="form-check text-center">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
-                        <label class="form-check-label" for="defaultCheck1">
-                          I accept to the <a href="#">Terms of Service</a>.
-                        </label>
-                      </div>
-
-                   
-
-                    
-
-
-                   
-
-                    <div class="container text-center">
-                        <button type="submit" class="box_shadow btn btn-primary col-lg-8 col-md-10 col-sm-10 mt-5">Submit</button>
-                    </div>
-
-
-
-                    </div>
-                    
-
-                    <div class="container col-2"></div>
+                <div class="card-subtitle">
+                    <h6 class="mb-3">Don't forget to bring over your little pet to us :) See you there!</h6>
                 </div>
-                </form>
-            </div>
+
+                <div class="container text-center">
+                    
+                      <a href="#" class="btn btn-outline-primary m-3">View Booking</a>
+                    
+                </div>
+            </div> 
         </div>
     </div>
     
@@ -183,5 +136,5 @@
   </body>
    <!--javaScript-->
   <script src="all.js"></script>
-  <script src="booking_contact.js"></script>
+  <script src="booking_done.js"></script>
 </html>

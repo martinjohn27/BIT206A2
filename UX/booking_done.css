@@ -38,7 +38,7 @@
   .book_tab{
       color: #a9a9a9;
   }
-  .book_tab_3{
+  .book_tab_4{
       color:black;
   }
 
@@ -93,11 +93,4 @@
       }
        
  
-}
-
-/*hide number spinner*/
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
 }
