@@ -47,7 +47,12 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-uppercase" onclick="displayForm('login')">Login</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-uppercase" id="btnLogin"  onclick="displayForm('login')">Login</a></li>
+                <li>
+                    <div class="dropdown userDropdown">
+                        <!--render dropdown menu for user in topNav.js-->
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -73,19 +78,19 @@
                     <h2>Welcome to <span class="highlight"> PETTO</span> &nbsp;<img style="width: 35px;" src="image/black-invisible-logo.png" alt="PETTO Logo">  </h2>
                     <div class="row">
                         <i class="fas fa-envelope col-2"></i>
-                        <input class="col-8" type="text" placeholder="Enter Email" name="name" required>
+                        <input class="col-8" type="text" placeholder="Enter Email" id="loginEmail" required>
                     </div>
                     <br>
                     <div class="row">
                         <i class="fas fa-unlock-alt col-2"></i>
-                        <input class="col-8" type="password" placeholder="Enter Password" name="psw" required>
+                        <input class="col-8" type="password" placeholder="Enter Password" id="loginPsw" required>
                     </div>
                     <div class="row RemPwrd">
                         <label class="col-6"><input type="checkbox" name="loginRmbName" class="rememberMe" >&nbsp; Remember Me</label>
                         <span class="col-6">Forgot <a href="#">password?</a></span>
                     </div>
 
-                    <a href="" class="btn btn-primary text-center btn-lg" role="button"> Login &nbsp;</a>
+                    <a href="" class="btn btn-primary text-center btn-lg" role="button" onclick="login()"> Login </a>
                     
                     <div class="createAccount">
                         <div class="row or"><hr>&emsp; or &emsp;<hr></div>
@@ -106,34 +111,34 @@
                     <h2>Register Account</h2>
                     <div class="row">
                         <i class="fas fa-user col-2"></i>
-                        <input class="col-8" type="text" placeholder="Enter Name" name="name" required>
+                        <input class="col-8" type="text" placeholder="Enter Name" id="registerName" required>
                     </div>
                     <br>
                     <div class="row">
                         <i class="fas fa-envelope col-2"></i>
-                        <input class="col-8" type="text" placeholder="Enter Email" name="name" required>
+                        <input class="col-8" type="text" placeholder="Enter Email" id="registerEmail" required>
                     </div>
                     <br>
                     <div class="row">
                         <i class="fas fa-phone col-2"></i>
-                        <input class="col-8" type="text" placeholder="Enter Phone Number" name="name" required>
+                        <input class="col-8" type="text" placeholder="Enter Phone Number" id="registerPhone" required>
                     </div>
                     <br>
                     <div class="row">
                         <i class="fas fa-unlock-alt col-2"></i>
-                        <input class="col-8" type="password" placeholder="Enter Password" name="psw" required>
+                        <input class="col-8" type="password" placeholder="Enter Password" id="registerPsw" required>
                     </div>
                     <br>
                     <div class="row">
                         <i class="fas fa-lock col-2"></i>
-                        <input class="col-8" type="password" placeholder="Retype Password" name="psw" required>
+                        <input class="col-8" type="password" placeholder="Retype Password" id="retypePsw" required>
                     </div>
 
 
-                    <a href="" class="btn btn-primary text-center btn-lg" role="button"> Sign Up</a>
+                    <a href="" class="btn btn-primary text-center btn-lg" role="button" onclick="signUp()"> Sign Up</a>
 
                     <div class="createAccount">
-                        Already Have an Account ? &nbsp;<a class="" role="button" onclick="displayForm('register')">Log In</a>
+                        Already Have an Account ? &nbsp;<a class="" role="button" onclick="displayForm('login')">Log In</a>
                     </div>
                 </div>                    
             </form>            

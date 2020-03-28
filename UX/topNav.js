@@ -42,6 +42,7 @@ $(function () {
   function displayForm(form){
     switch(form){
        case 'login':
+           document.getElementById('registerForm').style.display='none';
            document.getElementById('loginForm').style.display='block';
            break;
        case 'register':
@@ -54,7 +55,6 @@ $(function () {
 }
 
 function cancelForm(form){
-
     switch(form){
         case 'login':
             document.getElementById('loginForm').style.display='none';
@@ -63,8 +63,39 @@ function cancelForm(form){
             document.getElementById('registerForm').style.display='none';
             break;    
     }
-
 }
+var loginSuccess;
+var user;
+
+const signUp = () =>{
+    user = {
+        name : document.getElementById('registerName').value,
+        email : document.getElementById('registerEmail').value,
+        phone : document.getElementById('registerPhone').value,
+        psw : document.getElementById('registerPsw').value,
+        login : true
+    };  
+    localStorage.setItem('user', JSON.stringify(user));
+}
+
+
+
+const login = () => {
+    const loginUser = {
+        email: document.getElementById('loginEmail').value,
+        psw : document.getElementById('loginPsw').value
+    }
+
+    if (loginUser.email === user.email){
+        alert("login")
+        user.login = true;
+        localStorage.setItem('user', JSON.stringify(user));
+    } 
+    else {
+
+    }
+}
+
 
 //when the user clicks anywhere outside of the form, close it
 window.onclick = function(event){
@@ -75,3 +106,23 @@ window.onclick = function(event){
         document.getElementById('registerForm').style.display='none';
     }
 }
+
+window.addEventListener('load',() => {
+    user = JSON.parse(localStorage.getItem('user'));
+    user.login = true;
+
+    const markup = 
+        `<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i>&nbsp; ${user.name}    
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Log Out</a>
+        </div>`;
+
+    if (user.login === true){
+        //document.getElementById('btnLogin').style.display = 'none';
+        document.querySelector('.userDropdown').insertAdjacentHTML("afterbegin", markup);
+
+    }
+});
+
