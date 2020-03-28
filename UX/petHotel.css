@@ -1,0 +1,40 @@
+/*pet hotel section*/
+
+.ui-container{
+    background-color: black;
+    outline: white; 
+    z-index: 10;
+  }
+  .ui-container img{
+    height: 453px;
+    width: 100%;
+    opacity: 0.3;    
+    /* z-index:5;  */
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .ui-container .card-img-overlay h1 br{
+    display: none;
+  }
+  
+  .card-img-overlay{
+    margin-top: 7%;
+  }
+  
+  .card-img-overlay h1, .card-img-overlay h5{
+    color: #d5d5d5;
+    font-weight: 700;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+/*navigation*/
+  .navigation{
+    width: 100% !important;
+    height: 238px;
+  }
+  
+  .navBar a{
+    font-size: 17px;
+  }

@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - PETTO</title>
 
+    <!--icons-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="assets/jquery.countup.js"></script>
     <!--setup-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="topNav.css">
-
-
-
-    <!--icons-->
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="assets/jquery.countup.js"></script>
     
     <!--TopNav-->
     <script src="topNav.js"></script>
@@ -47,7 +44,14 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-uppercase" onclick="displayForm('login')">Login</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-uppercase" id="btnLogin"  onclick="displayForm('login')">Login</a></li>
+                <li class="nav-item">
+                    <div class="user-dropdown userDropdown">
+                        <!--render dropdown menu for user in topNav.js-->
+                        
+                        
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -63,9 +67,7 @@
 
     <main>
         <div id="loginForm">
-            <form id=loginContent class="box-shadow card">
-                
-                    
+            <form id=loginContent class="box-shadow card">                    
                 <img class="float-left imgLogin" src="image/home/home8.jpg" alt="Default Picture">
 
                 <div class="loginInput card-body  float-right">
@@ -74,31 +76,72 @@
 
                     <h2>Welcome to <span class="highlight"> PETTO</span> &nbsp;<img style="width: 35px;" src="image/black-invisible-logo.png" alt="PETTO Logo">  </h2>
                     <div class="row">
-                        <i class="fas fa-user col-2"></i>
-                        <input class="col-8" type="text" placeholder="Enter Email" name="name" required>
+                        <i class="fas fa-envelope col-2"></i>
+                        <input class="col-8" type="text" placeholder="Enter Email" id="loginEmail" required>
                     </div>
                     <br>
                     <div class="row">
                         <i class="fas fa-unlock-alt col-2"></i>
-                        <input class="col-8" type="password" placeholder="Enter Password" name="psw" required>
+                        <input class="col-8" type="password" placeholder="Enter Password" id="loginPsw" required>
                     </div>
                     <div class="row RemPwrd">
                         <label class="col-6"><input type="checkbox" name="loginRmbName" class="rememberMe" >&nbsp; Remember Me</label>
                         <span class="col-6">Forgot <a href="#">password?</a></span>
                     </div>
 
-                    <a href="" class="btn btn-primary text-center btn-lg" role="button"> Login &nbsp;</a>
+                    <a href="" class="btn btn-primary text-center btn-lg" role="button" onclick="login()"> Login </a>
                     
                     <div class="createAccount">
                         <div class="row or"><hr>&emsp; or &emsp;<hr></div>
-                        <a class="">Create an Account</a>
+                        <a class="" role="button" onclick="displayForm('register')">Create an Account</a>
                     </div>
-                </div>
-
-                    
+                </div>                    
             </form>            
         </div>
 
+        <div id="registerForm">
+            <form id=registerContent class="box-shadow card">                    
+                <img class="float-left imgRegister" src="image/home/home10.jpg" alt="Default Picture">
+
+                <div class="registerInput card-body  float-right">
+                    <span onclick="cancelForm('register')" 
+                    id="close" title="Close Modal">&times;</span>
+
+                    <h2>Register Account</h2>
+                    <div class="row">
+                        <i class="fas fa-user col-2"></i>
+                        <input class="col-8" type="text" placeholder="Enter Name" id="registerName" required>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-envelope col-2"></i>
+                        <input class="col-8" type="text" placeholder="Enter Email" id="registerEmail" required>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-phone col-2"></i>
+                        <input class="col-8" type="text" placeholder="Enter Phone Number" id="registerPhone" required>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-unlock-alt col-2"></i>
+                        <input class="col-8" type="password" placeholder="Enter Password" id="registerPsw" required>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-lock col-2"></i>
+                        <input class="col-8" type="password" placeholder="Retype Password" id="retypePsw" required>
+                    </div>
+
+
+                    <a href="" class="btn btn-primary text-center btn-lg" role="button" onclick="signUp()"> Sign Up</a>
+
+                    <div class="createAccount">
+                        Already Have an Account ? &nbsp;<a class="" role="button" onclick="displayForm('login')">Log In</a>
+                    </div>
+                </div>                    
+            </form>            
+        </div>
         <div class="ui-container">
             <video id="videoTesting" autoplay muted loop>
                 <source src="image/home/PETTO_Intro.mp4" type="video/mp4" >
@@ -121,13 +164,13 @@
                 <div class="card-body box-shadow">
                     <div class="col-12 row center">
                         <div class="navBar col-3 center"> 
-                            <a href="#" class="card-link"><img class="big-image" src="image/paw.png" alt="Pet Grooming & Spa"> <br> <span class="visibility"> Pet Grooming & Spa</span></a>
+                            <a href="petGromming.html" class="card-link"><img class="big-image" src="image/paw.png" alt="Pet Grooming & Spa"> <br> <span class="visibility"> Pet Grooming & Spa</span></a>
                         </div> 
                         <div class="navBar  col-3 center">
-                            <a href="#" class="card-link"><img class="big-image" src="image/pet-care.png" alt="Pet Care"><br> <span class="visibility">Pet Hotel</span></a>
+                            <a href="petHotel.html" class="card-link"><img class="big-image" src="image/pet-care.png" alt="Pet hotel"><br> <span class="visibility">Pet Hotel</span></a>
                         </div>      
                         <div class="navBar col-3 center">
-                            <a href="#" class="card-link"><img class="big-image" src="image/walking-the-dog.png" alt="Swimming Pool & Indoor Park"> <br><span class="visibility"> Pet Activities </span></a>
+                            <a href="swimmingPool.html" class="card-link"><img class="big-image" src="image/walking-the-dog.png" alt="Swimming Pool & Indoor Park"> <br><span class="visibility"> Pet Activities </span></a>
                         </div>        
                         <div class="navBar col-3 center">
                             <a href="about.html" class="card-link"><img class="big-image" src="image/pet-shop.png" alt="About Us"><br> <span class="visibility">About us</span> </a>

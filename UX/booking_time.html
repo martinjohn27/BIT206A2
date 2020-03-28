@@ -22,7 +22,7 @@
     <link rel="icon" type="image/png" href="image/tabIcon.JPG">
     
     <!--TopNav-->
-    <script src="topNav.js"></script>
+    <script src="topNav_user.js"></script>
     <link rel="stylesheet" href="topNav.css">
 
     
@@ -100,8 +100,8 @@
                     <h3 >Booking Details</h3>
                     <hr>
                 </div>
-                
-                <form method="post" action="booking_contact.html" onsubmit="submitBookForm()">
+                <!---->
+                <form method="post" onsubmit="submitBookForm()" action="booking_contact.html">
                 <div class="row">
                     <div class="container col-2"></div>
               
@@ -166,6 +166,10 @@
                     <div class="form-group">
                         <label class="font-weight-bold mt-3" for="inRemarks"><i class="far fa-star"></i> Remarks:</label>
                         <textarea class="form-control" rows="3" id="inRemarks" placeholder="Plese write down your special needs here. Thank you!"></textarea>
+                    </div>
+
+                    <div class="container">
+                        <small class="text-danger" id="errorMsg">Invalid check-in and check-out date!</small>
                     </div>
 
                     <div class="container text-center">
