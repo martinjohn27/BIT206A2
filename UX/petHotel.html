@@ -14,7 +14,6 @@
 
 
     <!--icons-->
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -62,8 +61,16 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
+        <div class="myBookingSideNav">
+            <!--topNav render here-->
+        </div>
         <p><i class="far fa-window-minimize"></i></p>
-        <a onclick="displayForm('login')" >Login</a>
+        <a onclick="displayForm('login')" id="btnLoginSideNav" >Login</a>
+        
+        <div class="logoutSideNav">
+            <!--topNav render here-->
+        </div>
+        
     </div>    
 
     <main>
@@ -155,7 +162,7 @@
                 <h3>Your Pets are Our Passion"</h3>
                 <br>
                 <div class="buttons">
-                    <a class="btn btn-outline btn-header" role="button">Book Now &nbsp; <i class="fas fa-calendar-alt"></i></a>
+                    <a href="booking.html" class="btn btn-outline btn-header" role="button">Book Now &nbsp; <i class="fas fa-calendar-alt"></i></a>
                 </div>              
             </div>  
         </div>
@@ -364,6 +371,9 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript" src="all.js"></script>
     <script type="text/javascript" src="assets/bundle.js"></script>
+    
 </body>
 </html>

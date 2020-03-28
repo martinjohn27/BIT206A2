@@ -22,7 +22,7 @@
     <link rel="icon" type="image/png" href="image/tabIcon.JPG">
     
     <!--TopNav-->
-    <script src="topNav_user.js"></script>
+    <script src="topNav.js"></script>
     <link rel="stylesheet" href="topNav.css">
 
     
@@ -47,7 +47,21 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
-                <li class="nav-item"><a href="login.html" class="nav-link text-uppercase">Login</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-uppercase" id="btnLogin"  onclick="displayForm('login')">Login</a></li>
+                <li class="nav-item">
+                    <div class="user-myBooking">
+                        
+                    </div>
+
+                </li>
+                <li class="nav-item">
+
+                    <div class="user-dropdown userDropdown">
+                        <!--render dropdown menu for user in topNav.js-->
+                        
+                        
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -57,11 +71,17 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
+    <div class="myBookingSideNav">
+        <!--topNav render here-->
+    </div>
     <p><i class="far fa-window-minimize"></i></p>
-    <a href="#">Login</a>
-    <a href="#">Sign Up</a>
-
-</div>    
+    <a onclick="displayForm('login')" id="btnLoginSideNav" >Login</a>
+    
+    <div class="logoutSideNav">
+        <!--topNav render here-->
+    </div>
+    
+</div>   
     <!--Header-->
     <div class="page-header">
         <div class="container-fluid">

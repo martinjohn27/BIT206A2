@@ -42,6 +42,16 @@ html, body{
 
  
 /*top navigation bar*/
+.btn-secondary{
+  background-color: #00ace6!important; 
+  border-color: #00ace6!important;
+}
+.btn-secondary:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #005c7a!important; 
+  border-color:  #005c7a!important;
+}
+
 .user-dropdown {
   position: relative;
   display: inline-block;
@@ -62,14 +72,16 @@ html, body{
 
 .user-dropdown-content a{
   text-align: center;
-  transition: all .125s ease-in-out;
+  transition: all 0.125s ease-in-out;
 }
+
 
 .user-dropdown:hover .user-dropdown-content{
   margin-left: auto;
   margin-right: auto;
   display: block;
   transition: 0.5s;
+  
 }
 
 

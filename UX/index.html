@@ -7,8 +7,6 @@
 
     <!--icons-->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="assets/jquery.countup.js"></script>
     <!--setup-->
@@ -46,6 +44,13 @@
                 <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
                 <li class="nav-item"><a href="#" class="nav-link text-uppercase" id="btnLogin"  onclick="displayForm('login')">Login</a></li>
                 <li class="nav-item">
+                    <div class="user-myBooking">
+
+                    </div>
+
+                </li>
+                <li class="nav-item">
+
                     <div class="user-dropdown userDropdown">
                         <!--render dropdown menu for user in topNav.js-->
                         
@@ -61,8 +66,16 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
+    <div class="myBookingSideNav">
+        <!--topNav render here-->
+    </div>
     <p><i class="far fa-window-minimize"></i></p>
-    <a onclick="displayForm('login')" >Login</a>
+    <a onclick="displayForm('login')" id="btnLoginSideNav" >Login</a>
+    
+    <div class="logoutSideNav">
+        <!--topNav render here-->
+    </div>
+    
 </div>    
 
     <main>
@@ -440,7 +453,7 @@
   
 
  
-
+    <script type="text/javascript" src="all.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="assets/bundle.js"></script>
     <script>
@@ -453,8 +466,7 @@
     </script>
 
 
-    <script type="text/javaScript">
-        
-    </script>
+    
 </body>
+    
 </html>
