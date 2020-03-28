@@ -19,11 +19,9 @@
 
     
 
-    <!--icons-->
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    
 
      <!--TopNav-->
-     <script src="topNav.js"></script>
      <link rel="stylesheet" href="topNav.css">
 
     <link rel="icon" type="image/png" href="image/tabIcon.JPG">
@@ -45,24 +43,141 @@
       <span id="sidenavBtnClose" style="font-size:30px;cursor:pointer" onclick="closeNav()">&#9776; close</span>
       -->
       <div id="navbarSupportedContent" class="collapse navbar-collapse">
+<<<<<<< HEAD
           <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
               <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
-              <li class="nav-item"><a href="login.html" class="nav-link text-uppercase">Login</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-uppercase" onclick="displayForm('login')">Login</a></li>
           </ul>
       </div>
   </div>
 </nav>
+<main>
+  <div id="mySidenav" class="sidenav text-left">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <p><i class="far fa-window-minimize"></i></p>
+    <a href="#">Login</a>
+    <a href="#">Sign Up</a>
 
+  </div>    
+
+  <div id="loginForm">
+    <form id=loginContent class="box-shadow card">                    
+        <img class="float-left imgLogin" src="image/home/home8.jpg" alt="Default Picture">
+
+        <div class="loginInput card-body  float-right">
+            <span onclick="cancelForm('login')" 
+            id="close" title="Close Modal">&times;</span>
+
+            <h2>Welcome to <span class="highlight"> PETTO</span> &nbsp;<img style="width: 35px;" src="image/black-invisible-logo.png" alt="PETTO Logo">  </h2>
+            <div class="row">
+                <i class="fas fa-envelope col-2"></i>
+                <input class="col-8" type="text" placeholder="Enter Email" id="loginEmail" required>
+            </div>
+            <br>
+            <div class="row">
+                <i class="fas fa-unlock-alt col-2"></i>
+                <input class="col-8" type="password" placeholder="Enter Password" id="loginPsw" required>
+            </div>
+            <div class="row RemPwrd">
+                <label class="col-6"><input type="checkbox" name="loginRmbName" class="rememberMe" >&nbsp; Remember Me</label>
+                <span class="col-6">Forgot <a href="#">password?</a></span>
+            </div>
+
+            <a href="" class="btn btn-primary text-center btn-lg" role="button" onclick="login()"> Login </a>
+            
+            <div class="createAccount">
+                <div class="row or"><hr>&emsp; or &emsp;<hr></div>
+                <a class="" role="button" onclick="displayForm('register')">Create an Account</a>
+            </div>
+        </div>                    
+    </form>            
+  </div>
+
+  <div id="registerForm">
+    <form id=registerContent class="box-shadow card">                    
+        <img class="float-left imgRegister" src="image/home/home10.jpg" alt="Default Picture">
+
+        <div class="registerInput card-body  float-right">
+            <span onclick="cancelForm('register')" 
+            id="close" title="Close Modal">&times;</span>
+
+            <h2>Register Account</h2>
+            <div class="row">
+                <i class="fas fa-user col-2"></i>
+                <input class="col-8" type="text" placeholder="Enter Name" id="registerName" required>
+            </div>
+            <br>
+            <div class="row">
+                <i class="fas fa-envelope col-2"></i>
+                <input class="col-8" type="text" placeholder="Enter Email" id="registerEmail" required>
+            </div>
+            <br>
+            <div class="row">
+                <i class="fas fa-phone col-2"></i>
+                <input class="col-8" type="text" placeholder="Enter Phone Number" id="registerPhone" required>
+            </div>
+            <br>
+            <div class="row">
+                <i class="fas fa-unlock-alt col-2"></i>
+                <input class="col-8" type="password" placeholder="Enter Password" id="registerPsw" required>
+            </div>
+            <br>
+            <div class="row">
+                <i class="fas fa-lock col-2"></i>
+                <input class="col-8" type="password" placeholder="Retype Password" id="retypePsw" required>
+            </div>
+
+
+            <a href="" class="btn btn-primary text-center btn-lg" role="button" onclick="signUp()"> Sign Up</a>
+
+            <div class="createAccount">
+                Already Have an Account ? &nbsp;<a class="" role="button" onclick="displayForm('login')">Log In</a>
+            </div>
+        </div>                    
+    </form>            
+  </div>
+=======
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-uppercase" id="btnLogin"  onclick="displayForm('login')">Login</a></li>
+            <li class="nav-item">
+                <div class="user-myBooking">
+                    
+                </div>
+
+            </li>
+            <li class="nav-item">
+
+                <div class="user-dropdown userDropdown">
+                    <!--render dropdown menu for user in topNav.js-->
+                    
+                    
+                </div>
+            </li>
+        </ul>
+    </div>
+  </div>
+</nav>
 <div id="mySidenav" class="sidenav text-left">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html">Home</a>
   <a href="about.html">About Us</a>
+  <div class="myBookingSideNav">
+      <!--topNav render here-->
+  </div>
   <p><i class="far fa-window-minimize"></i></p>
-  <a href="#">Login</a>
-  <a href="#">Sign Up</a>
-
-</div>    
+  <a onclick="displayForm('login')" id="btnLoginSideNav" >Login</a>
+  
+  <div class="logoutSideNav">
+      <!--topNav render here-->
+  </div>
+  
+</div>   
+>>>>>>> 6b7b3de1c5d81f1375a96bf3d5f9b746d247dff5
 
 
   
@@ -88,16 +203,16 @@
         <div class="card-body box-shadow">
             <div class="col-12 row center">
                 <div class="navBar col-3 center"> 
-                    <a href="#" class="card-link"><img class="big-image" src="image/paw.png" alt="Pet Grooming & Spa"> <br> <span class="visibility"> Pet Grooming & Spa</span></a>
+                    <a href="petGromming.html" class="card-link"><img class="big-image" src="image/paw.png" alt="Pet Grooming & Spa"> <br> <span class="visibility"> Pet Grooming & Spa</span></a>
                 </div> 
                 <div class="navBar small-image col-3 center">
-                    <a href="#" class="card-link"><img class="big-image" src="image/pet-care.png" alt="Pet Care"><br> <span class="visibility">Pet Hotel</span></a>
+                    <a href="petHotel.html" class="card-link"><img class="big-image" src="image/pet-care.png" alt="Pet Hotel"><br> <span class="visibility">Pet Hotel</span></a>
                 </div>      
                 <div class="navBar small-image col-3 center">
-                    <a href="#" class="card-link"><img class="big-image" src="image/walking-the-dog.png" alt="Swimming Pool & Indoor Park"> <br><span class="visibility"> Pet Activities </span></a>
+                    <a href="swimmingPool.html" class="card-link"><img class="big-image" src="image/walking-the-dog.png" alt="Swimming Pool & Indoor Park"> <br><span class="visibility"> Pet Activities </span></a>
                 </div>        
                 <div class="navBar small-image col-3 center">
-                    <a href="#" class="card-link"><img class="big-image" src="image/pet-shop.png" alt="About Us"><br> <span class="visibility">About us</span> </a>
+                    <a href="about.html" class="card-link"><img class="big-image" src="image/pet-shop.png" alt="About Us"><br> <span class="visibility">About us</span> </a>
                 </div> 
             </div> 
         </div>
@@ -111,7 +226,7 @@
   <br>
   <div class="card motto">
     <h1 class="card-title"><strong>About <span class="highlight">PETTO</span></strong></h1>
-    <h5 class="card-text">Our mission is what drives us to bring comfort & joy to every pet</h5>
+    <h5 class="card-text">Our mission is what drives us to bring <br class="none">comfort & joy to every pet</h5>
   </div>
 
   <br><br><br>
@@ -240,13 +355,9 @@
 
      <div class="location card box-shadow">
     <div class="location col-12 row">
-        <div class="col-5 float-left">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7826783601554!2d101.66895621398854!3d3.1519372977049547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49aca5c7421b%3A0xb7242dad56a6c240!2sHELP%20University!5e0!3m2!1sen!2smy!4v1583205504058!5m2!1sen!2smy" width="550" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
-
-        <div class="card col-7 float-right">
+        <div class="card float-right">
             <h3>Don't have wait to let your <br> <span class="highlight">Pet feel SUPERB</span> </h3>
-            <h5><br><br>Popular Times (Based on visits to this place): </h5>
+            <h5><br><br>Popular Times <br class="none"> (Based on visits to this place): </h5>
             <div class="form-group">
               <br>
               <select class="form-control " id="popular-times">
@@ -260,12 +371,14 @@
               <br>
             </div>
             <div id="chart_div"></div>
-
-
         </div>
+        <div class="map float-left">
+          <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7826783601554!2d101.66895621398854!3d3.1519372977049547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49aca5c7421b%3A0xb7242dad56a6c240!2sHELP%20University!5e0!3m2!1sen!2smy!4v1583205504058!5m2!1sen!2smy" width="550" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div> 400 300
+        <iframe class="map2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7826783601554!2d101.66895621475736!3d3.1519372977049493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49aca5c7421b%3A0xb7242dad56a6c240!2sHELP%20University!5e0!3m2!1sen!2smy!4v1585409921305!5m2!1sen!2smy" width="" height="" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </div>
-
+  </main>
      <!--<img class="footer-img" src="image/home/footer.jpg" alt="Group of dogs">-->
   <!--Footer-->
   <footer>
@@ -343,14 +456,17 @@
     <script type="text/javascript" src="assets/bundle.js"></script>
     <script src="assets/js/main.js"></script>
     <script>       
-
+      $(window).resize(function(){
+         window.location.href = window.location.href;
+         console.log("reize")
+      })
 
       
       const loadChart = () => {
           var d = new Date();
           const selection = document.getElementById('popular-times');
           const value = selection.options[selection.selectedIndex].value;
-          const data = (d.getDay() === 2 ? value : d.getDay()-2); 
+          const data = (d.getDay() === 2 ? value : d.getDay() === 1 ? 0 : d.getDay()-2); 
 
           document.getElementById("popular-times").value = data;
 
@@ -365,10 +481,12 @@
             var options = {'title':'',
                           'legend' : { position: 'none' },
                           'hAxis' : {title: 'Time'},
-                          'vAxis' : {title: 'Percentage %',
-                                    ticks : [0,20,80,100]},
-                          'width':600,
+                          'vAxis' : {title: (window.innerWidth <=700 ? '':'Percentage %'),
+                                    ticks : (window.innerWidth <=700 ? [] : [0,20,80,100])},
+                          'width': (window.innerWidth <= 700 ? 350 : 600),
                           'height':250};
+
+            
 
             // Instantiate and draw our chart, passing in some options.
             var chart = new google.charts.Bar(document.getElementById('chart_div'));
@@ -472,6 +590,13 @@
 
 
     </script>
+
+    <!--TopNav-->
+    <script src="topNav.js"></script>
+
+    <!--icons-->
+    <script src="all.js"></script>
+
     
 </body>
 </html>
