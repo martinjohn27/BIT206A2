@@ -54,3 +54,13 @@ $(".navigation").mouseout(function(){
     : elements.navigation.style.marginTop = "70px";
   }
 });
+
+$(document).ready(function(){
+  $("#retypePsw").keyup(function(){
+       if ($("#retypePsw").val() != $("#registerPsw").val()) {
+           $("#msg").html("Password do not match").css("color","red");
+       }else{
+           $("#msg").html("Password matched").css("color","green");
+      }
+  });
+});

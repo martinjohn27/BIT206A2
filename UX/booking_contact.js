@@ -1,8 +1,5 @@
 console.log("booking_contact.js is running.");
 
-localStorage.userFullName = "Edison";
-localStorage.userEmail = "Edison@gmail.com";
-localStorage.userContact = "01234567890";
 
 
 getFormElement();
@@ -13,12 +10,17 @@ function getFormElement(){
     contactNo_input = document.getElementById('inContactNo');
 }
 
-setValue();
+var user = JSON.parse(localStorage.getItem('user'));
+
+if (user.login === true){
+    setValue();
+}
+
 
 function setValue(){
-    fullName_input.value = localStorage.userFullName;
-    email_input.value = localStorage.userEmail;
-    contactNo_input.value = localStorage.userContact;
+    fullName_input.value = user.name;
+    email_input.value = user.email;
+    contactNo_input.value = user.phone;
 }
 
 function submitContactForm(){
