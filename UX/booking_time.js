@@ -24,6 +24,8 @@ function getFormElement(){
 
     remarks_textarea = document.getElementById('inRemarks');
 
+    errorMsg_small = document.getElementById('errorMsg');
+
     
     
 }
@@ -31,6 +33,8 @@ function getFormElement(){
 //set value to input service
 service_input.setAttribute("readonly", null);
 service_input.value = localStorage.selectedService;
+
+errorMsg_small.style.display = 'none';
 
 
 //hide element if service is not pet hotel
@@ -41,6 +45,7 @@ if (localStorage.selectedService !="Pet Hotel"){
     checkInDate_label.style.display = 'none';
     bookingDate_input.setAttribute("required", null);
     bookingTime_input.setAttribute("required", null);
+
 }
 
 
@@ -63,6 +68,7 @@ function setupPetHotel(){
         checkOutDate_input.setAttribute("required", null);
         checkInDate_input.setAttribute("required", null);
 
+
     }
 } 
 
@@ -83,13 +89,34 @@ function getBookFormData(){
 
 //onsubmit function after form submitted
 function submitBookForm(){
-    localStorage.inService = service_input.value;
-    localStorage.inPetName = petName_input.value;
-    localStorage.inPetType = petType_input.value;
-    localStorage.inBookingTime = bookingTime_input.value;
-    localStorage.inBookingDate = bookingDate_input.value;
-    localStorage.inCheckInDate = checkInDate_input.value;
-    localStorage.inCheckOutDate = checkOutDate_input.value;
-    localStorage.inRemarks = remarks_textarea.value;
+
+        localStorage.inService = service_input.value;
+        localStorage.inPetName = petName_input.value;
+        localStorage.inPetType = petType_input.value;
+        localStorage.inBookingTime = bookingTime_input.value;
+        localStorage.inBookingDate = bookingDate_input.value;
+        localStorage.inCheckInDate = checkInDate_input.value;
+        localStorage.inCheckOutDate = checkOutDate_input.value;
+        localStorage.inRemarks = remarks_textarea.value;
+    // if(checkInDate_input.value > checkOutDate_input.value){
+    //     errorMsg_small.style.display = 'initial';
+
+    // }
+    // else
+    // {
+    //     localStorage.inService = service_input.value;
+    //     localStorage.inPetName = petName_input.value;
+    //     localStorage.inPetType = petType_input.value;
+    //     localStorage.inBookingTime = bookingTime_input.value;
+    //     localStorage.inBookingDate = bookingDate_input.value;
+    //     localStorage.inCheckInDate = checkInDate_input.value;
+    //     localStorage.inCheckOutDate = checkOutDate_input.value;
+    //     localStorage.inRemarks = remarks_textarea.value;
+    //     
+    // }
+   
+    
     
 }
+
+
