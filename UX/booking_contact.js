@@ -1,6 +1,18 @@
 console.log("booking_contact.js is running.");
 
 
+if(localStorage.bookingList!=""&&localStorage.bookingList!=undefined){
+    var bookingList = JSON.parse(localStorage.bookingList);
+    var nextBookingID  = bookingList[bookingList.length-1].bookingID + 1;
+}
+else {
+    var bookingList = new Array;
+    var nextBookingID = 10001;
+}
+
+
+console.log(bookingList);
+console.log(nextBookingID);
 
 getFormElement();
 //get form element
@@ -12,16 +24,22 @@ function getFormElement(){
 
 var user = JSON.parse(localStorage.getItem('user'));
 
-if (user.login === true){
-    setValue();
-}
+// if (user.login === true){
+//     setValue();
+// }
 
 
+// function setValue(){
+//     fullName_input.value = user.name;
+//     email_input.value = user.email;
+//     contactNo_input.value = user.phone;
+// }
+setValue();
 function setValue(){
-    fullName_input.value = user.name;
-    email_input.value = user.email;
-    contactNo_input.value = user.phone;
-}
+        fullName_input.value = "Edison";
+        email_input.value = "123@gmail.com";
+        contactNo_input.value = '12345567';
+    }
 
 function submitContactForm(){
     localStorage.inFullName = fullName_input.value;
@@ -65,11 +83,13 @@ function saveBooking(){
         
     }
 
-    var newBooking = {fullName: fullname, email: email, contactNo: contactNo, service: service, petName: petName, petType: petType, 
+    var newBooking = {bookingID: nextBookingID, fullName: fullname, email: email, contactNo: contactNo, service: service, petName: petName, petType: petType, 
         bookingTime: bookingTime, bookingDate: bookingDate, checkInDate: checkInDate, checkOutDate: checkOutDate,
         remarks: remarks
     };
     localStorage.newBooking = JSON.stringify(newBooking);
+    bookingList.push(newBooking);
+    localStorage.bookingList= JSON.stringify(bookingList);
 
     
     
@@ -77,4 +97,5 @@ function saveBooking(){
 }
 
 console.log(localStorage.newBooking);
+console.log(localStorage.bookingList);
 

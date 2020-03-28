@@ -64,6 +64,7 @@ function cancelForm(form){
             break;    
     }
 }
+
 var loginSuccess;
 var user;
 
