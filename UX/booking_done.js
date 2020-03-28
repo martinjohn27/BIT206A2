@@ -1,6 +1,5 @@
-var newBook = localStorage.newBooking;
+// var newBook = localStorage.newBooking;
 
-console.log(newBook);
+// console.log(newBook);
 
 
-Object.values(newBook);
