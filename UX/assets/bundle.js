@@ -10,7 +10,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     elements.navigation === null ? elements.homeNavigation.style.marginTop = "-170px"
-    :   elements.navigation.style.marginTop = "70px"; 
+    :   elements.navigation.style.marginTop = "35px"; 
     $(".navigation img").addClass("big-image");
     $(".navigation span").addClass("visibility");
     $(".navigation span").hide();
@@ -51,7 +51,7 @@ $(".navigation").mouseout(function(){
     $(".navigation span").addClass("visibility");
     $(".navigation img").addClass("big-image");
     elements.navigation === null ? elements.homeNavigation.style.marginTop = "-170px"
-    : elements.navigation.style.marginTop = "70px";
+    : elements.navigation.style.marginTop = "35px";
   }
 });
 

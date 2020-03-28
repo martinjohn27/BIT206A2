@@ -4,9 +4,10 @@
   background-color: black;
   outline: white; 
   z-index: 10;
+  height: 500px;
 }
 .ui-container img{
-  height: 50%;
+  height: 500px;
   width: 100%;
   opacity: 0.3;    
   /* z-index:5;  */
@@ -27,6 +28,10 @@
   font-weight: 700;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.motto{
+  padding-top: 25px;
 }
 
 /*navigation*/

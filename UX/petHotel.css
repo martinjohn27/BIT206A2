@@ -1,12 +1,21 @@
+/*pet hotel*/
+.card{
+    margin: 0 auto;
+    float: none; 
+    margin-bottom: 10px;
+    border: none; 
+  }
+
 /*pet hotel section*/
 
 .ui-container{
     background-color: black;
     outline: white; 
     z-index: 10;
+    height: 500px;
   }
   .ui-container img{
-    height: 453px;
+    height: 500px;
     width: 100%;
     opacity: 0.3;    
     /* z-index:5;  */
@@ -21,8 +30,13 @@
   .card-img-overlay{
     margin-top: 7%;
   }
+
+  .card-img-overlay h1{
+      font-size: 70px;
+      text-shadow: 1px 1px 10px #000;
+  }
   
-  .card-img-overlay h1, .card-img-overlay h5{
+  .card-img-overlay h1, .card-img-overlay h3{
     color: #d5d5d5;
     font-weight: 700;
     margin-top: auto;
@@ -38,3 +52,217 @@
   .navBar a{
     font-size: 17px;
   }
+
+  /*---------*/
+
+
+  /*Policy*/
+  .policy{
+      padding-top: 120px;
+      text-align: center;
+  }
+
+  .policy hr, .dog-room hr, .catRoom hr{
+      text-align: center;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .policy img{
+      width: 50%;
+  }
+
+  .policy-description{
+      text-align: left;
+      padding-left: 10px;
+  }
+
+  .policy-description h4{
+      font-weight: 700;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .policy-description h6{
+      padding-bottom: 10px;
+  }
+
+  .policy-description p{
+      margin-bottom: 0px;
+  }
+
+
+
+  /*dog room*/
+  .dog-room{
+      padding-top: 5rem;
+    text-align: center;
+  }
+
+  .dog-room .card{
+      width: 30%;
+  }
+
+
+  .dog-room .description-room{
+      padding-top: 1rem;
+  }
+
+  .dog-room .description-room p{
+      margin-bottom: 0px;
+  }
+
+  .room-feature img{
+    overflow: hidden;
+    
+  }
+
+  .room-feature h4{
+      font-size: 30px;
+      font-weight: 700;
+      padding-bottom: 20px;
+      color: white;
+  }
+
+  .room-feature li{
+      color: white;
+      font-size: 18px;
+  }
+
+  .room-feature .card-img-overlay{
+    margin-top: 30px !important;
+    padding-left: 100px;
+    text-align: left;
+  }
+
+  .addOnFeature{
+      margin-left: 40%;
+  }
+
+  /*----------*/
+
+
+ /*cat room*/
+ .catRoom{
+    padding-top: 100px;
+    text-align: center;
+ }
+
+ .catRoom-description{
+     text-align: left;
+ }
+
+ .catRoom-description h4{
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.catRoom-description h6{
+    padding-bottom: 10px;
+}
+
+.catRoom-description p{
+    margin-bottom: 0px;
+}
+
+
+/*Footer*/
+footer {
+    background-color: #0086b3;
+    color:#fff;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    
+  
+  }
+  
+  .footer-img{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  hr.light{
+    border-top: 1px solid #fff;
+    width: 75%;
+    margin-top: 0.8rem;
+    margin-bottom:1rem;
+  }
+  
+  footer a{
+    color: #fff;
+    margin: 1.5em;
+    font-size: 1rem;
+  }
+  
+  hr.light-100{
+    border-top: 1px solid #fff;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer_link:hover{
+    font-size: 105%;
+    text-decoration: none;
+    color:#fff;
+    transition: all 0.3s;
+  }
+  
+  .footer_btm_font{
+    font-size: 0.7em;
+    color: #fff;
+  }
+  
+  .social_icon{
+    font-size: 1.5em;
+    transform:all 0.4s;
+  }
+
+  
+  @media only screen and (max-width: 768px){
+    .ui-container .card-img-overlay h1{
+        padding-top: 40px;
+    }
+
+    /*policy*/
+    .policy{
+        padding-top: 50px;
+        padding-left: 15px;
+    }
+
+    .policy img{
+        width: 90%;
+    }
+
+    .policy h4{
+        padding-top: 20px;
+    }
+
+    .policy p, .policy h6{
+        font-size: 14px;
+    }
+
+    /*-----------*/
+
+    /*dog room*/
+    .dog-room .card{
+        padding-left: 15px;
+        width: 100%;
+    }
+
+
+
+    .catRoom{
+       padding-left: 15px;
+    }
+
+
+
+
+  }
+
+  
+
+
+
