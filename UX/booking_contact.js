@@ -24,22 +24,22 @@ function getFormElement(){
 
 var user = JSON.parse(localStorage.getItem('user'));
 
-// if (user.login === true){
-//     setValue();
-// }
+if (user.login === true){
+    setValue();
+}
 
 
-// function setValue(){
-//     fullName_input.value = user.name;
-//     email_input.value = user.email;
-//     contactNo_input.value = user.phone;
-// }
-setValue();
 function setValue(){
-        fullName_input.value = "Edison";
-        email_input.value = "123@gmail.com";
-        contactNo_input.value = '12345567';
-    }
+    fullName_input.value = user.name;
+    email_input.value = user.email;
+    contactNo_input.value = user.phone;
+}
+// setValue();
+// function setValue(){
+//         fullName_input.value = "Edison";
+//         email_input.value = "123@gmail.com";
+//         contactNo_input.value = '12345567';
+//     }
 
 function submitContactForm(){
     localStorage.inFullName = fullName_input.value;
@@ -68,7 +68,7 @@ function saveBooking(){
     var checkOutDate = localStorage.inCheckOutDate;
     var remarks = localStorage.inRemarks;
 
-    if(bookingDate == "" && bookingTime == ""){
+    if(service == "Pet Hotel"){
         bookingDate = ' - '; 
         bookingTime = ' - ';
          // var newBooking = {'fullName': fullname, 'email': email, 'contactNo': contactNo, 'service': service, 'petName': petName, 'petType': petType, 
@@ -76,9 +76,11 @@ function saveBooking(){
         //     'remarks': remarks
         // };
     }
-    else if (checkInDate == "" && checkOutDate == ""){
+    else
+    {
         checkInDate = ' - ';
         checkOutDate = ' - ';
+
        
         
     }

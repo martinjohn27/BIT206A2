@@ -124,11 +124,11 @@ window.addEventListener('load',() => {
     user = JSON.parse(localStorage.getItem('user'));
 
     const markup = 
-        `<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        `<button style="" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user"></i>&nbsp; ${user.name}
         </button>
         <div class="user-dropdown-content" aria-labelledby="dropdownMenuButton">
-            <a class="" href="#" onclick="logOut()">Log Out</a>
+            <a style="text-decoration: none;,color: #0086b3; " class="" href="#" onclick="logOut()">Logout</a>
         </div>`;
 
     if (user.login === true){

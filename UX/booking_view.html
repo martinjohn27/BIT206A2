@@ -8,7 +8,7 @@
     <!--setup-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="booking_done.css">
+    <link rel="stylesheet" href="booking_view.css">
     
 
 
@@ -27,7 +27,7 @@
 
     
   </head>
-  <body>
+  <body  onload="populateTable();"> 
     <!--Header-->
 
     <!-- Navbar-->
@@ -68,7 +68,7 @@
           <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div class="page-caption">
-                <h1 class="page-title"> View Booking </h1>
+                <h1 class="page-title"> My Booking </h1>
     
               </div>
             </div>
@@ -79,31 +79,49 @@
 <main>
 
     <div class="container mt-4 mb-5">
-        <table class="table table-hover">
+
+        <div class="container">
+
+        
+        <table id="bookingTable" class="table table-hover text-right">
             <thead>
                 <tr>
-                  <th>Booking ID</th>
-                  <th>Service</th>
-                  <th>Pet Name</th>
-                  <th>Pet Type</th>
-                  <th>Booking Time</th>
-                  <th>Booking Date</th>
-                  <th>Check-in Date</th>
-                  <th>Check-out Date</th>
-                  <th>Remarks</th>
+                  <th class="numeric">Booking ID</th>
+                  <th class="numeric">Service</th>
+                  <th class="numeric">Pet Name</th>
+                  <th class="numeric">Pet Type</th>
+                  <th class="numeric">Booking Time</th>
+                  <th class="numeric">Booking Date</th>
+                  <th class="numeric">Check-in Date</th>
+                  <th class="numeric">Check-out Date</th>
+                  <th class="numeric">Remarks</th>
                 </tr>
               </thead>
               <tbody>
-
+                  <!--
+                <tr>
+                    <td data-title="Booking ID" class="numeric">10001</td>
+                    <td data-title="Service" class="numeric">Bath</td>
+                    <td data-title="Pet Name" class="numeric">Koi</td>
+                    <td data-title="Pet Type" class="numeric">Dog</td>
+                    <td data-title="Booking Time" class="numeric">9am</td>
+                    <td data-title="Booking Date" class="numeric">01/04/2020</td>
+                    <td data-title="Check-in Date" class="numeric">01/04/2020</td>
+                    <td data-title="Check-out Date" class="numeric">01/04/2020</td>
+                    <td data-title="Remarks" class="numeric">Ok!</td>
+            
+                </tr>
+                -->
               </tbody>
         </table>
+    </div>
     </div>
 
   
 
 
 
-
+    <br>
 </main>
     <footer class="fixed-bottom">
         <div class="col-12">
@@ -115,5 +133,6 @@
   </body>
    <!--javaScript-->
   <script src="all.js"></script>
-  <script src="booking_done.js"></script>
+  <script src="booking_view.js"></script>
+  
 </html>
