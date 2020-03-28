@@ -121,13 +121,21 @@ html, body{
 
 
   .imgLogin{
-    height: 480px;
+    height: 478px;
     width: 480px;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
   }
 
-  .loginInput{
+  .imgRegister{
+    height: 570px;
+    width: 480px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+
+  .loginInput, .registerInput{
     /* margin-left: auto;
     margin-right: auto; */
     margin-top: -465px !important;
@@ -139,7 +147,12 @@ html, body{
     
   }
 
-  .loginInput .card{
+  .registerInput{
+    padding-top: 0px;
+    margin-top: -540px !important;
+  }
+
+  .loginInput .car, .registerInput .card{
     margin: 0px !important;
   }
 
@@ -150,16 +163,23 @@ html, body{
     text-align: center;
   }
 
+  .registerInput h2{
+    font-weight: 700;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
   .loginInput h2 img{
     margin-top: -5px;
   }
 
-  .loginInput svg{
+  .loginInput svg, .registerInput svg{
     padding-top: 10px !important;
     font-size: 30px;
   }
 
-  .loginInput input{
+  .loginInput input, .registerInput input{
       width: 100%;
       padding: 2% 3%; 
       margin-bottom: 5px;
@@ -171,18 +191,22 @@ html, body{
       
   }
 
-  .loginInput .row{
+  .registerInput input{
+    margin-bottom: 3px;
+  }
+
+  .loginInput .row, .registerInput .row{
     font-size: 12px;
   }
 
-  .loginInput hr{
+  .loginInput hr, .registerInput hr{
     margin: 0px;
     margin-top: 10px;
     width: 100px;
     border-top: 1px solid  rgba(0, 0, 0, 0.3);
   }
 
-  .loginInput .or{
+  .loginInput .or, .registerInput .or{
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -194,11 +218,16 @@ html, body{
 
 
 
-  .loginInput .btn-primary{
+  .loginInput .btn-primary, .registerInput .btn-primary{
     margin-top: 30px;
     width: 100%;
     position: relative;
     background-color: #0086b3;
+  }
+
+  .registerInput .btn-primary{
+    margin-top: 40px;
+    margin-bottom: 10px;
   }
 
 
@@ -211,6 +240,18 @@ html, body{
   .createAccount{
     text-align: center;
   }
+
+  .createAccount a{
+    cursor: pointer;
+    color: #007bff;
+  }
+
+  .createAccount a:hover{
+    color: #0056b3;
+    text-decoration: underline;
+  }
+
+
 
   .rememberMe{
     width: 0px !important;
@@ -233,8 +274,8 @@ html, body{
   }
 
 
-  #loginForm{
-      display: block;
+  #loginForm, #registerForm{
+      display: none;
       position: fixed;
       z-index: 50;
       left: 0;
@@ -246,7 +287,11 @@ html, body{
       padding-top: 20px;
   }
 
-  #loginContent{
+  #registerForm{
+    padding-top: 5px;
+  }
+
+  #loginContent, #registerContent{
       background-color: #fefefe;
       margin: 1% auto 15% auto;
       border: 1px solid #888;
@@ -257,15 +302,8 @@ html, body{
       z-index: 2;
   }
 
-  /*form footer */
-
-  #loginFormFooter{
-      padding: 2% 3%;
-  }
-  #loginCloseForm{
-      width: auto;
-      padding: 2% 3%;
-      background-color: #f44336;
+  #registerContent{
+    height: 573px;
   }
 
 /*Register form */

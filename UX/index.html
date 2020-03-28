@@ -63,9 +63,7 @@
 
     <main>
         <div id="loginForm">
-            <form id=loginContent class="box-shadow card">
-                
-                    
+            <form id=loginContent class="box-shadow card">                    
                 <img class="float-left imgLogin" src="image/home/home8.jpg" alt="Default Picture">
 
                 <div class="loginInput card-body  float-right">
@@ -74,7 +72,7 @@
 
                     <h2>Welcome to <span class="highlight"> PETTO</span> &nbsp;<img style="width: 35px;" src="image/black-invisible-logo.png" alt="PETTO Logo">  </h2>
                     <div class="row">
-                        <i class="fas fa-user col-2"></i>
+                        <i class="fas fa-envelope col-2"></i>
                         <input class="col-8" type="text" placeholder="Enter Email" name="name" required>
                     </div>
                     <br>
@@ -91,14 +89,55 @@
                     
                     <div class="createAccount">
                         <div class="row or"><hr>&emsp; or &emsp;<hr></div>
-                        <a class="">Create an Account</a>
+                        <a class="" role="button" onclick="displayForm('register')">Create an Account</a>
                     </div>
-                </div>
-
-                    
+                </div>                    
             </form>            
         </div>
 
+        <div id="registerForm">
+            <form id=registerContent class="box-shadow card">                    
+                <img class="float-left imgRegister" src="image/home/home10.jpg" alt="Default Picture">
+
+                <div class="registerInput card-body  float-right">
+                    <span onclick="cancelForm('register')" 
+                    id="close" title="Close Modal">&times;</span>
+
+                    <h2>Register Account</h2>
+                    <div class="row">
+                        <i class="fas fa-user col-2"></i>
+                        <input class="col-8" type="text" placeholder="Enter Name" name="name" required>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-envelope col-2"></i>
+                        <input class="col-8" type="text" placeholder="Enter Email" name="name" required>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-phone col-2"></i>
+                        <input class="col-8" type="text" placeholder="Enter Phone Number" name="name" required>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-unlock-alt col-2"></i>
+                        <input class="col-8" type="password" placeholder="Enter Password" name="psw" required>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-lock col-2"></i>
+                        <input class="col-8" type="password" placeholder="Retype Password" name="psw" required>
+                    </div>
+
+
+                    <a href="" class="btn btn-primary text-center btn-lg" role="button"> Sign Up</a>
+
+                    <div class="createAccount">
+                        Already Have an Account ? &nbsp;<a class="" role="button" onclick="displayForm('register')">Log In</a>
+                    </div>
+                </div>                    
+            </form>            
+        </div>
         <div class="ui-container">
             <video id="videoTesting" autoplay muted loop>
                 <source src="image/home/PETTO_Intro.mp4" type="video/mp4" >

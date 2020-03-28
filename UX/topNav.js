@@ -45,7 +45,8 @@ $(function () {
            document.getElementById('loginForm').style.display='block';
            break;
        case 'register':
-           registerForm.style.display='block';
+           document.getElementById('loginForm').style.display='none';
+           document.getElementById('registerForm').style.display='block';
            break;
 
     }
@@ -59,7 +60,7 @@ function cancelForm(form){
             document.getElementById('loginForm').style.display='none';
             break;
         case 'register':
-            registerForm.style.display='none';
+            document.getElementById('registerForm').style.display='none';
             break;    
     }
 
@@ -71,6 +72,6 @@ window.onclick = function(event){
         document.getElementById('loginForm').style.display = "none";
     }
     else if (event.target == registerForm){
-        registerForm.style.display='none';
+        document.getElementById('registerForm').style.display='none';
     }
 }
