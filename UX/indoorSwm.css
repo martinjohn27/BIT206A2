@@ -1,0 +1,45 @@
+#main-content {
+	padding:50px 0;
+	text-align:center;
+}
+.big-box {
+	margin-bottom:40px;
+}
+
+.align-center:hover  i {
+	color:#428bca;
+	-webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s;
+}
+
+.box-bg {
+	margin-bottom:80px;
+}
+
+.section-top{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-image: url(image/parkPool/indoorpark1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: slide 16s infinite;
+
+}
+
+.content{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.content h1{
+	color:white;
+	font-size:60px;
+	letter-spacing:16px;
+}
