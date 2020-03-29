@@ -1,0 +1,159 @@
+/*pet hotel*/
+.card{
+    margin: 0 auto;
+    float: none; 
+    margin-bottom: 10px;
+    border: none; 
+  }
+
+/*pet hotel section*/
+
+.ui-container{
+    background-color: black;
+    outline: white; 
+    z-index: 10;
+    height: 500px;
+  }
+  .ui-container img{
+    height: 500px;
+    width: 100%;
+    opacity: 0.3;    
+    /* z-index:5;  */
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .ui-container .card-img-overlay h1 br{
+    display: none;
+  }
+  
+  .card-img-overlay{
+    margin-top: 7%;
+  }
+
+  .card-img-overlay h1{
+      font-size: 70px;
+      text-shadow: 1px 1px 10px #000;
+  }
+  
+  .card-img-overlay h1, .card-img-overlay h3{
+    color: #d5d5d5;
+    font-weight: 700;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+/*navigation*/
+  .navigation{
+    width: 100% !important;
+    height: 238px;
+  }
+  
+  .navBar a{
+    font-size: 17px;
+  }
+
+  /*---------*/
+
+
+  /*Policy*/
+  .policy{
+      padding-top: 120px;
+      text-align: center;
+  }
+
+  .policy hr, .dog-room hr, .catRoom hr{
+      text-align: center;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .policy img{
+      width: 50%;
+  }
+
+  .policy-description{
+      text-align: left;
+      padding-left: 10px;
+  }
+
+  .policy-description h4{
+      font-weight: 700;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .policy-description h6{
+      padding-bottom: 10px;
+  }
+
+  .policy-description p{
+      margin-bottom: 0px;
+  }
+  .desktop_pic{
+    display: none;
+  }
+
+  /*Footer*/
+footer {
+    background-color: #0086b3;
+    color:#fff;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    
+  
+  }
+  
+  .footer-img{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  hr.light{
+    border-top: 1px solid #fff;
+    width: 75%;
+    margin-top: 0.8rem;
+    margin-bottom:1rem;
+  }
+  
+  footer a{
+    color: #fff;
+    margin: 1.5em;
+    font-size: 1rem;
+  }
+  
+  hr.light-100{
+    border-top: 1px solid #fff;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer_link:hover{
+    font-size: 105%;
+    text-decoration: none;
+    color:#fff;
+    transition: all 0.3s;
+  }
+  
+  .footer_btm_font{
+    font-size: 0.7em;
+    color: #fff;
+  }
+  
+  .social_icon{
+    font-size: 1.5em;
+    transform:all 0.4s;
+  }
+  
+  @media (max-width: 768px){
+
+    .desktop_pic{
+        display: initial;
+      }
+
+    .mobile_pic{
+        display: none;
+    }
+
+  }

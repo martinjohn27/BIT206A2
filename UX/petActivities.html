@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Hotel - PETTO</title>
+    <title>Pet Activities - PETTO</title>
 
     <!--setup-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="petHotel.css">
+    <link rel="stylesheet" href="petActivities.css">
     <link rel="stylesheet" href="topNav.css">
 
 
@@ -19,6 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="assets/jquery.countup.js"></script>
     
+   
    
     
 
@@ -45,18 +46,9 @@
                     <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
                     <li class="nav-item"><a href="#" class="nav-link text-uppercase" id="btnLogin"  onclick="displayForm('login')">Login</a></li>
-                    <li class="nav-item">
-                        <div class="user-myBooking">
-      
-                        </div>
-      
-                    </li>
-                    <li class="nav-item">
-      
-                        <div class="user-dropdown userDropdown">
+                    <li>
+                        <div class="dropdown userDropdown">
                             <!--render dropdown menu for user in topNav.js-->
-                            
-                            
                         </div>
                     </li>
                 </ul>
@@ -160,13 +152,13 @@
 
         <!--pet hotel section -->
         <div class="ui-container card">
-            <img class="aboutImg" src="image/petHotel/containerImg189.jpg" alt="About Us">
+            <img class="aboutImg" src="image/about-us/about2.jpg" alt="About Us">
             <img class="visibility card-img-overlay" src="image/about-us/cute-cat-pic7.jpg" alt="About Us"> 
             <div class="card-img-overlay col-sm-6">
-                <h1>Pet Hotel</h1>
+                <h1>Pet Activities</h1>
                 <br>
-                <h3>"You Leave Em, <br class="none"> We Love Em</h3>
-                <h3>Your Pets are Our Passion"</h3>
+                <h3>Our duty to release</h3>
+                <h3>"Pets excitement and hapiness"</h3>
                 <br>
                 <div class="buttons">
                     <a href="booking.html" class="btn btn-outline btn-header" role="button">Book Now &nbsp; <i class="fas fa-calendar-alt"></i></a>
@@ -196,117 +188,104 @@
             </div>
         </div>
 
-        <div class="card policy">
-            <h1 class="card-title"><strong><span class="highlight">PETTO</span> ROOMS</strong></h1>
+        <!--PETTO Swimming pool-->
+        <div class="container" >
+
+       
+        <div class="card policy" id="petswimmingpool">
+            <h1 class="card-title"><strong><span class="highlight">PETTO</span> SWIMMING POOL</strong></h1>
             <hr>
             
-            <div class="row col-12">
-                <img class="card box-shadow" src="image/petHotel/rooms.jpg" alt="dog room">
-                <div class="card policy-description">
-                    <h4 class="highlight">BOARDING POLICIES</h4>
+            <div class="card-body">
+
+            
+            <div class="row">
+                <div class="container-fluid col-lg-6 col-md-12 col-sm-12 p-3">
+                    <img class="box-shadow" style="min-width: 100%;" src="image/parkPool/dogswim3.jpg" alt="dog room">
+                </div>
+                
+                <div class="container-fluid col-lg-6 col-md-12 col-sm-12 text-left">
                     <br>
-                    <p><strong>Check-in time</strong> (Daily except Tuesday) 10am to 5pm.</p>
-                    <h6> Tuesdays (check-in by appointment only) </h6>
-        
-                    <p><strong>Check-out time</strong> (Daily except Tuesday) 10am to 5pm.</p>
-                    <h6>If picked up after 5pm, there will be an additional night charge.</h6>
+                    <h4 class="highlight font-weight-bold">POOL PARK FOR PETS</h4>
+                    <p class="text-justify">Swimming your dog is a perfect activity for the young or old. Swimming is a non-weight bearing activity that avoids all the stresses and strains of exercising on hard ground.</p>
+            
+                    <br>
+                    <h4 class="highlight font-weight-bold">ENTRANCES</h4>
+                    <p class="text-justify">A rinse and dry off area is available which can be used before or after swimming. Entrance fee of RM50 per dog per entry includes free access to indoor park.</p>
+                    <p</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
 
-                    <p><strong>Visiting hours </strong>, kindly inform visitor details and</p>
-                    <h6>arrange visiting hour with the receptionist.</h6>
+        <!--PETTO Indoor Park-->
+        <div class="container" >
 
-
+       
+            <div class="card policy" id="petindoorpark">
+                <h1 class="card-title"><strong><span class="highlight">PETTO</span> INDOOR PARK</strong></h1>
+                <hr>
+                
+                <div class="card-body">
                     
-                    <h4 class="highlight">DAILY SCHEDULE FOR BOARDING</h4>
-                    <P><strong>Breakfast:</strong>  10.30am</P>
-                    <P><strong>Snack:</strong>  2pm</P>
-                    <P><strong>Dinner:</strong>  6pm</P>
-                    <P><strong>Playtime:</strong>  11.30am till 5.30pm</P>
+                
+                <div class="row">
+                    <div class="container-fluid col-lg-6 col-md-12 col-sm-12 p-3 desktop_pic">
+                        <img class="box-shadow" style="min-width: 100%;" src="image/parkPool/indoorpark2_169.jpg" alt="dog room">
+                    </div>
+                    
+                    <div class="container-fluid col-lg-6 col-md-12 col-sm-12 text-left">
+                        <br>
+                        <h4 class="highlight font-weight-bold">INDOOR PARK FOR PETS</h4>
+                        <p class="text-justify">We’ve created a safe place for you and your pets to play with a 1200sqft indoor area with walking trails and training landscape. We have designated playtimes for smaller and larger pets, as well as a crew member nearby for added safety support.</p>
+                      
+                
+                        <br>
+                        <h4 class="highlight font-weight-bold">FREE ENTRANCES</h4>
+                        <p class="text-justify">It's free access to all PETTO members all year round. Customers are allowed in the park daily from 10am till 6pm.</p>
+                        
+                    </div>
+
+                    <div class="container-fluid col-lg-6 col-md-12 col-sm-12 p-3 mobile_pic">
+                        <img class="box-shadow" style="min-width: 100%;" src="image/parkPool/indoorpark2_169.jpg" alt="dog room">
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
+       
 
-
-        <div class="card dog-room">
-            <h1 class="card-title"><strong><span class="highlight">DOG</span> ROOMS</strong></h1>
-            <hr>
-            <div class="row col-12">
-                <div class="card box_shadow ">
-                    <img class="card-img-top box-shadow" src="image/petHotel/dog-deluxe.jpg" alt="Card image cap">
-                    <div class="card-body"> 
-                        <h5 class="card-title text-left font-weight-bold"><span class="highlight">DELUXE</span>  ROOM &emsp; <i class="far fa-check-circle"></i></h5>
-                        <div class="description-room">
-                            <p class="card-text text-left">RM 60 for one S/M sized dog</p>
-                            <p class="card-text text-left">RM 80 for one L sized dog</p>
-                        </div>
+        <!--PETTO Pet walking-->
+        <div class="container">
+            <div class="card policy" id="petwalking">
+                <h1 class="card-title"><strong><span class="highlight">PETTO</span> PET WALKING</strong></h1>
+                <hr>
+                
+                <div class="card-body">
+    
+                
+                <div class="row">
+                    <div class="container-fluid col-lg-6 col-md-12 col-sm-12 p-3">
+                        <img class="box-shadow" style="min-width: 100%;" src="image/booking/walkingDog.jpg" alt="dog room">
                     </div>
-                </div>
-                <div class="card box_shadow ">
-                    <img class="card-img-top box-shadow" src="image/petHotel/dog-suite.jpg" alt="Card image cap">
-                    <div class="card-body"> 
-                        <h5 class="card-title text-left font-weight-bold"><span class="highlight">SUITE</span>  ROOM &emsp; <i class="fas fa-bed"></i></h5>
-                        <p class="card-text text-left">RM 125 for one dog</p>
-                    </div>
-                </div>
-                <div class="card box_shadow ">
-                    <img class="card-img-top box-shadow" src="image/petHotel/dog-suite1.jpg" alt="Card image cap">
-                    <div class="card-body"> 
-                        <h5 class="card-title text-left font-weight-bold"><span class="highlight">ROYAL</span>  SUITE &emsp; <i class="fas fa-chess-knight"></i></h5>
-                        <p class="card-text text-left">RM 150 for one dog</p>
-
+                    
+                    <div class="container-fluid col-lg-6 col-md-12 col-sm-12 text-left">
+                        <br>
+                        <h4 class="highlight font-weight-bold">PETS WALKING SERVICE</h4>
+                        <p class="text-justify">From RM 15 per walk.</p>
+                      
+                
+                        <br>
+                        <h4 class="highlight font-weight-bold">PACKAGES</h4>
+                        <li>30 minutes walk</li>
+                        <li>Few Pets only</li>
+                        <li>Route recorded</li>
+                        <li>30%* discount on Second Pet</li>
                         
                     </div>
                 </div>
-            </div>
-
-            <div class="col-12 room-feature">
-                <img src="image/petHotel/darkenRoomFeature.jpg" alt="">
-
-                <div class="card-img-overlay float-left">
-                    <h4>ROOM FEATURES</h4>
-                    <ul>
-                        <li>Rooms cleaned and disinfected daily</li>
-                        <li>Airy ventilation with air conditioned installations</li>
-                        <li>Free shower with min. 7 nights' stay</li>
-                        <li>Free pool access with owner's supervisior</li>
-                        <li>Daily update of pet(s) to owner.</li>
-                    </ul>
                 </div>
-
-                <div class="card-img-overlay col-6 float-right addOnFeature">
-                    <h4>ADD ON FEATURES <br>(for Suite Room & Royal Suite only) </h4>
-                    <ul>
-                        <li>Sound proofed walls</li>
-                        <li>CCTV access available</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="card catRoom">
-            <h1 class="card-title"><strong><span class="highlight">CAT</span> ROOMS</strong></h1>
-            <hr>
-
-            <div class="row col-12">
-                <div class="card catRoom-description">
-                    <h4 class="highlight">DELUXE ROOM</h4>
-                    <br>
-                    <p> RM 60 for one cat</p>
-                    <h6>(Max 3 cats, RM 25 for additional cat)</h6>
-                    
-                    <p>(16 sqft)</p>
-                    <h6></h6>
-
-                    
-                    <h4 class="highlight">ROOM FEATURES</h4>
-                    <ul>
-                        <li>Rooms cleaned and disinfected daily</li>
-                        <li>Airy ventilation with air conditioned installations</li>
-                        <li>Sound proofed walls</li>
-                        <li>Cozy room</li>
-                        <li>Litter changed daily</li>
-                    </ul>
-                </div>
-                <img class="card box-shadow" src="image/petHotel/catRoom.jpg" alt="dog room">
             </div>
         </div>
 
@@ -378,12 +357,11 @@
         </div>
       </div>
     </footer>
-    <script src="topNav.js"></script>
+
     <script type="text/javascript" src="all.js"></script>
     <script type="text/javascript" src="assets/bundle.js"></script>
-    <!--TopNav-->
-    <script src="topNav.js"></script>
-   
-    
+
+     <!--TopNav-->
+     <script src="topNav.js"></script>
 </body>
 </html>
