@@ -91,7 +91,9 @@
   .policy-description p{
       margin-bottom: 0px;
   }
-
+  .desktop_pic{
+    display: none;
+  }
 
   /*Footer*/
 footer {
@@ -142,4 +144,16 @@ footer {
   .social_icon{
     font-size: 1.5em;
     transform:all 0.4s;
+  }
+  
+  @media (max-width: 768px){
+
+    .desktop_pic{
+        display: initial;
+      }
+
+    .mobile_pic{
+        display: none;
+    }
+
   }
