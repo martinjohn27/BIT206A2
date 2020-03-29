@@ -1,152 +1,253 @@
-/*banner*/
-*{
-  margin: 0;
-  height: 100%;
+/*Grooming page */
+.card{
+  margin: 0 auto;
+  float: none; 
+  margin-bottom: 10px;
+  border: none; 
 }
 
 
-body{
+
+.ui-container{
+  background-color: black;
+  outline: white; 
+  z-index: 10;
+  height: 500px;
+}
+.ui-container img{
+  height: 500px;
   width: 100%;
+  opacity: 0.3;    
+  /* z-index:5;  */
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.img-container{
-  background-image: url(../image/grooming/dogWashBanner.jpg);
-  height: 70%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.ui-container .card-img-overlay h1 br{
+  display: none;
 }
 
-.inner-container{
+.card-img-overlay{
+  margin-top: 5%;
+}
+
+.card-img-overlay h1, .card-img-overlay h5{
+  color: #d5d5d5;
+  font-weight: 700;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*navigation*/
+.navigation{
+  width: 100% !important;
+  height: 238px;
+}
+
+.navBar a{
+  font-size: 17px;
+}
+/*--------*/
+
+
+
+
+
+
+/*grooming*/
+.grooming{
+  padding-top: 100px;
   text-align: center;
-  position: absolute;
+}
+
+.grooming hr, .groomingPrice hr{
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grooming-description{
+   text-align: left;
+}
+
+.grooming-description h4{
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.grooming-description h6{
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.grooming-description p{
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.grooming img{
+  width: 50%;
+}
+
+/*-------*/
+
+/*grooming value*/
+.grooming-value{
+  margin-top: 100px;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.grooming-value .card{
+  background-color: lightblue;
+}
+
+.grooming-value .grooming-valueDescription{
+  text-align: left;
+  padding-top: 30px;
+}
+
+.grooming-valueDescription h1{
+  margin-bottom: 0px;
+}
+
+.grooming-valueDescription p{
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.grooming-valueDescription ul{
+  list-style-type: none;
+}
+
+.grooming-valueDescription li{
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+
+.grooming-value img{
+  width: 50%;
+}
+
+
+/*------------*/
+
+
+/*Grooming price*/
+
+.groomingPrice{
+  padding-top: 100px;
+  text-align: center;
+}
+
+.groomingPrice img{
+  width: 40%;
+}
+
+.groomingPrice h5{
+  font-weight: 700;
+  text-align: left;
+}
+
+
+table {
+  font-family: 'Arial';
+  margin: 25px 10px;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #0086b3;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+     0px 10px 20px rgba(0,0,0,0.05),
+     0px 20px 20px rgba(0,0,0,0.05),
+     0px 30px 20px rgba(0,0,0,0.05);
+  }
+  
+  th:hover{color: black;}   
+  td:hover{color: #999;}
+  
+  th, td {
+    color: black;
+    border: 1px solid #eee;
+    padding: 12px 35px;
+    border-collapse: collapse;
+  }
+  th {
+    background: #0086b3;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+
+/*-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+footer {
+  background-color: #0086b3;
+  color:#fff;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  
+  
+
+}
+
+.footer-img{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+hr.light{
+  border-top: 1px solid #fff;
+  width: 75%;
+  margin-top: 0.8rem;
+  margin-bottom:1rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+footer a{
+  color: #fff;
+  margin: 1.5em;
+  font-size: 1rem;
+  text-decoration: none!important;
+}
+
+hr.light-100{
+  border-top: 1px solid #fff;
   width: 100%;
-  color:black;
-  height: auto;
-  margin-top: 120px;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
 }
 
-h1{
-  font-size: 7em;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500 !important;
-}
-
-h2{
-  margin-top: -10px;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.7em;
-  text-align: center;
-  font-weight: 400;
-}
-
-a{
-  margin-top: 20px;
-  font-size: 1.3em;
-  font-family: 'Quicksand', sans-serif;
-}
-
-.btnBanner{
-  display: inline-block;
-  width: 200px;
-  font-weight: bold;
-  padding: 10px;
-  color:#00ace6;
-  border: 4px solid #00ace6;
-  text-align: center;
-  outline:none;
+.footer_link:hover{
+  font-size: 105%;
   text-decoration: none;
-  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  color:#fff;
+  transition: all 0.3s;
 }
 
-.btnBanner:hover,.btnBanner:active{
-  background-color: grey;
-  color:#00ace6;
-  transition: background-color 0.3s ease-in, color 0.3s ease-in;
-}
-/*banner*/
-
-
-/*mobile phone view*/
-@media only screen and (max-width: 600px) {
-  h1{
-    margin-top: 10px;
-    font-size: 4em;
-  }
-  h2{
-    margin-top: 10px;
-    font-size:1.4em;
-  }
-  .inner-container{
-    margin-top: 20px;
-  }
-
-  #catC{
-    margin-top: 1500px;
-  }
-
-  #tableSize{
-    font-size:0.7em;
-    padding-right: 40px;
-  }
-
+.footer_btm_font{
+  font-size: 0.7em;
+  color: #fff;
 }
 
-@media only screen and (max-width: 326px) {
-  h1{
-    margin-top: 10px;
-    font-size: 4em;
-  }
-  h2{
-    margin-top: 10px;
-    font-size:1.4em;
-  }
-  #h3Size{
-    font-size: 1.4em;
-  }
-  .inner-container{
-    margin-top: 20px;
-  }
-
-  #catC{
-    margin-top: 1500px;
-  }
-
-  #tableSize{
-    font-size:0.5em;
-    padding-right: 40px;
-  }
-
-}
-/*mobile phone view*/
-
-#petTransition{
-  overflow: hidden;
-}
-
-#petTransition img{
-  opacity: 0.8;
-}
-
-#petTransition:hover img{
-  opacity: 1;
-}
-
-.dogS{
-  background-color:#00ace6;
-  color: white;
-}
-
-hr {
-    border: none;
-    height:2px;
-    background-color: white;
-}
-
-.dogService{
-  position: absolute;
-  width: 100%;
-  color:white;
-  height: auto;
+.social_icon{
+  font-size: 1.5em;
+  transform:all 0.4s;
 }
