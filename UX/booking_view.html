@@ -8,7 +8,7 @@
     <!--setup-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="booking_done.css">
+    <link rel="stylesheet" href="booking_view.css">
     
 
 
@@ -22,12 +22,12 @@
     <link rel="icon" type="image/png" href="image/tabIcon.JPG">
     
     <!--TopNav-->
-    <script src="topNav_user.js"></script>
+    <script src="topNav.js"></script>
     <link rel="stylesheet" href="topNav.css">
 
     
   </head>
-  <body>
+  <body  onload="populateTable();"> 
     <!--Header-->
 
     <!-- Navbar-->
@@ -47,28 +47,47 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
-                <li class="nav-item"><a href="login.html" class="nav-link text-uppercase">Login</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-uppercase" id="btnLogin"  onclick="displayForm('login')">Login</a></li>
+                <li class="nav-item">
+                    <div class="user-myBooking">
+                        
+                    </div>
+
+                </li>
+                <li class="nav-item">
+
+                    <div class="user-dropdown userDropdown">
+                        <!--render dropdown menu for user in topNav.js-->
+                        
+                        
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
-
 <div id="mySidenav" class="sidenav text-left">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
+    <div class="myBookingSideNav">
+        <!--topNav render here-->
+    </div>
     <p><i class="far fa-window-minimize"></i></p>
-    <a href="#">Login</a>
-    <a href="#">Sign Up</a>
-
-</div>    
+    <a onclick="displayForm('login')" id="btnLoginSideNav" >Login</a>
+    
+    <div class="logoutSideNav">
+        <!--topNav render here-->
+    </div>
+    
+</div>   
     <!--Header-->
     <div class="page-header">
         <div class="container-fluid">
           <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div class="page-caption">
-                <h1 class="page-title"> View Booking </h1>
+                <h1 class="page-title"> My Booking </h1>
     
               </div>
             </div>
@@ -79,31 +98,49 @@
 <main>
 
     <div class="container mt-4 mb-5">
-        <table class="table table-hover">
+
+        <div class="container">
+
+        
+        <table id="bookingTable" class="table table-hover text-right">
             <thead>
                 <tr>
-                  <th>Booking ID</th>
-                  <th>Service</th>
-                  <th>Pet Name</th>
-                  <th>Pet Type</th>
-                  <th>Booking Time</th>
-                  <th>Booking Date</th>
-                  <th>Check-in Date</th>
-                  <th>Check-out Date</th>
-                  <th>Remarks</th>
+                  <th class="numeric">Booking ID</th>
+                  <th class="numeric">Service</th>
+                  <th class="numeric">Pet Name</th>
+                  <th class="numeric">Pet Type</th>
+                  <th class="numeric">Booking Time</th>
+                  <th class="numeric">Booking Date</th>
+                  <th class="numeric">Check-in Date</th>
+                  <th class="numeric">Check-out Date</th>
+                  <th class="numeric">Remarks</th>
                 </tr>
               </thead>
               <tbody>
-
+                  <!--
+                <tr>
+                    <td data-title="Booking ID" class="numeric">10001</td>
+                    <td data-title="Service" class="numeric">Bath</td>
+                    <td data-title="Pet Name" class="numeric">Koi</td>
+                    <td data-title="Pet Type" class="numeric">Dog</td>
+                    <td data-title="Booking Time" class="numeric">9am</td>
+                    <td data-title="Booking Date" class="numeric">01/04/2020</td>
+                    <td data-title="Check-in Date" class="numeric">01/04/2020</td>
+                    <td data-title="Check-out Date" class="numeric">01/04/2020</td>
+                    <td data-title="Remarks" class="numeric">Ok!</td>
+            
+                </tr>
+                -->
               </tbody>
         </table>
+    </div>
     </div>
 
   
 
 
 
-
+    <br>
 </main>
     <footer class="fixed-bottom">
         <div class="col-12">
@@ -115,5 +152,6 @@
   </body>
    <!--javaScript-->
   <script src="all.js"></script>
-  <script src="booking_done.js"></script>
+  <script src="booking_view.js"></script>
+  
 </html>

@@ -1,0 +1,149 @@
+
+.box_shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /*Title*/
+  .page-header {
+    background-image:url("image/viewBooking/cuteCute_bla50.jpg");
+      background-repeat:no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position:50% 5%;
+    height: 20rem;
+  }
+  .page-caption {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .page-title { 
+    font-size: 2.5rem;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1px 1px 10px #000;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+
+  /*main*/
+  .book_tab{
+      color: #a9a9a9;
+  }
+  .book_tab_2{
+      color:black;
+  }
+
+
+
+
+  hr.light-100{
+    border-top: 1px solid #fff;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    background-color: #0086b3;
+    color:#fff;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    text-decoration: none!important;
+    
+  
+  }
+  .footer_btm_font{
+    font-size: 0.7em;
+    color: #fff;
+  }
+
+.btn-primary{
+    background-color: #0086b3 !important;
+    color: #fff!important;
+    border-color:  #0086b3!important;
+}
+
+.btn-primary:hover{
+    background-color: #005c7a !important;
+    color: #fff!important;
+    border-color: #005c7a!important;
+}
+
+@media(max-width:768px){
+    .page-header {
+        height: 10rem;
+      }
+
+      .page-title { 
+        font-size: 1.5rem;
+      }
+      .page-caption {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+      }
+       
+ 
+}
+/*Media query to make responsive table view*/
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+        display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { border: 1px solid #ccc; }
+
+	td {
+		/* Behave  like a "row" */
+    top:2px;
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+        top:11px;
+        left:3px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+        font-weight: bold;
+	}
+
+    /* Label the data */
+    td:nth-of-type(1):before { content: "Booking ID:"; }
+    td:nth-of-type(2):before { content: "Service:"; }
+    td:nth-of-type(3):before { content: "Pet Name:"; }
+    td:nth-of-type(4):before { content: "Pet Type:"; }
+    td:nth-of-type(5):before { content: "Booking Time:"; }
+    td:nth-of-type(6):before { content: "Booking Date:"; }
+    td:nth-of-type(7):before { content: "Check-in Date:"; }
+    td:nth-of-type(8):before { content: "Check-out Date:"; }
+    td:nth-of-type(9):before { content: "Remarks:"; }
+  
+}

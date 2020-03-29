@@ -124,16 +124,35 @@ window.addEventListener('load',() => {
     user = JSON.parse(localStorage.getItem('user'));
 
     const markup = 
-        `<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-user"></i>&nbsp; ${user.name}
+        `<button class="btn btn-secondary btn_user dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-user"></i>&nbsp; ${user.name}
         </button>
         <div class="user-dropdown-content" aria-labelledby="dropdownMenuButton">
-            <a class="" href="#" onclick="logOut()">Log Out</a>
+            <a style="text-decoration: none;,color: #0086b3; " class="" href="#" onclick="logOut()">Logout</a>
         </div>`;
 
+    const markupNav = `<a href="booking_view.html" id="btnViewBooking" class="nav-link text-uppercase">My Booking</a>`;
+
+    const markupSideNav = `<a href="booking_view.html">My Booking</a>`;
+
+    const markupSideNav2 = `<a href="#" onclick="logOut()">Logout</a>`;
+
     if (user.login === true){
+        //hide element after login
         document.getElementById('btnLogin').style.display = 'none';
+
+        //sideNav
+        document.getElementById('btnLoginSideNav').style.display = 'none';
+        
+
+        //show element after login
+        document.querySelector('.user-myBooking').insertAdjacentHTML("afterbegin", markupNav);
         document.querySelector('.userDropdown').insertAdjacentHTML("afterbegin", markup);
+
+        //sideNav
+        document.querySelector('.myBookingSideNav').insertAdjacentHTML("afterbegin",markupSideNav);
+        document.querySelector('.logoutSideNav').insertAdjacentHTML("afterbegin", markupSideNav2);
+        
 
     }
 });

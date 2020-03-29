@@ -37,16 +37,7 @@ service_input.value = localStorage.selectedService;
 errorMsg_small.style.display = 'none';
 
 
-//hide element if service is not pet hotel
-if (localStorage.selectedService !="Pet Hotel"){
-    checkInDate_input.style.display = 'none';
-    checkOutDate_input.style.display = 'none';
-    checkOutDate_label.style.display = 'none';
-    checkInDate_label.style.display = 'none';
-    bookingDate_input.setAttribute("required", null);
-    bookingTime_input.setAttribute("required", null);
 
-}
 
 
 
@@ -67,9 +58,25 @@ function setupPetHotel(){
         checkInDate_label.style.display = 'initial';
         checkOutDate_input.setAttribute("required", null);
         checkInDate_input.setAttribute("required", null);
-
+        
+        localStorage.inCheckInDate = "";
+        localStorage.inCheckOutDate = "";
+        
 
     }
+    else
+   {
+    checkInDate_input.style.display = 'none';
+    checkOutDate_input.style.display = 'none';
+    checkOutDate_label.style.display = 'none';
+    checkInDate_label.style.display = 'none';
+
+    bookingDate_input.setAttribute("required", null);
+    bookingTime_input.setAttribute("required", null);
+    localStorage.inBookingTime = "";
+    localStorage.inBookingDate = "";
+
+}
 } 
 
 //get data from localstorage

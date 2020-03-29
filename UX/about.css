@@ -1,12 +1,29 @@
+/*register*/
+#registerForm .createAccount{
+  font-size: 15px;
+}
+
+.registerInput input{
+  margin-bottom: 0px;
+}
+
+.registerInput{
+  height: 480px;
+}
+
+
+
+
 /*about-us section*/
 
 .ui-container{
   background-color: black;
   outline: white; 
   z-index: 10;
+  height: 500px;
 }
 .ui-container img{
-  height: 50%;
+  height: 500px;
   width: 100%;
   opacity: 0.3;    
   /* z-index:5;  */
@@ -27,6 +44,10 @@
   font-weight: 700;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.motto{
+  padding-top: 25px;
 }
 
 /*navigation*/
@@ -176,14 +197,25 @@
   font-weight: 700;
 }
 
+.location iframe{
+  margin-left: -50px;
+}
+
 
 .location .card{
   text-align: left; 
+  padding-left: 0px !important;
+  padding-right: 0px;
 }
 
-.location .col-7{
-  padding-left: 60px;
+.location select{
+  width: 580px;
 }
+
+.map iframe {
+  padding-left: 40px;
+}
+
 
 .form-control{
   font-family: Arial, Helvetica, sans-serif;
@@ -207,9 +239,67 @@ select{
 }
 
 
+/*Footer*/
+footer {
+  background-color: #0086b3;
+  color:#fff;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  
+  
+
+}
+
+.footer-img{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+hr.light{
+  border-top: 1px solid #fff;
+  width: 75%;
+  margin-top: 0.8rem;
+  margin-bottom:1rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+footer a{
+  color: #fff;
+  margin: 1.5em;
+  font-size: 1rem;
+  text-decoration: none!important;
+}
+
+hr.light-100{
+  border-top: 1px solid #fff;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer_link:hover{
+  font-size: 105%;
+  text-decoration: none;
+  color:#fff;
+  transition: all 0.3s;
+}
+
+.footer_btm_font{
+  font-size: 0.7em;
+  color: #fff;
+}
+
+.social_icon{
+  font-size: 1.5em;
+  transform:all 0.4s;
+}
+
+
+
 @media only screen and (max-width: 768px){
   /*about us container*/
   .ui-container{ 
+    margin-top: 56px;
     height: 450px;  
   }
 
@@ -218,6 +308,10 @@ select{
     width: 450px;
     opacity: 0.5;
     padding: 0px;
+  }
+
+  .ui-container h5{
+    padding-top: 50px;
   }
   
   .aboutImg{
@@ -290,62 +384,32 @@ select{
   }
 
 
+  /*location*/
+  .location .card{
+    padding-left: 30px !important;
+  }
 
-}
+  .location h3, .location h5{
+    width: 300px;
+  }
 
+  .location map{
+    display: none;
+  }
 
+  .location select{
+    width: 100%;
+  }
 
-/*Footer*/
-footer {
-  background-color: #0086b3;
-  color:#fff;
-  padding-top: 2rem;
-  padding-bottom: 5rem;
+  .location .col-5{
+    display: none;
+  }
+
   
-  
+
+  /*-----------*/
 
 }
 
-.footer-img{
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
-hr.light{
-  border-top: 1px solid #fff;
-  width: 75%;
-  margin-top: 0.8rem;
-  margin-bottom:1rem;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
 
-footer a{
-  color: #fff;
-  margin: 1.5em;
-  font-size: 1rem;
-  text-decoration: none!important;
-}
-
-hr.light-100{
-  border-top: 1px solid #fff;
-  width: 100%;
-  margin-top: 0.8rem;
-  margin-bottom: 1rem;
-}
-
-.footer_link:hover{
-  font-size: 105%;
-  text-decoration: none;
-  color:#fff;
-  transition: all 0.3s;
-}
-
-.footer_btm_font{
-  font-size: 0.7em;
-  color: #fff;
-}
-
-.social_icon{
-  font-size: 1.5em;
-  transform:all 0.4s;
-}
