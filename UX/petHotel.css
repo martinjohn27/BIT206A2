@@ -251,11 +251,44 @@ footer {
         width: 100%;
     }
 
+    .featureHide{
+      display: none;
+    }
 
+    .room-feature img{
+      height: 700px;
+      width: 380px;
+    }
+
+    .room-feature .float-left, .room-feature .float-right{
+      float: none !important;
+      width: 100%;
+      padding-left: 40px;
+      margin-left: 0px;
+    }
+
+    .room-feature .float-right{
+      padding-top: 350px;
+      
+    }
+
+    .room-feature .col-6{
+      width: 100% !important;
+    }
+    .room-feature .float-right h4{
+      font-size: 25px;
+    }
+
+    .room-feature .float-right h4, .room-feature .float-right li{
+      width: 350px;
+    }
 
     .catRoom{
        padding-left: 15px;
     }
+
+
+
 
 
 
