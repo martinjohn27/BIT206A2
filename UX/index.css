@@ -351,6 +351,7 @@
     visibility: hidden;
   }
   
+  
   .title_top_space{
     padding-top: 5rem;
   }
@@ -519,10 +520,13 @@
     font-size: 1.3em;
   }
 
-  .footer_mid{
-    display: hidden;
-  }
+  /*.footer_mid{
+    display: none;
+  }*/
 
+  .video_play{
+    display: none;
+  }
 }
 
 @media (max-width:576px){
@@ -555,6 +559,10 @@
 
   .social_icon{
     font-size: 1.3em;
+  }
+
+  .video_play{
+    display: none;
   }
 
 }
