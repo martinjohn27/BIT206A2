@@ -382,7 +382,61 @@ html, body{
       height: auto;
       width: 375px;
     }
+
+
+    .loginInput, .registerInput{
+      position: absolute;
+      padding-top: 0px;
+      margin-top: 0px !important;
+      margin-left: 0px !important;
+    }
+
+    .loginInput .row, .registerInput .row{
+      width: 78%;
+    }
+
+    .loginInput input{
+      width: 10%;
+    }
+
+    .imgLogin, .imgRegister{
+      display: none;
+    }
+
+    .loginInput .btn-primary, .registerInput .btn-primary{
+      width: 65%;
+    }
+
+    .RemPwrd{
+      padding-top: 20px;
+      padding-left: 0px;
+    }
   
+    .createAccount{
+      width: 65%;
+    }
+
+    .or hr{
+      width: 35%;
+    }
+
+    .loginInput h2, .registerInput h2{
+      font-size: 25px;
+      width: 65%;
+      padding-top: 10px;
+    }
+
+    .registerInput h2{
+      padding-top: 5px;
+    }
+
+    #close{
+      position: static;
+      margin-left:250px;
+    }
+
+
+
 
   }
    
