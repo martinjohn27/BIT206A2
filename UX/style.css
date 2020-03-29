@@ -318,7 +318,6 @@ html, body{
       cursor: pointer;
   }
 
-
   #loginForm, #registerForm{
       display: none;
       position: fixed;
@@ -349,6 +348,13 @@ html, body{
 
   #registerContent{
     height: 573px;
+  }
+
+  #validate-name{
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+    margin-bottom: 0px;
   }
 
 
