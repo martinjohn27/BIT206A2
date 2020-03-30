@@ -536,7 +536,8 @@
 
 @media (max-width:576px){
   .title_top_space{
-    padding-top: 12rem;
+    /*padding-top: 12rem;*/
+    padding-top:5rem;
   }
 
   .title_h1 {
@@ -544,7 +545,7 @@
     text-transform: uppercase;
     text-shadow: 1px 1px 10px #000;
     padding-bottom: 0rem;
-    display: none;
+    
   }
 
   .title_h2{
