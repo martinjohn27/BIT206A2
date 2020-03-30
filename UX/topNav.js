@@ -87,13 +87,17 @@ const login = () => {
         psw : document.getElementById('loginPsw').value
     }
 
-    if (loginUser.email === user.email){
+    if (loginUser.email === user.email & loginUser.psw === user.psw){
         alert("login")
         user.login = true;
         localStorage.setItem('user', JSON.stringify(user));
     } 
     else {
-
+        if (loginUser.email != user.email){
+            alert("Email that you input does not registered an account yet");
+        } else if (loginUser.psw != user.psw){
+            alert("Password is incorrect. Please try again !");
+        }
     }
 }
 
