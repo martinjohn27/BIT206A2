@@ -1,0 +1,449 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-align: center;
+  }
+
+  hr {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 300px;
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
+  }
+
+  h1{
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: 1000;
+}
+
+/*ALERT*/
+/*ALERT*/
+/*dangerous css*/
+.buttons a{
+  
+  color: #00ace6;
+  border: 2px solid #00ace6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons a:hover{
+  color: white;
+  background-color:#00ace6;
+}
+
+
+.none{
+  display: none;
+}
+
+
+/*-------------*/
+
+ 
+/*top navigation bar*/
+.btn-secondary{
+  background-color: #00ace6!important; 
+  border-color: #00ace6!important;
+}
+.btn-secondary:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #005c7a!important; 
+  border-color:  #005c7a!important;
+}
+
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.user-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px;
+  z-index: 1;
+  text-align: center;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+}
+
+.user-dropdown-content a{
+  text-align: center;
+  transition: all 0.125s ease-in-out;
+}
+
+
+.user-dropdown:hover .user-dropdown-content{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: 0.5s;
+  
+}
+
+
+ 
+/*navifation bar*/
+
+  .navigation{
+    position: fixed !important;
+    margin-top: -50px;
+    z-index: 20 ;
+    opacity: 1;
+    transition: all 0.5s;  
+  }
+
+  .navigation img{
+    width: 35px;
+  }
+
+  .navBar{
+    text-align: center !important;
+  }
+
+  .navBar a{
+    color: black ;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+
+  .navBar:hover{
+    font-weight: 700;
+    transform: scale(1.3);
+    transition: 0.5s;
+  }
+
+  .navBar a:hover{
+    color: #00ace6;
+  }
+
+  .big-image{
+    height: 30px;
+    width: 30px;
+    transition: 0.2s;
+  }
+
+  .visibility{
+    visibility: hidden;
+}
+  /*-----------------*/
+ 
+  .footer-img{
+    height: 60%;
+    width: 100%;
+  } 
+
+  .highlight{
+    color: #0086b3;
+  }
+
+  .navBar-highlight{
+    opacity: 0.3;
+  }
+
+  .navBar-highlight-link{
+    color: #00ace6;
+    font-weight: 700;
+  }
+
+  .silver{
+    color: silver;
+    font-weight: 600;
+  }
+
+  .box-shadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+
+  
+  /*login form*/
+
+
+  .imgLogin{
+    height: 478px;
+    width: 480px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .imgRegister{
+    height: 570px;
+    width: 480px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+
+  .loginInput, .registerInput{
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-top: -465px !important;
+    margin-left: 480px !important;
+    padding: 20px;
+    text-align: left;
+    border-radius: 1rem;
+    width: 470px;
+    
+  }
+
+  .registerInput{
+    padding-top: 0px;
+    margin-top: -540px !important;
+  }
+
+  .loginInput .car, .registerInput .card{
+    margin: 0px !important;
+  }
+
+  .loginInput h2{
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .registerInput h2{
+    font-weight: 700;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .loginInput h2 img{
+    margin-top: -5px;
+  }
+
+  .loginInput svg, .registerInput svg{
+    padding-top: 10px !important;
+    font-size: 30px;
+  }
+
+  .loginInput input, .registerInput input{
+      width: 100%;
+      padding: 2% 3%; 
+      margin-bottom: 5px;
+      display: inline-block;
+      border: 1px solid #cccccc;
+      border-radius: 1rem;
+      box-sizing: border-box;
+      font-size: 100%;
+      
+  }
+
+  .registerInput input{
+    margin-bottom: 3px;
+  }
+
+  .loginInput .row, .registerInput .row{
+    font-size: 12px;
+  }
+
+  .loginInput hr, .registerInput hr{
+    margin: 0px;
+    margin-top: 10px;
+    width: 100px;
+    border-top: 1px solid  rgba(0, 0, 0, 0.3);
+  }
+
+  .loginInput .or, .registerInput .or{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 284px;
+    text-align: center;
+  }
+
+  
+
+
+
+  .loginInput .btn-primary, .registerInput .btn-primary{
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+    color: white;
+    background-color: #0086b3;
+  }
+
+  .registerInput .btn-primary{
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+
+
+  .RemPwrd{
+    padding-top: 10px;
+    padding-left: 60px;
+  }
+
+  .createAccount{
+    text-align: center;
+  }
+
+  .createAccount a{
+    cursor: pointer;
+    color: #007bff;
+  }
+
+  .createAccount a:hover{
+    color: #0056b3;
+    text-decoration: underline;
+  }
+
+
+
+  .rememberMe{
+    width: 0px !important;
+  }
+
+
+
+  #close{
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: black;
+      font-size: 25px;
+      font-weight: bold;
+  }
+
+  #close:hover{
+      color: red;
+      cursor: pointer;
+  }
+
+  #loginForm, #registerForm{
+      display: none;
+      position: fixed;
+      z-index: 50;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: none;    
+      background-color: rgb(0,0,0,0.4);
+      padding-top: 20px;
+  }
+
+  #registerForm{
+    padding-top: 5px;
+  }
+
+  #loginContent, #registerContent{
+      background-color: #fefefe;
+      margin: 1% auto 15% auto;
+      border: 1px solid #888;
+      border-radius: 1rem;
+      width: 75%;
+      height: 481px;
+      animation: animatezoom 0.6s;  
+      z-index: 2;
+  }
+
+  #registerContent{
+    height: 573px;
+  }
+
+  #validate-name{
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+    margin-bottom: 0px;
+  }
+
+
+
+/*Register form */
+
+
+
+@keyframes animatezoom{
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+
+
+  /*--------------------*/
+
+  
+
+  @media only screen and (max-width: 768px){
+
+    .navigation{
+      visibility: hidden;
+    }
+
+    .none{
+      display: initial;
+    }
+      
+    .footer-img{
+      height: auto;
+      width: 375px;
+    }
+
+
+    .loginInput, .registerInput{
+      position: absolute;
+      padding-top: 0px;
+      margin-top: 0px !important;
+      margin-left: 0px !important;
+    }
+
+    .loginInput .row, .registerInput .row{
+      width: 78%;
+    }
+
+    .loginInput input{
+      width: 10%;
+    }
+
+    .imgLogin, .imgRegister{
+      display: none;
+    }
+
+    .loginInput .btn-primary, .registerInput .btn-primary{
+      width: 65%;
+    }
+
+    .RemPwrd{
+      padding-top: 20px;
+      padding-left: 0px;
+    }
+  
+    .createAccount{
+      width: 65%;
+    }
+
+    .or hr{
+      width: 35%;
+    }
+
+    .loginInput h2, .registerInput h2{
+      font-size: 25px;
+      width: 65%;
+      padding-top: 10px;
+    }
+
+    .registerInput h2{
+      padding-top: 5px;
+    }
+
+    #close{
+      position: static;
+      margin-left:250px;
+    }
+
+
+
+
+  }
+   
+

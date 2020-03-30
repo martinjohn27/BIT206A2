@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PETTO</title>
+
+    <!--setup-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!--timeline setup-->
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!---->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">   
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    
+
+    
+
+     <!--TopNav-->
+     <link rel="stylesheet" href="topNav.css">
+
+    <link rel="icon" type="image/png" href="image/tabIcon.JPG">
+</head>
+<body>
+  
+    <!--Jacky-->
+    <!-- Navbar-->
+<nav class="nav_bar navbar navbar-expand-lg fixed-top py-2">
+  <div class="container-fluid">
+      <a href="#" onclick="openNav()" class="navbar-toggler navbar-toggler-left"><i class="fa fa-bars"></i></a>
+      <span class="spacer "></span>
+      <a href="index.html" class="navbar-brand text-uppercase font-weight-bold"> <img style="width: 35px;" src="image/invisible-logo.png" alt="PETTO Logo"> PETTO</a>
+      <span class="spacer "></span>
+      <span> </span>
+      
+      <!--
+      <span id="sidenavBtnOpen" style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; open</span>
+      <span id="sidenavBtnClose" style="font-size:30px;cursor:pointer" onclick="closeNav()">&#9776; close</span>
+      -->
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-uppercase" id="btnLogin"  onclick="displayForm('login')">Login</a></li>
+              <li class="nav-item">
+                  <div class="user-myBooking">
+
+                  </div>
+
+              </li>
+              <li class="nav-item">
+
+                  <div class="user-dropdown userDropdown">
+                      <!--render dropdown menu for user in topNav.js-->
+                      
+                      
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<div id="mySidenav" class="sidenav text-left">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <div class="myBookingSideNav">
+      <!--topNav render here-->
+  </div>
+  <p><i class="far fa-window-minimize"></i></p>
+  <a onclick="displayForm('login')" id="btnLoginSideNav" >Login</a>
+  
+  <div class="logoutSideNav">
+      <!--topNav render here-->
+  </div>
+  
+</div>
+
+  <div id="loginForm">
+    <form id=loginContent class="box-shadow card">                    
+        <img class="float-left imgLogin" src="image/home/home8.jpg" alt="Default Picture">
+
+        <div class="loginInput card-body  float-right">
+            <span onclick="cancelForm('login')" 
+            id="close" title="Close Modal">&times;</span>
+
+            <h2>Welcome to <span class="highlight"> PETTO</span> &nbsp;<img style="width: 35px;" src="image/black-invisible-logo.png" alt="PETTO Logo">  </h2>
+            <div class="row">
+                <i class="fas fa-envelope col-2"></i>
+                <input class="col-8" type="text" placeholder="Enter Email" id="loginEmail" required>
+            </div>
+            <br>
+            <div class="row">
+                <i class="fas fa-unlock-alt col-2"></i>
+                <input class="col-8" type="password" placeholder="Enter Password" id="loginPsw" required>
+            </div>
+            <div class="row RemPwrd">
+                <label class="col-6"><input type="checkbox" name="loginRmbName" class="rememberMe" >&nbsp; Remember Me</label>
+                <span class="col-6">Forgot <a href="#">password?</a></span>
+            </div>
+
+            <a href="" class="btn btn-primary text-center btn-lg" role="button" onclick="login()"> Login </a>
+            
+            <div class="createAccount">
+                <div class="row or"><hr>&emsp; or &emsp;<hr></div>
+                <a class="" role="button" onclick="displayForm('register')">Create an Account</a>
+            </div>
+        </div>                    
+    </form>            
+  </div>
+
+  <div id="registerForm">
+    <form id=registerContent class="box-shadow card">                    
+        <img class="float-left imgRegister" src="image/home/home10.jpg" alt="Default Picture">
+
+        <div class="registerInput card-body  float-right">
+            <span onclick="cancelForm('register')" 
+            id="close" title="Close Modal">&times;</span>
+
+            <h2>Register Account</h2>
+            <div class="row">
+                <i class="fas fa-user col-2"></i>
+                <input class="col-8" type="text" placeholder="Enter Name" id="registerName" required>
+            </div>
+            <br>
+            <div class="row">
+                <i class="fas fa-envelope col-2"></i>
+                <input class="col-8" type="text" placeholder="Enter Email" id="registerEmail" required>
+            </div>
+            <br>
+            <div class="row">
+                <i class="fas fa-phone col-2"></i>
+                <input class="col-8" type="text" placeholder="Enter Phone Number" id="registerPhone" required>
+            </div>
+            <br>
+            <div class="row">
+                <i class="fas fa-unlock-alt col-2"></i>
+                <input class="col-8" type="password" placeholder="Enter Password" id="registerPsw" required>
+            </div>
+            <br>
+            <div class="row">
+                <i class="fas fa-lock col-2"></i>
+                <input class="col-8" type="password" placeholder="Retype Password" id="retypePsw" required>
+            </div>
+
+
+            <a href="" class="btn btn-primary text-center btn-lg" role="button" onclick="signUp()"> Sign Up</a>
+
+            <div class="createAccount">
+                Already Have an Account ? &nbsp;<a class="" role="button" onclick="displayForm('login')">Log In</a>
+            </div>
+        </div>                    
+    </form>            
+  </div>
+
+
+  
+  <div class="ui-container card">
+    <img class="aboutImg" src="image/about-us/location2.jpg" alt="About Us">
+    <img class="visibility card-img-overlay" src="image/about-us/cute-cat-pic7.jpg" alt="About Us">
+    <div class="card-img-overlay col-sm-6">
+        <h5>Our Mission :</h5>
+        <h1>"Spread Love And</h1>
+        <h1>Let No Pet  <br>Ever Leave Without Happiness"</h1>
+        <br>
+        <div class="buttons">
+            <a href="booking.html" class="btn btn-outline btn-header" role="button">Book Now &nbsp; <i class="fas fa-calendar-alt"></i></a>
+        </div>              
+    </div>  
+    <div class="col-sm-6"></div>    
+  </div>
+
+  <!--navigation bar-->
+  
+  <div class="navigation col-12" id="navigation">
+    <div class="card bg-light">
+        <div class="card-body box-shadow">
+            <div class="col-12 row center">
+                <div class="navBar col-3 center"> 
+                    <a href="petGromming.html" class="card-link"><img class="big-image" src="image/paw.png" alt="Pet Grooming & Spa"> <br> <span class="visibility"> Pet Grooming & Spa</span></a>
+                </div> 
+                <div class="navBar small-image col-3 center">
+                    <a href="petHotel.html" class="card-link"><img class="big-image" src="image/pet-care.png" alt="Pet Hotel"><br> <span class="visibility">Pet Hotel</span></a>
+                </div>      
+                <div class="navBar small-image col-3 center">
+                    <a href="petActivities.html" class="card-link"><img class="big-image" src="image/walking-the-dog.png" alt="Swimming Pool & Indoor Park"> <br><span class="visibility"> Pet Activities </span></a>
+                </div>        
+                <div class="navBar small-image col-3 center">
+                    <a href="about.html" class="card-link"><img class="big-image" src="image/pet-shop.png" alt="About Us"><br> <span class="visibility">About us</span> </a>
+                </div> 
+            </div> 
+        </div>
+    </div>
+  </div> 
+
+  <br>
+  <!--motto-->
+  <div class="none"><br><br></div>
+
+  <br>
+  <div class="card motto">
+    <h1 class="card-title"><strong>About <span class="highlight">PETTO</span></strong></h1>
+    <h5 class="card-text">Our mission is what drives us to bring <br class="none">comfort & joy to every pet</h5>
+  </div>
+
+  <br><br><br>
+  <!--mission-->
+  <div class="row mission col-12">
+    <div class="float-left">
+      <div class="mission-box">
+        <div></div>
+        <img class="big-images card-img-overlay" src="image/about-us/cute-cat-pic4.jpeg" alt="">
+      </div>
+    </div>
+    <div class="float-right">
+      <h2>PASSION</h2>
+      <hr>
+      <h4>WE ARE OBSESSIVELY PASSIONATE ABOUT TAKING CARE OF EVERY PET</h4>
+      <P>We believe focusing on pet's feeling it's one of the least understood job for every pet-care
+         store, and we see that as an important task to carry out.
+      </P>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="row mission2 col-12">
+    <div class="float-left">
+      <h2>OUR TEAM</h2>
+      <hr>
+      <h4>A LOVE FOR PETS <br>UNITES US</h4>
+      <p>Good services & good relationships come from collaboration. We're excited to take care of your pet
+         and make your pet happy together.
+      </p>
+    </div>
+    <div class="float-right">
+      <div class="mission-box">
+        <div></div>
+        <img class="big-images card-img-overlay" src="image/about-us/cute-dog-pic4.jpg" alt="">
+      </div>
+    </div>
+    
+  </div>
+
+
+  <br>
+  <!--Timeline-->
+  <div class="timeline">
+    <section class="cd-timeline js-cd-timeline">
+      <h3> <span class="highlight">Procedures in its SIMPLICITY</span>  <br>to use our services</h3>
+      <hr>
+      <div class="container max-width-lg cd-timeline__container">
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img  booking ">
+              <i class="fas fa-calendar-alt"></i>
+          </div> <!-- cd-timeline__img -->
+  
+          <div class="cd-timeline__content text-component">
+            <h2>1. Booking</h2>
+            <h4 class="highlight">"Booking in just 2 clicks 😉 "</h4>
+            <p>    <br><strong>Cancellation procedures</strong> of the booking can be made via phone calls</p>
+  
+            <div class="flex justify-between items-center">
+              <div class="buttons">
+                <a class="btn btn-outline" role="button">Book Now &nbsp; <i class="fas fa-calendar-alt"></i></a>
+              </div>
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
+  
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img check-in">
+              <i class="far fa-calendar-check"></i>
+          </div> <!-- cd-timeline__img -->
+  
+          <div class="cd-timeline__content text-component">
+            <h2>2. Check In</h2>
+            <h4 class="highlight">"If you love pets... you'll LOVE US" <br> Come and Join Us Now 😊</h4>
+            <p><br><strong>Enjoy simply awesome services</strong> only the best for your fur baby</p>
+            
+            <div class="flex justify-between items-center">
+              <div class="buttons">
+                <a class="btn btn-outline" href="#" role="button">Learn More</a>
+              </div>
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
+  
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img check-out">
+              <i class="fas fa-dollar-sign"></i>
+          </div> <!-- cd-timeline__img -->
+  
+          <div class="cd-timeline__content text-component">
+            <h2>3. Check Out & make payment</h2>
+            <h4 class="highlight">“We’ve been in business for a long time because people love our products and trust us. 😁 ”</h4>
+            <p ><br> <strong>*Payment will be made at the counter </strong><br><strong>*Remember to check out our <span class="highlight">LOYALTY PROGRAM</span> at the counter</strong></p>
+  
+            <div class="flex justify-between items-center">
+              <div class="buttons">
+                <a class="btn btn-outline" href="#" role="button">Learn More</a>
+              </div>
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
+        
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img complete">
+              <i class="far fa-handshake"></i>
+          </div> <!-- cd-timeline__img -->
+  
+          <div class="cd-timeline__content text-component">
+            <h2>Completed</h2>
+            <h4 class="highlight">"Thank you for using our services 😄. <br>Your valueble feedback will help us <br>to serve you better" </h4>
+  
+            <div class="flex justify-between items-center">
+              <div class="buttons">
+                <br>
+                <a class="btn btn-outline" href="#" role="button">Give us feedback now</a>
+              </div>
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
+      </div>
+    </section> <!-- cd-timeline -->
+  </div>
+  
+
+    <br><br><br>
+
+     <div class="location card box-shadow">
+    <div class="location col-12 row">
+        <div class="card float-right">
+            <h3>Don't have wait to let your <br> <span class="highlight">Pet feel SUPERB</span> </h3>
+            <h5><br><br>Popular Times <br class="none"> (Based on visits to this place): </h5>
+            <div class="form-group">
+              <br>
+              <select class="form-control " id="popular-times">
+                <option value="0">Monday</option>
+                <option value="1">Wednesday</option>
+                <option value="2">Thursday</option>
+                <option value="3">Friday</option>
+                <option value="4">Saturday</option>
+                <option value="5">Sunday</option>
+              </select>
+              <br>
+            </div>
+            <div id="chart_div"></div>
+        </div>
+        <div class="map float-left">
+          <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7826783601554!2d101.66895621398854!3d3.1519372977049547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49aca5c7421b%3A0xb7242dad56a6c240!2sHELP%20University!5e0!3m2!1sen!2smy!4v1583205504058!5m2!1sen!2smy" width="550" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div> 
+      </div>
+    </div>
+  </main>
+     <!--<img class="footer-img" src="image/home/footer.jpg" alt="Group of dogs">-->
+  <!--Footer-->
+  <footer>
+    <!--  <img class="footer-img" src="image/home/footer.jpg" alt="Group of dogs">-->
+      
+  <div class="container-fluid">
+
+ 
+  <div class="container-fluid padding mt-3 footer_mid">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <hr class="light">
+      <h5>Directory</h5>
+      <hr class="light">
+      <div class="lead">
+      
+      <a class="footer_link font-weight-bold text-warning" href="booking.html">Book Now</a>
+      <br>
+      <a class="footer_link" href="about.html">About Us</a>
+      <br>
+      <a class="footer_link" href="contact.html">Contact Us</a>
+      <br>
+     
+      </div>
+    </div>
+
+  <div class="col-md-4">
+    <hr class="light">
+    <h5>Services</h5>
+    <hr class="light">
+    <div class="lead">
+    <a class="footer_link" href="petGromming.html#petgrooming">Pet Grooming</a>
+    <br>
+    <a class="footer_link" href="petGromming.html#petspa">Pet Spa</a>
+    <br>
+    <a class="footer_link" href="petHotel.html">Pet Hotel</a>
+    <br>
+    <a class="footer_link" href="petActivities.html#petwalking">Pet Walking</a>
+    <br>
+    <a class="footer_link" href="petActivities.html#petswimmingpool">Swimming Pool</a>
+    <br>
+    <a class="footer_link" href="petActivities.html#petindoorpark">Indoor Park</a>
+    <br>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <hr class="light">
+    <h5>Follow Us</h5>
+    <hr class="light">
+    <div class="lead">
+    <a class="social_icon social_icon_fb" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+    <a class="social_icon social_icon_tw" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    <a class="social_icon social_icon_ig" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+    <br>
+    </div>
+    <br>
+    <div class="container-fluid text-left col-md-8">
+      <p>NEWSLETTER</p>
+    <small>Sign-up now & we'll send you offers and stuff.</small>
+    <form>
+        <div class="form-group">
+          <input class="form-control text-center" type="email" placeholder="Email Address">
+              <button class="btn btn-warning mt-1 text-center" style="min-width:100%;">
+                  Subscribe 
+                  <span><i class="far fa-bell"></i></span>
+                  
+                 
+              </button>
+         
+        </div>
+        
+    </form>
+    </div>
+    
+  </div>
+
+
+
+</div>
+
+</div>
+<br>
+  <div class="col-12">
+      <hr class="light-100">
+      <h5 class="footer_btm_font">&copy; PETTO 2020. All Copyright Reserved.</h5>
+  </div>
+  </div>
+</footer>
+
+
+    
+
+    <script type="text/javascript" src="assets/bundle.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>       
+      $(window).resize(function(){
+         window.location.href = window.location.href;
+         console.log("reize")
+      })
+
+      
+      const loadChart = () => {
+          var d = new Date();
+          const selection = document.getElementById('popular-times');
+          const value = selection.options[selection.selectedIndex].value;
+          const data = (d.getDay() === 2 ? value : d.getDay() === 1 ? 0 : d.getDay() === 0 ? 5 : d.getDay()-2); 
+
+          document.getElementById("popular-times").value = data;
+
+          google.charts.load('current', {'packages':['corechart', 'bar']});
+          google.charts.setOnLoadCallback(drawChart);
+
+          function drawChart() {            
+
+            var chartData = storeData(data);
+
+            // Set chart options
+            var options = {'title':'',
+                          'legend' : { position: 'none' },
+                          'hAxis' : {title: 'Time'},
+                          'vAxis' : {title: (window.innerWidth <=700 ? '':'Percentage %'),
+                                    ticks : (window.innerWidth <=700 ? [] : [0,20,80,100])},
+                          'width': (window.innerWidth <= 700 ? 350 : 600),
+                          'height':250};
+
+            
+
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.charts.Bar(document.getElementById('chart_div'));
+            chart.draw(chartData, google.charts.Bar.convertOptions(options));
+
+          }
+      };
+
+      loadChart();
+      
+      
+      document.getElementById('popular-times').addEventListener("change", () => {
+          const selection = document.getElementById('popular-times');
+          const data = selection.options[selection.selectedIndex].value;
+
+          google.charts.load('current', {'packages':['corechart', 'bar']});
+          google.charts.setOnLoadCallback(drawChart);
+
+          function drawChart() {            
+
+            var chartData = storeData(data);
+
+            // Set chart options
+            var options = {'title':'',
+                          'legend' : { position: 'none' },
+                          'hAxis' : {title: 'Time'},
+                          'vAxis' : {title: (window.innerWidth <=700 ? '':'Percentage %'),
+                                    ticks : (window.innerWidth <=700 ? [] : [0,20,80,100])},
+                          'width': (window.innerWidth <= 700 ? 350 : 600),
+                          'height':250};
+
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.charts.Bar(document.getElementById('chart_div'));
+            chart.draw(chartData, google.charts.Bar.convertOptions(options));
+
+          }
+      });
+      
+      
+
+      const storeData = (data) => {
+        var data0 = new google.visualization.DataTable();
+            data0.addColumn('string', 'Time');
+            data0.addColumn('number', 'Percentage%');
+            data0.addRows([
+              ['10am', 10], ['11am', 20],['12pm', 40],['1pm', 50],['2pm', 50],
+              ['3pm', 40], ['4pm', 20], ['5pm', 40],['6pm', 40],['7pm', 10]
+            ]);
+
+            var data1 = new google.visualization.DataTable();
+            data1.addColumn('string', 'Time');
+            data1.addColumn('number', 'Percentage%');
+            data1.addRows([
+              ['10am', 20],['11am', 20],['12pm', 50],['1pm', 50],['2pm', 40],
+              ['3pm', 40],['4pm', 30],['5pm', 30],['6pm', 20],['7pm', 10]
+            ]);
+
+            var data2 = new google.visualization.DataTable();
+            data2.addColumn('string', 'Time');
+            data2.addColumn('number', 'Percentage%');
+            data2.addRows([
+              ['10am', 40],['11am', 40],['12pm', 30],['1pm', 80],['2pm', 80],
+              ['3pm', 60],['4pm', 30],['5pm', 40],['6pm', 30],['7pm', 20]
+            ]);
+
+            var data3 = new google.visualization.DataTable();
+            data3.addColumn('string', 'Time');
+            data3.addColumn('number', 'Percentage%');
+            data3.addRows([
+              ['10am', 50],['11am', 50],['12pm', 40],['1pm', 20],['2pm', 20],
+              ['3pm', 30],['4pm', 30],['5pm', 40],['6pm', 40],['7pm', 20]
+            ]);
+
+            var data4 = new google.visualization.DataTable();
+            data4.addColumn('string', 'Time');
+            data4.addColumn('number', 'Percentage%');
+            data4.addRows([
+              ['10am', 20],['11am', 20],['12pm', 30],['1pm', 40],['2pm', 50],
+              ['3pm', 70],['4pm', 60],['5pm', 50],['6pm', 30],['7pm', 20]
+            ]);
+
+            
+            var data5 = new google.visualization.DataTable();
+            data5.addColumn('string', 'Time');
+            data5.addColumn('number', 'Percentage%');
+            data5.addRows([
+              ['10am', 10],['11am', 30],['12pm', 50],['1pm', 70],['2pm', 60],
+              ['3pm', 50],['4pm', 50],['5pm', 40],['6pm', 40],['7pm', 30]
+            ]);
+
+            const dataList = [];
+            dataList.push(data0);
+            dataList.push(data1);
+            dataList.push(data2);
+            dataList.push(data3);
+            dataList.push(data4);
+            dataList.push(data5);
+
+          return dataList[data];
+      };
+
+
+    </script>
+
+    <!--TopNav-->
+    <script src="topNav.js"></script>
+
+    <!--icons-->
+    <script src="all.js"></script>
+
+    
+</body>
+</html>

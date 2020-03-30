@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - PETTO</title>
+
+    <!--setup-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
+    
+
+
+
+    <!--icons-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="assets/jquery.countup.js"></script>
+    <link rel="icon" type="image/png" href="image/tabIcon.JPG">
+    
+    <!--TopNav-->
+    <script src="topNav.js"></script>
+    <link rel="stylesheet" href="topNav.css">
+
+    
+  </head>
+  <body>
+    <!--Header-->
+
+    <!-- Navbar-->
+<nav class="nav_bar navbar navbar-expand-lg fixed-top py-2">
+    <div class="container-fluid">
+        <a href="#" onclick="openNav()" class="navbar-toggler navbar-toggler-left"><i class="fa fa-bars"></i></a>
+        <span class="spacer "></span>
+        <a href="index.html" class="navbar-brand text-uppercase font-weight-bold"> <img style="width: 35px;" src="image/invisible-logo.png" alt="PETTO Logo"> PETTO</a>
+        <span class="spacer "></span>
+        <span> </span>
+        
+        <!--
+        <span id="sidenavBtnOpen" style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; open</span>
+        <span id="sidenavBtnClose" style="font-size:30px;cursor:pointer" onclick="closeNav()">&#9776; close</span>
+        -->
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-uppercase" id="btnLogin"  onclick="displayForm('login')">Login</a></li>
+                <li class="nav-item">
+                    <div class="user-myBooking">
+                        
+                    </div>
+
+                </li>
+                <li class="nav-item">
+
+                    <div class="user-dropdown userDropdown">
+                        <!--render dropdown menu for user in topNav.js-->
+                        
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="mySidenav" class="sidenav text-left">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <div class="myBookingSideNav">
+        <!--topNav render here-->
+    </div>
+    <p><i class="far fa-window-minimize"></i></p>
+    <a onclick="displayForm('login')" id="btnLoginSideNav" >Login</a>
+    
+    <div class="logoutSideNav">
+        <!--topNav render here-->
+    </div>
+    
+</div>   
+
+<main>
+    <!--Header-->
+
+<div class="page-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="page-caption">
+            <h1 class="page-title"> Make Appointment </h1>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="container mt-5 ">
+        <div class="container mb-3">
+            <div class="row">
+                <span> <p class="lead book_tab book_tab_1">&nbsp; SERVICE &nbsp;<i class="fas fa-chevron-right"></i></p></span>
+                 <span> <p class="lead book_tab book_tab_2">&nbsp; BOOKING &nbsp;<i class="fas fa-chevron-right"></i></p></span>
+                 <span> <p class="lead book_tab book_tab_3">&nbsp; CONTACT &nbsp;<i class="fas fa-chevron-right"></i></p></span>
+                 <span> <p class="lead book_tab book_tab_4">&nbsp; COMPLETE &nbsp;</p></span>
+            </div>
+        </div>
+
+    
+        <div class="row">
+
+            <div class="card box_shadow ">
+                <img class="card-img-top" src="image/booking/service-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-left font-weight-bold">Pet Grooming</h5>
+                  <p class="card-text text-left">Pet grooming specialist that provides the best of services for pets.</p>
+                  
+                    <a onclick="selectedService('s1')" class="btn btn-primary text-center card_btn col-12">Select</a>
+                  
+                  
+                </div>
+            </div>
+
+            <div class="card box_shadow ">
+                <img class="card-img-top" src="image/booking/service-2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-left font-weight-bold">Pet Spa</h5>
+                  <p class="card-text text-left">The ultimate retreat for the pampered pet.</p>
+                  <a onclick="selectedService('s2')"  class="btn btn-primary text-center col-12">Select</a>
+                </div>
+              </div>
+
+              <div class="card box_shadow ">
+                <img class="card-img-top" src="image/booking/service-3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-left font-weight-bold">Pet Hotel</h5>
+                  <p class="card-text text-left">On a work trip or vacation? Leave your pet with us!</p>
+                  <a onclick="selectedService('s3')"  class="btn btn-primary text-center col-12">Select</a>
+                </div>
+              </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="card box_shadow ">
+                <img class="card-img-top" src="image/booking/service-4.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-left font-weight-bold">Swimming Pool</h5>
+                  <p class="card- text-left">Swimming your dog is a perfect activity for the young or old.</p>
+                  <a onclick="selectedService('s4')"  class="btn btn-primary text-center col-12">Select</a>
+                </div>
+            </div>
+
+            <div class="card box_shadow ">
+                <img class="card-img-top" src="image/booking/service-5.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-left font-weight-bold">Indoor Park</h5>
+                  <p class="card-text text-left">A platform for your pets to release stress and having fun.</p>
+                  <a onclick="selectedService('s5')"  class="btn btn-primary text-center col-12">Select</a>
+                </div>
+              </div>
+
+              
+              <div class="card box_shadow ">
+                <img class="card-img-top" src="image/booking/service-6.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-left font-weight-bold">Pet Walking</h5>
+                  <p class="card-text text-left">Busy life? Don't worry, our pet walking service is here.</p>
+                  <a onclick="selectedService('s6')"  class="btn btn-primary text-center col-12">Select</a>
+                </div>
+              </div>
+
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+</main>
+    <footer>
+        <div class="col-12">
+            <!--<hr class="light-100">-->
+            <h5 class="footer_btm_font">&copy; PETTO 2020. All Copyright Reserved.</h5>
+        </div>
+    </footer>
+
+  </body>
+
+  <!--javaScript-->
+  <script src="booking.js"></script>
+  <script src="all.js"></script>
+</html>

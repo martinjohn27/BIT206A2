@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Booking - PETTO</title>
+
+    <!--setup-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking_view.css">
+    
+
+
+
+    <!--icons-->
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="assets/jquery.countup.js"></script>
+    <link rel="icon" type="image/png" href="image/tabIcon.JPG">
+    
+    <!--TopNav-->
+    <script src="topNav.js"></script>
+    <link rel="stylesheet" href="topNav.css">
+
+    
+  </head>
+  <body  onload="populateTable();"> 
+    <!--Header-->
+
+    <!-- Navbar-->
+<nav class="nav_bar navbar navbar-expand-lg fixed-top py-2">
+    <div class="container-fluid">
+        <a href="#" onclick="openNav()" class="navbar-toggler navbar-toggler-left"><i class="fa fa-bars"></i></a>
+        <span class="spacer "></span>
+        <a href="index.html" class="navbar-brand text-uppercase font-weight-bold"> <img style="width: 35px;" src="image/invisible-logo.png" alt="PETTO Logo"> PETTO</a>
+        <span class="spacer "></span>
+        <span> </span>
+        
+        <!--
+        <span id="sidenavBtnOpen" style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; open</span>
+        <span id="sidenavBtnClose" style="font-size:30px;cursor:pointer" onclick="closeNav()">&#9776; close</span>
+        -->
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-uppercase" id="btnLogin"  onclick="displayForm('login')">Login</a></li>
+                <li class="nav-item">
+                    <div class="user-myBooking">
+                        
+                    </div>
+
+                </li>
+                <li class="nav-item">
+
+                    <div class="user-dropdown userDropdown">
+                        <!--render dropdown menu for user in topNav.js-->
+                        
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="mySidenav" class="sidenav text-left">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <div class="myBookingSideNav">
+        <!--topNav render here-->
+    </div>
+    <p><i class="far fa-window-minimize"></i></p>
+    <a onclick="displayForm('login')" id="btnLoginSideNav" >Login</a>
+    
+    <div class="logoutSideNav">
+        <!--topNav render here-->
+    </div>
+    
+</div>   
+    <!--Header-->
+    <div class="page-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="page-caption">
+                <h1 class="page-title"> My Booking </h1>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+<main>
+
+    <div class="container mt-4 mb-5">
+
+        <div class="container">
+
+        
+        <table id="bookingTable" class="table table-hover text-right">
+            <thead>
+                <tr>
+                  <th class="numeric">Booking ID</th>
+                  <th class="numeric">Service</th>
+                  <th class="numeric">Pet Name</th>
+                  <th class="numeric">Pet Type</th>
+                  <th class="numeric">Booking Time</th>
+                  <th class="numeric">Booking Date</th>
+                  <th class="numeric">Check-in Date</th>
+                  <th class="numeric">Check-out Date</th>
+                  <th class="numeric">Remarks</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <!--
+                <tr>
+                    <td data-title="Booking ID" class="numeric">10001</td>
+                    <td data-title="Service" class="numeric">Bath</td>
+                    <td data-title="Pet Name" class="numeric">Koi</td>
+                    <td data-title="Pet Type" class="numeric">Dog</td>
+                    <td data-title="Booking Time" class="numeric">9am</td>
+                    <td data-title="Booking Date" class="numeric">01/04/2020</td>
+                    <td data-title="Check-in Date" class="numeric">01/04/2020</td>
+                    <td data-title="Check-out Date" class="numeric">01/04/2020</td>
+                    <td data-title="Remarks" class="numeric">Ok!</td>
+            
+                </tr>
+                -->
+              </tbody>
+        </table>
+    </div>
+    </div>
+
+  
+
+
+
+    <br>
+</main>
+    <footer class="fixed-bottom">
+        <div class="col-12">
+            <!--<hr class="light-100">-->
+            <h5 class="footer_btm_font">&copy; PETTO 2020. All Copyright Reserved.</h5>
+        </div>
+    </footer>
+
+  </body>
+   <!--javaScript-->
+  <script src="all.js"></script>
+  <script src="booking_view.js"></script>
+  
+</html>

@@ -1,0 +1,419 @@
+/*register*/
+#registerForm .createAccount{
+  font-size: 15px;
+}
+
+.registerInput input{
+  margin-bottom: 0px;
+}
+
+.registerInput{
+  height: 480px;
+}
+
+.user-dropdown button{
+  color: white;
+}
+
+
+
+
+/*about-us section*/
+
+.ui-container{
+  background-color: black;
+  outline: white; 
+  z-index: 10;
+  height: 500px;
+}
+.ui-container img{
+  height: 500px;
+  width: 100%;
+  opacity: 0.3;    
+  /* z-index:5;  */
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.ui-container .card-img-overlay h1 br{
+  display: none;
+}
+
+.card-img-overlay{
+  margin-top: 5%;
+}
+
+.card-img-overlay h1, .card-img-overlay h5{
+  color: #d5d5d5;
+  font-weight: 700;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.motto{
+  padding-top: 25px;
+}
+
+/*navigation*/
+.navigation{
+  width: 100% !important;
+  height: 238px;
+}
+
+.navBar{
+  margin-left: 20px;
+}
+
+.navBar a{
+  font-size: 17px;
+}
+/*-------------------*/
+
+/*mission*/
+.mission .float-left, .mission .float-right, .mission2 .float-left, .mission2 .float-right{
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 20px;
+  width: 50%;
+}
+
+.mission .float-left img{
+  margin-left: 40px;
+}
+
+.big-images{
+  width: 550px;
+  height: 450px;
+  margin:auto;
+}
+
+.mission-box{
+  width: 450px;
+  height: 450px;
+}
+
+.mission-box div{
+  width: 450px;
+  height: 350px;
+  background-image: linear-gradient(to bottom right, 	 #99e6ff, #00ace6);
+}
+
+.mission2 .float-right .mission-box div{
+  margin-left: 110px;
+}
+
+.mission2 .float-right img{
+  margin-left: 650px;
+}
+
+.mission2 .float-left br{
+  display: none;
+}
+
+.mission .float-right h4, .mission2 .float-left h4{
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.mission .float-right hr, .mission2 .float-left hr{
+  width: 70px !important;
+  margin-top: 0px !important;
+  border-top: 3px solid #00ace6;
+}
+
+.mission .float-right p, .mission2 .float-left p{
+  text-align: justify;
+}
+
+/*----------*/
+
+
+
+
+/*timeline*/
+
+.timeline{ text-align: center;}
+.timeline h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  
+}
+
+.timeline hr {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  width: 300px; 
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.booking, .check-in, .check-out, .complete{
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .booking{
+    background-color: #00ace6;
+  }
+  .check-in{
+    background-color: #0086b3;
+  }
+  .check-out{
+    background-color:  #54ac51;
+  }
+  .complete{
+    background-color: #85d560;
+  }
+
+  .text-component p{
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+
+  .text-component .buttons{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*-------------------------*/
+
+
+
+/*location*/
+.card{
+  margin: 0 auto;
+  float: none; 
+  margin-bottom: 10px;
+  border: none; 
+}
+
+.location{
+  padding: 10px;
+}
+
+.location h3, .location h5, .location p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.location iframe{
+  margin-left: -50px;
+}
+
+
+.location .card{
+  text-align: left; 
+  padding-left: 0px !important;
+  padding-right: 0px;
+}
+
+.location select{
+  width: 580px;
+}
+
+.map iframe {
+  padding-left: 40px;
+}
+
+
+.form-control{
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px;
+}
+
+select{
+  background-image:
+    linear-gradient(45deg, transparent 50%, #0086b3 60%),
+    linear-gradient(135deg, #0086b3 40%, transparent 50%) !important;
+    background-position:
+    calc(100% - 30px) 14px,
+    calc(100% - 20px) 14px,
+    100% 0;
+  background-size:
+    10px 10px,
+    10px 10px;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+/*Footer*/
+footer {
+  background-color: #0086b3;
+  color:#fff;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  
+  
+
+}
+
+.footer-img{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+hr.light{
+  border-top: 1px solid #fff;
+  width: 75%;
+  margin-top: 0.8rem;
+  margin-bottom:1rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+footer a{
+  color: #fff;
+  margin: 1.5em;
+  font-size: 1rem;
+  text-decoration: none!important;
+}
+
+hr.light-100{
+  border-top: 1px solid #fff;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer_link:hover{
+  font-size: 105%;
+  text-decoration: none;
+  color:#fff;
+  transition: all 0.3s;
+}
+
+.footer_btm_font{
+  font-size: 0.7em;
+  color: #fff;
+}
+
+.social_icon{
+  font-size: 1.5em;
+  transform:all 0.4s;
+}
+
+
+
+@media only screen and (max-width: 768px){
+  /*about us container*/
+  .ui-container{ 
+    margin-top: 56px;
+    height: 450px;  
+  }
+
+  .ui-container img{
+    height: 450px;
+    width: 450px;
+    opacity: 0.5;
+    padding: 0px;
+  }
+
+  .ui-container h5{
+    padding-top: 50px;
+  }
+  
+  .aboutImg{
+    visibility: hidden;
+  }
+
+  .ui-container .visibility{
+    visibility: visible;
+  }
+
+  .ui-container .card-img-overlay br{
+    display: initial;
+  }
+  
+  /*------------------*/
+
+  /*mission*/
+  .mission .float-right{
+    float: none;
+    width: 100%;
+  }
+
+  .mission .float-left{
+    padding-bottom: 0px;
+    margin-bottom: -50px;
+  }
+
+  .mission-box div{
+    height: 300px;
+    width: 260px;
+  }
+
+  .mission-box{
+    width: 300px;
+  }
+
+  .big-images{
+    height: 380px;
+    width: 300px;
+    margin-top: 15px;
+  }
+
+  .mission2 .float-left{
+    margin-top: 440px;
+    width: 100%;
+    float: none;
+  }
+
+  .mission2 .float-left br{
+    display: initial;
+  }
+
+  .mission2 .float-right{
+    margin-top: -750px;
+    margin-left: 20px;
+  }
+
+  .mission2 .float-right .mission-box div{
+    margin-left: 0px;
+  }
+  
+  .mission2 .float-right .big-images{
+    margin-left: 10px;
+  }
+
+  /*---------------------*/
+
+  .timeline .cd-timeline__img {
+    font-size: 20px;
+  }
+
+
+  /*location*/
+  .location .card{
+    padding-left: 30px !important;
+  }
+
+  .location h3, .location h5{
+    width: 300px;
+  }
+
+  .location map{
+    display: none;
+  }
+
+  .location select{
+    width: 100%;
+  }
+
+  .location .col-5{
+    display: none;
+  }
+
+  
+
+  /*-----------*/
+
+}
+
+
+

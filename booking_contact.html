@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - PETTO</title>
+
+    <!--setup-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking_contact.css">
+    
+
+
+
+    <!--icons-->
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="assets/jquery.countup.js"></script>
+    <link rel="icon" type="image/png" href="image/tabIcon.JPG">
+    
+    <!--TopNav-->
+    <script src="topNav.js"></script>
+    <link rel="stylesheet" href="topNav.css">
+
+    
+  </head>
+  <body>
+    <!--Header-->
+
+    <!-- Navbar-->
+<nav class="nav_bar navbar navbar-expand-lg fixed-top py-2">
+    <div class="container-fluid">
+        <a href="#" onclick="openNav()" class="navbar-toggler navbar-toggler-left"><i class="fa fa-bars"></i></a>
+        <span class="spacer "></span>
+        <a href="index.html" class="navbar-brand text-uppercase font-weight-bold"> <img style="width: 35px;" src="image/invisible-logo.png" alt="PETTO Logo"> PETTO</a>
+        <span class="spacer "></span>
+        <span> </span>
+        
+        <!--
+        <span id="sidenavBtnOpen" style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; open</span>
+        <span id="sidenavBtnClose" style="font-size:30px;cursor:pointer" onclick="closeNav()">&#9776; close</span>
+        -->
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">About Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-uppercase" id="btnLogin"  onclick="displayForm('login')">Login</a></li>
+                <li class="nav-item">
+                    <div class="user-myBooking">
+                        
+                    </div>
+
+                </li>
+                <li class="nav-item">
+
+                    <div class="user-dropdown userDropdown">
+                        <!--render dropdown menu for user in topNav.js-->
+                        
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="mySidenav" class="sidenav text-left">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <div class="myBookingSideNav">
+        <!--topNav render here-->
+    </div>
+    <p><i class="far fa-window-minimize"></i></p>
+    <a onclick="displayForm('login')" id="btnLoginSideNav" >Login</a>
+    
+    <div class="logoutSideNav">
+        <!--topNav render here-->
+    </div>
+    
+</div>   
+    <!--Header-->
+    <div class="page-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="page-caption">
+                <h1 class="page-title"> Make Appointment </h1>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+<main>
+    <div class="container mt-5 ">
+        <div class="container col-lg-12 col-md-12 col-sm-12 mb-3">
+            <div class="row">
+                <span class ="font_size_bar"> <a href="booking.html" class="lead book_tab book_tab_1">SERVICE &nbsp;<i class="fas fa-chevron-right"></i></a></span>
+                 <span class ="font_size_bar"> <a href="booking_time.html" class="lead book_tab book_tab_2">&nbsp; BOOKING &nbsp;<i class="fas fa-chevron-right"></i></a></span>
+                 <span class ="font_size_bar"> <p class="lead book_tab book_tab_3">&nbsp; CONTACT &nbsp;<i class="fas fa-chevron-right"></i></p></span>
+                 <span class ="font_size_bar"> <p class="lead book_tab book_tab_4">&nbsp; COMPLETE &nbsp;</p></span>
+                 
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card box_shadow">
+            <!--<div class="card-title m-3">
+                <h3>Booking Arrangement</h3>
+            </div>-->
+
+            <div class="card-body">
+                <div class="card-title mt-5">
+                    <h3>Contact Details</h3>
+                    <hr>
+                </div>
+                <!-- action="booking_done.html"-->
+                <form method="post" onsubmit="submitContactForm()"  action="booking_done.html">
+                <div class="row">
+                    <div class="container col-2"></div>
+              
+
+                    <div class="container text-left col-lg-8 col-md-12 col-sm-12 mb-3">
+                    <!--
+                    <div class="form-group">
+                      <label for="inEmail">Email address</label>
+                      <input type="email" class="form-control" id="inEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">
+                          Leave your email to keep in touch your appointment with us.
+                      </small>
+                    </div>-->
+
+                    <div class="form-group">
+                        <label for="inFullName" class="font-weight-bold"><i class="far fa-user"></i> Owner's Name </label>
+                        <input type="text" class="form-control" id="inFullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inEmail" class="font-weight-bold mt-3"><i class="far fa-envelope"></i> E-mail </label>
+                        <input type="email" class="form-control" id="inEmail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inContactNo" class="font-weight-bold mt-3"><i class="fas fa-phone-square"></i> Contact No. </label>
+                        <input type="phone" class="form-control" id="inContactNo" required>
+                    </div>
+
+                    <div class="form-check text-center">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+                        <label class="form-check-label" for="defaultCheck1">
+                          I accept to the <a href="#">Terms of Service</a>.
+                        </label>
+                      </div>
+
+                   
+
+                    
+
+
+                   
+
+                    <div class="container text-center">
+                        <button type="submit" class="box_shadow btn btn-primary col-lg-8 col-md-10 col-sm-10 mt-5">Submit</button>
+                    </div>
+
+
+
+                    </div>
+                    
+
+                    <div class="container col-2"></div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+</main>
+    <footer>
+        <div class="col-12">
+            <!--<hr class="light-100">-->
+            <h5 class="footer_btm_font">&copy; PETTO 2020. All Copyright Reserved.</h5>
+        </div>
+    </footer>
+
+  </body>
+   <!--javaScript-->
+  <script src="all.js"></script>
+  <script src="booking_contact.js"></script>
+</html>
