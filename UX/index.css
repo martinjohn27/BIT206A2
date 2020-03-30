@@ -429,7 +429,7 @@
     }
 
     .pic-container .pic1{
-      left: 150px;
+      left: 130px;
       width: 250px;
     }
 
@@ -448,9 +448,13 @@
 
   /*comments*/
   
+  .social-proof{
+    height: 675px;
+  }
 
   .comments{
     width: 400px !important;
+    height: 300px;
   }
 
   #lefty,#righty {
@@ -466,6 +470,7 @@
     font-size: 24px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 250px;
   }
 
   #lefty:hover, #righty:hover{
@@ -475,12 +480,12 @@
   }
 
   #lefty {
-    margin-left: 70px;
+    margin-left: 120px;
 
   }
 
   #righty {
-     margin-right: 70px;
+     margin-right: 120px;
   }
 
   .comment-none {

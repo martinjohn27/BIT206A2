@@ -55,12 +55,58 @@ $(".navigation").mouseout(function(){
   }
 });
 
+
+
+//register form
 $(document).ready(function(){
+
+  
+
+  $("#registerName").keyup(function(){
+    if ($("#registerName").val().length < 3) {
+        document.getElementById('registerName').style.border = "2px solid red";
+    }else{
+        document.getElementById('registerName').style.border = "2px solid green";
+   }
+});
+
+
+$("#registerEmail").keyup(function(){
+  if (!$("#registerEmail").val().includes("@")) {
+      document.getElementById('registerEmail').style.border = "2px solid red";
+  }else{
+      document.getElementById('registerEmail').style.border = "2px solid green";
+ }
+});
+
+$("#registerPhone").keyup(function(){
+  if ($("#registerPhone").val().length < 3) {
+      document.getElementById('registerPhone').style.border = "2px solid red";
+  }else{
+      document.getElementById('registerPhone').style.border = "2px solid green";
+ }
+});
+
+$("#registerPsw").keyup(function(){
+  if ($("#registerPsw").val().length < 3) {
+      document.getElementById('registerPsw').style.border = "2px solid red";
+  }else{
+      document.getElementById('registerPsw').style.border = "2px solid green";
+ }
+});
+
   $("#retypePsw").keyup(function(){
-       if ($("#retypePsw").val() != $("#registerPsw").val()) {
-           $("#msg").html("Password do not match").css("color","red");
+       if ($("#registerPsw").val() !== $("#retypePsw").val()) {
+           document.getElementById('retypePsw').style.border = "2px solid red";
+           document.getElementById('validate-name').textContent = "Password do not match !"
+           document.getElementById('registerBtn').style.marginTop = "20px";
        }else{
-           $("#msg").html("Password matched").css("color","green");
+           document.getElementById('retypePsw').style.border = "2px solid green";
+           document.getElementById('validate-name').textContent = "";
+           document.getElementById('registerBtn').style.marginTop = "40px";
       }
   });
 });
+
+
+
