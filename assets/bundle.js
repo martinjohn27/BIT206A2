@@ -9,8 +9,8 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    elements.navigation === null ? elements.homeNavigation.style.marginTop = "-170px"
-    :   elements.navigation.style.marginTop = "105px"; 
+    elements.navigation === null ? elements.homeNavigation.style.marginTop = "-130px"
+    :   elements.navigation.style.marginTop = "90px"; 
     $(".navigation img").addClass("big-image");
     $(".navigation span").addClass("visibility");
     $(".navigation span").hide();
@@ -50,8 +50,8 @@ $(".navigation").mouseout(function(){
     $(".navigation span").hide();
     $(".navigation span").addClass("visibility");
     $(".navigation img").addClass("big-image");
-    elements.navigation === null ? elements.homeNavigation.style.marginTop = "-170px"
-    : elements.navigation.style.marginTop = "105px";
+    elements.navigation === null ? elements.homeNavigation.style.marginTop = "-130px"
+    : elements.navigation.style.marginTop = "90px";
   }
 });
 
