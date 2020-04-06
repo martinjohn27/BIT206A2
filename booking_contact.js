@@ -46,6 +46,7 @@ function submitContactForm(){
     localStorage.inEmail = email_input.value;
     localStorage.inContactNo = contactNo_input.value;
     saveBooking();
+    location.href = "booking_done.html";
 
 }
 

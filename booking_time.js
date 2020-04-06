@@ -105,6 +105,10 @@ function submitBookForm(){
         localStorage.inCheckInDate = checkInDate_input.value;
         localStorage.inCheckOutDate = checkOutDate_input.value;
         localStorage.inRemarks = remarks_textarea.value;
+        //window.location.href = 'booking_contact.html';
+        window.location.assign("booking_contact.html");
+        
+       
     // if(checkInDate_input.value > checkOutDate_input.value){
     //     errorMsg_small.style.display = 'initial';
 
