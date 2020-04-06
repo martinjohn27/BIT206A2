@@ -17,7 +17,7 @@ function scrollFunction() {
     elements.navigation === null ? elements.homeNavigation.style.opacity = "0.9" 
     : elements.navigation.style.opacity = "0.9";
   } else {
-    elements.navigation === null ? elements.homeNavigation.style.marginTop = "-220px"
+    elements.navigation === null ? elements.homeNavigation.style.marginTop = "-190px"
     : elements.navigation.style.marginTop = "-50px";
     $(".navigation img").removeClass("big-image");
     $(".navigation span").removeClass("visibility");  
